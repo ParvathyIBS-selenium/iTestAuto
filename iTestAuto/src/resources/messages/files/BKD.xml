@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:StatusMessage
+    xmlns:rsm="iata:statusmessage:1"
+    xmlns=" http://www.w3.org/2001/XMLSchema http://www.addval.com/cargo/air/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ram="iata:datamodel:3"
+    xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:8"
+    xmlns:ccts="urn:un:unece:uncefact:documentation:standard:CoreComponentsTechnicalSpecification:2"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema" xsi:schemaLocation="iata:statusmessage:1 StatusMessage_1.xsd">
+    <rsm:MessageHeaderDocument>
+        <ram:ID>2843</ram:ID>
+        <ram:Name>Cargo Status</ram:Name>
+        <ram:TypeCode>34</ram:TypeCode>
+        <ram:IssueDateTime>2024-09-18T09:06:13</ram:IssueDateTime>
+        <ram:PurposeCode>Creation</ram:PurposeCode>
+        <ram:VersionID>3</ram:VersionID>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="C">TDVAGT01DHLGFXX</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:RecipientParty>
+            <ram:PrimaryID schemeID="C">TYOXBKZ</ram:PrimaryID>
+        </ram:RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:BusinessHeaderDocument>
+        <ram:ID>074-15479936-BKD</ram:ID>
+    </rsm:BusinessHeaderDocument>
+    <rsm:MasterConsignment>
+        <ram:GrossWeightMeasure unitCode="KGM">100</ram:GrossWeightMeasure>
+        <ram:TotalGrossWeightMeasure unitCode="KGM">100</ram:TotalGrossWeightMeasure>
+        <ram:PieceQuantity>10</ram:PieceQuantity>
+        <ram:TotalPieceQuantity>10</ram:TotalPieceQuantity>
+        <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+        <ram:TransportContractDocument>
+            <ram:ID>074-15479936</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+        </ram:TransportContractDocument>
+        <ram:OriginLocation>
+            <ram:ID>CDG</ram:ID>
+        </ram:OriginLocation>
+        <ram:FinalDestinationLocation>
+            <ram:ID>AMS</ram:ID>
+        </ram:FinalDestinationLocation>
+        <ram:ReportedStatus>
+            <ram:ReasonCode>BKD</ram:ReasonCode>
+            <ram:AssociatedStatusConsignment>
+                <ram:GrossWeightMeasure unitCode="KGM">100</ram:GrossWeightMeasure>
+                <ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+                <ram:PieceQuantity>10</ram:PieceQuantity>
+                <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+                <ram:SpecifiedLogisticsTransportMovement>
+                    <ram:ID>KL8146</ram:ID>
+                    <ram:UsedLogisticsTransportMeans>
+                        <ram:Name>KL</ram:Name>
+                    </ram:UsedLogisticsTransportMeans>
+                    <ram:ScheduledArrivalEvent>
+                        <ram:ScheduledOccurrenceDateTime>2024-09-18T15:50:00</ram:ScheduledOccurrenceDateTime>
+                    </ram:ScheduledArrivalEvent>
+                    <ram:ArrivalEvent>
+                        <ram:ArrivalOccurrenceDateTime>2024-09-18T15:50:00</ram:ArrivalOccurrenceDateTime>
+                        <ram:ArrivalDateTimeTypeCode>S</ram:ArrivalDateTimeTypeCode>
+                    </ram:ArrivalEvent>
+                    <ram:DepartureEvent>
+                        <ram:DepartureOccurrenceDateTime>2024-09-18T13:35:00</ram:DepartureOccurrenceDateTime>
+                        <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+                    </ram:DepartureEvent>
+                    <ram:CarrierParty>
+                        <ram:PrimaryID>KL</ram:PrimaryID>
+                    </ram:CarrierParty>
+                    <ram:SpecifiedLocation>
+                        <ram:ID>CDG</ram:ID>
+                        <ram:TypeCode>Airport</ram:TypeCode>
+                        <ram:FlightStatusTypeCode>Departure</ram:FlightStatusTypeCode>
+                    </ram:SpecifiedLocation>
+                    <ram:SpecifiedLocation>
+                        <ram:ID>AMS</ram:ID>
+                        <ram:TypeCode>Airport</ram:TypeCode>
+                        <ram:FlightStatusTypeCode>Arrival</ram:FlightStatusTypeCode>
+                    </ram:SpecifiedLocation>
+                    <ram:SpecifiedEvent>
+                        <ram:OccurrenceDateTime>2024-09-18T10:06:00</ram:OccurrenceDateTime>
+                        <ram:DateTimeTypeCode>S</ram:DateTimeTypeCode>
+                    </ram:SpecifiedEvent>
+                </ram:SpecifiedLogisticsTransportMovement>
+            </ram:AssociatedStatusConsignment>
+        </ram:ReportedStatus>
+        </rsm:MasterConsignment>
+</rsm:StatusMessage>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CargoFreightInformationMessageTypeElement>
+<FreightInformationMessage>
+<AirWaybill>074-15479925</AirWaybill>
+<WaybillDetails>
+<NumberOfPieces>10</NumberOfPieces>
+<Weight>100</Weight>
+</WaybillDetails>
+<SpecialHandlingRequirements>
+<SpecialHandlingCode>PER</SpecialHandlingCode>
+</SpecialHandlingRequirements>
+<Shipper>
+<Name>SIFA   163</Name>
+<Address>
+<Street>24 RTE DU MIDI</Street>
+<PostalCode>95975</PostalCode>
+<City>ROISSY</City>
+<CountryCode>FR</CountryCode>
+</Address>
+</Shipper>
+<Consignee>
+<Name>FAST FORWARD FREIGHT VOF</Name>
+<Address>
+<Street>VALKWEG1</Street>
+<PostalCode>1118 EC</PostalCode>
+<City>SCHIPHOL</City>
+<CountryCode>NL</CountryCode>
+</Address>
+</Consignee>
+<NominatedAgent>INV</NominatedAgent>
+</FreightInformationMessage>
+<originalMessage>
+<type>OTHER XML</type>
+</originalMessage>
+<state/>
+</CargoFreightInformationMessageTypeElement>

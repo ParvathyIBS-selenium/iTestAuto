@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-03940930_vqaNCeJAvCQHo2RwTdB</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T14:37:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>091031</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">TDVAGT03QUICK/JFK1</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">TDVAGT03QUICK/JFK1</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">AIR/SAFRANELECTRICALP/ORD</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-03940930</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>ABD</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>CDG</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-XPS</ram:ID>
+            <ram:AdditionalID>AFKL-M21|SKT-XPS</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">24</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>M21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>SAFRAN ELECTRICAL POWER</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>F79005</ram:PostcodeCode>
+                    <ram:StreetName>271 RUE DU CHATEAU</ram:StreetName>
+                    <ram:CityName>MISSETT NIORT</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>BOMBARDIER</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>60018</ram:PostcodeCode>
+                    <ram:StreetName>251 WILLE ROAD</ram:StreetName>
+                    <ram:CityName>DES PLAINES</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                    <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>SAFRAN ELECTRICAL POWER</ram:Name>
+                <ram:CargoAgentID>2047443</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>MISSETT NIORT  F7</ram:StreetName>
+                    <ram:CityName>MISSETT NIORT  F7</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>9344</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>ORD</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF136</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>ORD</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-09T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>XPS</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAW</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>AIRCRAFT ON GROUND</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>NOA STERLING COURIER</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>EXPRESS FREIGHT</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>CIN OK   AOG</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>SC</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">26.50</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">233.50</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">24</ram:GrossWeightMeasure>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CIVIL AIRCRAFT PART S</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>M</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">27</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>233.50</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">233.50</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">233.50</ram:WeightChargeTotalAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">233.50</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>136</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>US</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

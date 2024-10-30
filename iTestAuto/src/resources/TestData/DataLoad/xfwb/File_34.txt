@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-45781610_kTUr53x7QJYScHHhUs3</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>741</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T10:30:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>F5ECE8F6FE14</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">REUFFW87FRACHT/TLS01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">REUFFW87FRACHT/TLS01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">FFW/CWIDFRAFRAGBL/TLS</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-45781610</ram:ID>
+            <ram:SenderAssignedID>C00414203</ram:SenderAssignedID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>C</ram:ContentCode>
+                <ram:Content>Consolidation</ram:Content>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>ANAIS MERCANTI</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>FRACHT FRANCE TOULOU</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>BLAGNAC</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-DIM</ram:ID>
+            <ram:AdditionalID>AFKL-R21|SKT-DIM</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">1532</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>2</ram:TotalPieceQuantity>
+            <ram:ProductID>R21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>FRACHT FRANCE</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>31700</ram:PostcodeCode>
+                    <ram:StreetName>26 RUE RAYMOND GRIMAUD</ram:StreetName>
+                    <ram:CityName>BLAGNAC</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                    <ram:CountrySubDivisionID>31</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>33534595750</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>FRACHT  HONG KONG  LTD</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:StreetName>1209-10  LAFORD CENTRE 838 LAI CHI</ram:StreetName>
+                    <ram:CityName>HONG KONG</ram:CityName>
+                    <ram:CountryID>HK</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>85228035089</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>FRACHT FRANCE TOULOUSE 26 RUE RAYMO</ram:Name>
+                <ram:AccountID>R166352</ram:AccountID>
+                <ram:CargoAgentID>2047355</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>31700 BLAGNAC</ram:StreetName>
+                    <ram:CityName>31700 BLAGNAC</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>3111</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>HKG</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>2C602</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>2C</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>HKG</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>SPX</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAP</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>PLEASE NOTIFY CONSIGNEE IMMEDIATELY UPON ARRIVAL.</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>EXP 2308413981</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>FR RA 03097-05-SPX-</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>EDD-11-SEP-23 12 30 27-AMT</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>SP-166352-50093482</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>RA</ram:ContentCode>
+                <ram:Content>03097-05</ram:Content>
+                <ram:SubjectCode>ISS</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ED</ram:ContentCode>
+                <ram:Content>1225</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SM</ram:ContentCode>
+                <ram:Content>EDD</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SN</ram:ContentCode>
+                <ram:Content>ANAIS MERCANTI</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SD</ram:ContentCode>
+                <ram:Content>11SEP231230</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>33534595750</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>85228035089</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>HK</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>NE</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">20</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">3952.56</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">1532</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">3.56</ram:GrossVolumeMeasure>
+                    <ram:PieceQuantity>2</ram:PieceQuantity>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CONSOLIDATION AS PER ATTACHED LIST NOT RESTRICTED</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:TransportLogisticsPackage>
+                        <ram:ItemQuantity>1</ram:ItemQuantity>
+                        <ram:LinearSpatialDimension>
+                            <ram:WidthMeasure unitCode="CMT">100</ram:WidthMeasure>
+                            <ram:LengthMeasure unitCode="CMT">120</ram:LengthMeasure>
+                            <ram:HeightMeasure unitCode="CMT">152</ram:HeightMeasure>
+                        </ram:LinearSpatialDimension>
+                    </ram:TransportLogisticsPackage>
+                    <ram:TransportLogisticsPackage>
+                        <ram:ItemQuantity>1</ram:ItemQuantity>
+                        <ram:LinearSpatialDimension>
+                            <ram:WidthMeasure unitCode="CMT">100</ram:WidthMeasure>
+                            <ram:LengthMeasure unitCode="CMT">120</ram:LengthMeasure>
+                            <ram:HeightMeasure unitCode="CMT">145</ram:HeightMeasure>
+                        </ram:LinearSpatialDimension>
+                    </ram:TransportLogisticsPackage>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">1532</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>2.58</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">3952.56</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">3952.56</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">20</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">3972.56</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>2C</carrierCode>
+        <flightNumber>602</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>HK</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

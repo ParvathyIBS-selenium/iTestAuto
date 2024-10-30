@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:CustomsStatusNotification xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:customsstatusnotification:1">
+    <rsm:MessageHeaderDocument>
+        <ram:ID>074-13478986_DAP3CI8SMKIZY0WqCAS</ram:ID>
+        <ram:Name>Document Response Customs</ram:Name>
+        <ram:TypeCode>962</ram:TypeCode>
+        <ram:IssueDateTime>2024-05-15T04:58:35.036Z</ram:IssueDateTime>
+        <ram:PurposeCode>Creation</ram:PurposeCode>
+        <ram:VersionID>1.00</ram:VersionID>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="C">TDVAGT01DHLGFXX</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="T">ZCSTXLH</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:RecipientParty>
+            <ram:PrimaryID schemeID="C">TYOXBKZ</ram:PrimaryID>
+        </ram:RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:BusinessHeaderDocument>
+        <ram:StatusCode>CO</ram:StatusCode>
+        <ram:ActionTypeCode>002</ram:ActionTypeCode>
+        <ram:ActionTypeName>N/A</ram:ActionTypeName>
+        <ram:Information>CUSTOMS ACTIONED</ram:Information>
+        <ram:IssueDateTime>2024-05-15T14:01:00</ram:IssueDateTime>
+    </rsm:BusinessHeaderDocument>
+    <rsm:MasterConsignment>
+        <ram:CustomsID>ENO900001X</ram:CustomsID>
+        <ram:TotalPieceQuantity>10</ram:TotalPieceQuantity>
+        <ram:BondedWarehouseLocation>
+            <ram:ID>9966</ram:ID>
+        </ram:BondedWarehouseLocation>
+        <ram:SpecifiedLogisticsTransportMovement>
+            <ram:StageCode>Main-Carriage</ram:StageCode>
+            <ram:ModeCode>4</ram:ModeCode>
+            <ram:Mode>Air transport</ram:Mode>
+            <ram:ID>KL8049</ram:ID>
+            <ram:SequenceNumeric>1</ram:SequenceNumeric>
+            <ram:UsedLogisticsTransportMeans>
+                <ram:Name>KL</ram:Name>
+            </ram:UsedLogisticsTransportMeans>
+            <ram:ArrivalEvent>
+                <ram:ScheduledOccurrenceDateTime>2024-05-15T00:00:00</ram:ScheduledOccurrenceDateTime>
+                <ram:OccurrenceArrivalLocation>
+                    <ram:ID>CDG</ram:ID>
+                </ram:OccurrenceArrivalLocation>
+            </ram:ArrivalEvent>
+            <ram:DepartureEvent>
+                <ram:OccurrenceDepartureLocation>
+                    <ram:ID>AMS</ram:ID>
+                </ram:OccurrenceDepartureLocation>
+            </ram:DepartureEvent>
+        </ram:SpecifiedLogisticsTransportMovement>
+        <ram:AssociatedReferenceDocument>
+            <ram:ID>074-13478986</ram:ID>
+            <ram:TypeCode>740</ram:TypeCode>
+        </ram:AssociatedReferenceDocument>
+    </rsm:MasterConsignment>
+</rsm:CustomsStatusNotification>

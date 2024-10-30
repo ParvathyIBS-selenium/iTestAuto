@@ -1,0 +1,3 @@
+TC002- Flight is not getting auto finalized on processing FFM+MVT AD
+TC005- Two defects logged for this . Need to track and modify the CRA exception resolution steps if needed based on the
+fixture comments (IIP-32,IIP-34) 

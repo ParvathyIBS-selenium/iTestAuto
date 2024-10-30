@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-47136611_mlD8Nai0OAK2VAqiApV</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T17:14:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>L2316245000</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">REUAGT87FRTEU/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">REUAGT87FRTEU/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">AGT/REUAGT87FRTEU/CDG</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-47136611</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>TRANSIT EUROFRET FRA</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-12T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>FABIEN DELAHOCHE</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>ROISSY  CDG</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-COL</ram:ID>
+            <ram:AdditionalID>AFKL-S23|SKT-COL</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">98.0</ram:IncludedTareGrossWeightMeasure>
+            <ram:GrossVolumeMeasure unitCode="MTQ">1.39</ram:GrossVolumeMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>S23</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>LALLEMAND SPECIALTY CULTURES</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>77260</ram:PostcodeCode>
+                    <ram:StreetName>23 RUE DE LA MERLETTE</ram:StreetName>
+                    <ram:CityName>SEPT-SORTS</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>0160244519</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>NELSON JAMESON</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>54449</ram:PostcodeCode>
+                    <ram:StreetName>2400 EAST FIFTH STREETMARSHFIELD  WI  54449</ram:StreetName>
+                    <ram:CityName>MARSHFIELD</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>7153871151</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>TRANSIT EUROFRET FRANCE</ram:Name>
+                <ram:CargoAgentID>2047368</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>ROISSY  CDG</ram:StreetName>
+                    <ram:CityName>ROISSY  CDG</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>9515</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>ORD</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>ORD</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>SPX</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAP</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>ONE POUCH ATTACHED</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>TSD MIRO                       NO DANGEROUS GOODS</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>INV 48187 48211-ID 22977-PC.169</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>AIR FRANCE G1XL-VARIATION FRESH</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>CONSERVATION AT  2 C  8 C</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>PLACE IN COOLER AT THE AIRPORT</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CP</ram:ContentCode>
+                <ram:Content>ROYER SANDRINE</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>0160244519</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CP</ram:ContentCode>
+                <ram:Content>CTC JENNIFER LIMB PH</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>7153871151</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>TRANSIT EUROFRET FRANCE</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>HAS REVIEWED ALL AVAILABLE</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>DOCUMENTATION AND HAS DETERMINED</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>THAT NONE OF THE CARGO BEING</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>OFFERED IN THIS CONSIGNMENT OR</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>CONSOLIDATION HAS EITHER</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>ORIGINATED IN TRANSFERRED FROM</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>OR TRANSITED THROUGH ANY POINT IN</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>EGYPT SOMALIA SYRIAN ARAB</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>REPUBLIC YEMEN.</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CH</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">31.3</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>SC</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">8.8</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CG</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">4.1</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">867.7</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">98.0</ram:GrossWeightMeasure>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>FERMENTS-VARIATION HS CODE 30.02.49.00 PLEASE KEEP FREIGHT BETWEEN  2   8 C VOLUME 1.392 CBM 1    120 X 80 X 145</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">232.0</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>3.7</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">867.7</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">867.7</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">44.2</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">911.9</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>US</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

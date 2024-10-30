@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-47680216_6b35aff8-9a72-4a3a-94b9-104a83cf7a37</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>741</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-10T15:21:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">QVIDOAF</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">QVIBGAF</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-47680216</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>C</ram:ContentCode>
+                <ram:Content>Consolidation</ram:Content>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>CEVA LOGISTICS SINGA</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-09T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>CHIA</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>SINGAPORE</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-DIM</ram:ID>
+            <ram:AdditionalID>AFKL-R21|SKT-DIM</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">190</ram:IncludedTareGrossWeightMeasure>
+            <ram:GrossVolumeMeasure unitCode="MTQ">1.83</ram:GrossVolumeMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>R21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>CEVA LOGISTICS SINGAPORE PTE LTD</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>349248</ram:PostcodeCode>
+                    <ram:StreetName>164 KALLANG WAY   09-01</ram:StreetName>
+                    <ram:CityName>SINGAPORE</ram:CityName>
+                    <ram:CountryID>SG</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>6565072600</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>CEVA FREIGHT LLC</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>60018</ram:PostcodeCode>
+                    <ram:StreetName>1333 SOUTH MT. PROSPECT RD</ram:StreetName>
+                    <ram:CityName>DES PLAINES</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                    <ram:CountrySubDivisionID>IL</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>8472503100</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>CEVA LOGISTICS SIN</ram:Name>
+                <ram:CargoAgentID>3232462</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:PostcodeCode>349248</ram:PostcodeCode>
+                    <ram:StreetName>164 KALLANG WAY #09-01</ram:StreetName>
+                    <ram:CityName>SINGAPORE</ram:CityName>
+                    <ram:CountryID>SG</ram:CountryID>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>0005</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>6512345678</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>SIN</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>ORD</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF0257</ram:ID>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-10T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>SIN</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF0136</ram:ID>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>ORD</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>SPX</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAW</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>HEA</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>RCAR-UC-E WITHOUT POUCH . NO PARTS OF THE CONTENTS ARE DANGEROUS</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description> .</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>EORI  20-547303200</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>20-547303200</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CP</ram:ContentCode>
+                <ram:Content>MARTY ROBINSON</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>8472503100</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>197301084E</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>SG</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>6565072600</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>SG</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>M2-0016062-2</ram:Content>
+                <ram:SubjectCode>AGT</ram:SubjectCode>
+                <ram:CountryID>SG</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>RA</ram:ContentCode>
+                <ram:Content>006</ram:Content>
+                <ram:SubjectCode>ISS</ram:SubjectCode>
+                <ram:CountryID>SG</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ED</ram:ContentCode>
+                <ram:Content>1299</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SM</ram:ContentCode>
+                <ram:Content>XRY</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SN</ram:ContentCode>
+                <ram:Content>AETOS SG</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>SD</ram:ContentCode>
+                <ram:Content>10SEP231400</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>SGD</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CG</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="SGD">4.3</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CH</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="SGD">3</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:TypeCode>854442</ram:TypeCode>
+                    <ram:TypeCode>844399</ram:TypeCode>
+                    <ram:TypeCode>850440</ram:TypeCode>
+                    <ram:GrossWeightMeasure unitCode="KGM">190</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">1.83</ram:GrossVolumeMeasure>
+                    <ram:PackageQuantity>1</ram:PackageQuantity>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CONSOLIDATION AS PER ATTACHED MANIFESTHS CODE 844399 850440 854442 .</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">306.5</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>12.88</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="SGD">3947.72</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="SGD">3947.72</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="SGD">7.3</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="SGD">3955.02</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CXML</type>
+    </originalMessage>
+    <state>AIRLINE</state>
+    <senderRole>AIRLINE</senderRole>
+    <actualSegment>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>0257</flightNumber>
+        <departureStation>SIN</departureStation>
+        <departureCountry>SG</departureCountry>
+        <arrivalStation>CDG</arrivalStation>
+        <arrivalCountry>FR</arrivalCountry>
+    </actualSegment>
+</ef:CargoWaybillTypeElement>
+

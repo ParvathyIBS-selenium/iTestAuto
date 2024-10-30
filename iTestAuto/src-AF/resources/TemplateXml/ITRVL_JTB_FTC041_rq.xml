@@ -1,0 +1,187 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken>
+				<wsse:Username>ALL@IVV</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"></wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<iCommHeader>
+			<ConsumerCode>HRG</ConsumerCode>
+			<ProviderCode>1A</ProviderCode>
+		</iCommHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<AirShoppingRQ xmlns="http://www.iata.org/IATA/EDIST"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+			<PointOfSale>
+				<Location>
+					<CountryCode />
+					<CityCode />
+				</Location>
+				<AugmentationPoint>
+					<AugPoint Key="ISOCurrency">
+						<xs:Value>USD</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestorType">
+						<xs:Value>AGENCY</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestorID">
+						<xs:Value>AgnAir</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestingUserID">
+						<xs:Value>AgnAirAgent</xs:Value>
+					</AugPoint>
+					<AugPoint Key="BookingChannelType">
+						<xs:Value>B2B</xs:Value>
+					</AugPoint>
+					<AugPoint Key="Market">
+						<xs:Value>B2B</xs:Value>
+					</AugPoint>
+					<AugPoint Key="AgencyConsortium">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="OrganizationalUnitCode">
+						<xs:Value>AgnAir</xs:Value>
+					</AugPoint>
+					<AugPoint Key="Role">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="ProfileID">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_FirstName">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_LastName">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Email">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_PhoneNumber">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Language">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Address">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Street">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_StateProv">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_ZipCode">
+						<xs:Value />
+					</AugPoint>
+					<Lists />
+					<!--<List ListKey="" ListName="Brand"> <AugPointAssoc KeyRef="OrganizationalUnitCode"/> 
+						</List> </Lists> -->
+				</AugmentationPoint>
+			</PointOfSale>
+			<Party>
+				<Sender>
+					<AggregatorSender>
+						<Name>Worldspan</Name>
+						<Category>
+							<Code>M</Code>
+							<Definition>NDC aggregator</Definition>
+						</Category>
+						<AggregatorID>1P</AggregatorID>
+					</AggregatorSender>
+				</Sender>
+				<Participants>
+					<Participant>
+						<TravelAgencyParticipant SequenceNumber="1">
+							<Name>USD Travel</Name>
+							<Type>TravelAgency</Type>
+							<Contacts>
+								<Contact>
+									<EmailContact>
+										<Address>ndc@usdtravel.com</Address>
+									</EmailContact>
+								</Contact>
+							</Contacts>
+							<PseudoCity>1F8</PseudoCity>
+							<IATA_Number>2212345</IATA_Number>
+							<AgencyID Owner="LH">1001</AgencyID>
+							<AgentUser>
+								<Name>John Smith</Name>
+								<AgentUserID>1980</AgentUserID>
+								<UserRole>Admin</UserRole>
+							</AgentUser>
+						</TravelAgencyParticipant>
+					</Participant>
+				</Participants>
+			</Party>
+			<Document>
+				<Name>LH NDC GATEWAY</Name>
+				<ReferenceVersion>1.0</ReferenceVersion>
+			</Document>
+			<Travelers>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="2">ADT</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="2">CHD</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="1">INF</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+			</Travelers>
+			<CoreQuery>
+				<OriginDestinations>
+					<OriginDestination OriginDestinationKey="OD1">
+						<Departure>
+							<AirportCode>LHR</AirportCode>
+							<Date>2017-08-08</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>LYR</AirportCode>
+						</Arrival>
+					</OriginDestination>
+					<OriginDestination OriginDestinationKey="OD2">
+						<Departure>
+							<AirportCode>LYR</AirportCode>
+							<Date>2017-08-31</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>LHR</AirportCode>
+
+						</Arrival>
+					</OriginDestination>
+				</OriginDestinations>
+			</CoreQuery>
+			<Preferences>
+				<Preference>
+					<AirlinePreferences>
+						<flightPreferences>
+							<Characteristic>
+								<NonStopPreferences>Preferred</NonStopPreferences>
+							</Characteristic>
+						</flightPreferences>
+						<Airline PreferencesContext=" " PreferencesLevel=" ">
+							<AirlineID refs=" VA" />
+						</Airline>
+					</AirlinePreferences>
+				</Preference>
+			</Preferences>
+			<!-- <Preferences> <Preference> <AlliancePreferences> <Alliance PreferencesLevel="Required"> 
+				<Code>*A</Code> </Alliance> </AlliancePreferences> </Preference> </Preferences> -->
+			<!-- <Preferences> <Preference> <TransferPreferences> <Connection refs="OD1"> 
+				<Codes> <Code PreferencesLevel="Required">DEL</Code> </Codes> </Connection> 
+				</TransferPreferences> </Preference> </Preferences> -->
+		</AirShoppingRQ>
+	</soapenv:Body>
+</soapenv:Envelope>

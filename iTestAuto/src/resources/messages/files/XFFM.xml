@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><ns2:FlightManifest xmlns="iata:datamodel:3" xmlns:ns2="iata:flightmanifest:1">
+<ns2:MessageHeaderDocument>
+<ID>KL8000-26SEP2024_260924123827581</ID>
+<Name>Transport Loading Report</Name>
+<TypeCode>122</TypeCode>
+<IssueDateTime>2024-10-03T10:11:43</IssueDateTime>
+<PurposeCode>Creation</PurposeCode>
+<VersionID>2.00</VersionID>
+<SenderParty>
+<PrimaryID schemeID="C">QVIUSAF</PrimaryID>
+</SenderParty>
+<SenderParty>
+<PrimaryID schemeID="C">TDVAGT01DHLGFXX</PrimaryID>
+</SenderParty>
+<SenderParty>
+<PrimaryID schemeID="T">ZCSTXLH</PrimaryID>
+</SenderParty>
+<RecipientParty>
+<PrimaryID schemeID="C">TYOXBKZ</PrimaryID>
+</RecipientParty>
+</ns2:MessageHeaderDocument>
+<ns2:BusinessHeaderDocument>
+<ID>KL8000260924123827CDG</ID>
+<IncludedHeaderNote>
+<Content>FlightManifest</Content>
+</IncludedHeaderNote>
+</ns2:BusinessHeaderDocument>
+<ns2:LogisticsTransportMovement>
+<StageCode>Main-Carriage</StageCode>
+<ModeCode>4</ModeCode>
+<Mode>AIR TRANSPORT</Mode>
+<ID>KL8000</ID>
+<SequenceNumeric>1</SequenceNumeric>
+<TotalGrossWeightMeasure unitCode="KGM">100</TotalGrossWeightMeasure>
+<TotalGrossVolumeMeasure unitCode="MTQ">1.0</TotalGrossVolumeMeasure>
+<TotalPackageQuantity>10</TotalPackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<DepartureEvent>
+<DepartureOccurrenceDateTime>2024-10-03T02:00:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceDepartureLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+</OccurrenceDepartureLocation>
+</DepartureEvent>
+</ns2:LogisticsTransportMovement>
+<ns2:ArrivalEvent>
+<ArrivalOccurrenceDateTime>2024-10-03T05:00:00</ArrivalOccurrenceDateTime>
+<ArrivalDateTimeTypeCode>S</ArrivalDateTimeTypeCode>
+<DepartureOccurrenceDateTime>2024-10-03T02:00:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceArrivalLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+<FirstArrivalCountryID>NL</FirstArrivalCountryID>
+</OccurrenceArrivalLocation>
+<AssociatedTransportCargo>
+<TypeCode>ULD</TypeCode>
+<UtilizedUnitLoadTransportEquipment>
+<ID>22199</ID>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1.0</GrossVolumeMeasure>
+<PieceQuantity>10</PieceQuantity>
+<CharacteristicCode>AKE</CharacteristicCode>
+<LoadingRemark>C-L7 </LoadingRemark>
+<OperatingParty>
+<PrimaryID schemeAgencyID="3">KL</PrimaryID></OperatingParty>
+</UtilizedUnitLoadTransportEquipment>
+
+<IncludedMasterConsignment>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1</GrossVolumeMeasure>
+<PackageQuantity>10</PackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<SummaryDescription>BERRIES</SummaryDescription>
+<TransportSplitDescription>T</TransportSplitDescription>
+<TransportContractDocument>
+<ID>074-12670512</ID>
+</TransportContractDocument>
+<OriginLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+</FinalDestinationLocation>
+<HandlingSPHInstructions>
+<DescriptionCode>PEP</DescriptionCode>
+</HandlingSPHInstructions>
+
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+</IncludedMasterConsignment>
+
+</AssociatedTransportCargo>
+
+</ns2:ArrivalEvent>
+</ns2:FlightManifest>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:FreightBookedList xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:freightbookedlist:1">
+    <rsm:MessageHeaderDocument>
+        <ram:ID>AF428301JUN2021JFK_b11ffa44-927a-4d8c-a073-cac0f39ea28b</ram:ID>
+        <ram:Name>Transport Loading Instructions</ram:Name>
+        <ram:TypeCode>121</ram:TypeCode>
+        <ram:IssueDateTime>2021-06-01T10:42:00Z</ram:IssueDateTime>
+        <ram:PurposeCode>Creation</ram:PurposeCode>
+        <ram:VersionID>2.00</ram:VersionID>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="C">SPLJXKL</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="P">SPLJXKL</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:RecipientParty>
+            <ram:PrimaryID schemeID="P">QVIUSAF</ram:PrimaryID>
+        </ram:RecipientParty>
+        <ram:RecipientParty>
+            <ram:PrimaryID schemeID="C">QVIUSAF</ram:PrimaryID>
+        </ram:RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:BusinessHeaderDocument>
+        <ram:ID>AF428301JUN2021AMS</ram:ID>
+    </rsm:BusinessHeaderDocument>
+    <rsm:LogisticsTransportMovement>
+        <ram:StageCode>Main-Carriage</ram:StageCode>
+        <ram:ModeCode>0</ram:ModeCode>
+        <ram:Mode></ram:Mode>
+        <ram:ID>AF4283</ram:ID>
+        <ram:SequenceNumeric>1</ram:SequenceNumeric>
+        <ram:DepartureEvent>
+            <ram:DepartureOccurrenceDateTime>2021-06-01T21:45:00</ram:DepartureOccurrenceDateTime>
+            <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+            <ram:OccurrenceDepartureLocation>
+                <ram:ID>IAD</ram:ID>
+                <ram:TypeCode>Airport</ram:TypeCode>
+            </ram:OccurrenceDepartureLocation>
+        </ram:DepartureEvent>
+    </rsm:LogisticsTransportMovement>
+    <rsm:ArrivalEvent>
+        <ram:OccurrenceArrivalLocation>
+            <ram:ID>CDG</ram:ID>
+            <ram:TypeCode>Airport</ram:TypeCode>
+        </ram:OccurrenceArrivalLocation>
+        <ram:AssociatedTransportCargo>
+<ram:IncludedMasterConsignment>
+<ram:GrossWeightMeasure unitCode="KGM">100</ram:GrossWeightMeasure>
+<ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+<ram:TotalPieceQuantity>10</ram:TotalPieceQuantity>
+<ram:SummaryDescription>GENERAL COMMODI</ram:SummaryDescription>
+<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+<ram:TransportContractDocument>
+<ram:ID>057-80955070</ram:ID>
+</ram:TransportContractDocument>
+<ram:OriginLocation>
+<ram:ID>DEL</ram:ID>
+</ram:OriginLocation>
+<ram:FinalDestinationLocation>
+<ram:ID>CDG</ram:ID>
+</ram:FinalDestinationLocation>
+<ram:HandlingInstructions>
+<ram:Description>GEN</ram:Description>
+<ram:DescriptionCode>GEN</ram:DescriptionCode>
+</ram:HandlingInstructions>
+</ram:IncludedMasterConsignment>
+
+        </ram:AssociatedTransportCargo>
+    </rsm:ArrivalEvent>
+</rsm:FreightBookedList>

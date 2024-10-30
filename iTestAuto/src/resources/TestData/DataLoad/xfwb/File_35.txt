@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-03894516_Uo2UeOSjk8dMPRG25yr</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>741</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T10:30:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>14782253</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">REUAGT87ITNSSDB/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">REUAGT87ITNSSDB/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">AGT/20471079510/CDG</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-03894516</ram:ID>
+            <ram:SenderAssignedID>XZ0184</ram:SenderAssignedID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>C</ram:ContentCode>
+                <ram:Content>Consolidation</ram:Content>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>ESTELASOUZA</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>TREMBLAY EN FRANC</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-DIM</ram:ID>
+            <ram:AdditionalID>AFKL-R21|SKT-DIM</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">245</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>R21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>SAVINO DEL BENE FRANCE S.A.-CDG P</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>93290</ram:PostcodeCode>
+                    <ram:StreetName>ZACSUDCDG   AEROLIANSPARIS 4 AVENUE</ram:StreetName>
+                    <ram:CityName>TREMBLAY-EN-FRANC</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>33141843400</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>SAVINO DEL BENE CHINA LTD</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:StreetName>UNIT B  15F  KINGS WING PLAZA 2  1</ram:StreetName>
+                    <ram:CityName>SHATIN  NEW TERRI</ram:CityName>
+                    <ram:CountryID>HK</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>85223308555</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>SAVINO DEL BENE FRANCE S.A.</ram:Name>
+                <ram:CargoAgentID>2047107</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>ROISSY CDG AIRPOR</ram:StreetName>
+                    <ram:CityName>ROISSY CDG AIRPOR</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>9510</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>HKG</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF0602</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>HKG</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>AGREEMENT FRRA04008-01 AGENT HAB</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>ILITE-SPX CIN OK</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>SAVINO DEL BENE FRANCE S.A.S.</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>HAS REVIEWED ALL AVAILABLE DOCUMENT</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>ATION AND HAS DETERMINED THAT NONE</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>OF THE CARGO BEING OFFERED IN THIS</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>CONSIGNMENT OR CONSOLIDATION EITHER</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>ORIGINATED IN TRANSFERRED FROM OR</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>TRANSITED THROUGH ANY POINT IN</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>AFGHANISTAN LYBIA SOMALIA SYRIA YEM</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>EN.</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>FR18403939333</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>85223308555</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>HK</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>16814138000</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>HK</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>33141843400</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CH</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>A</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">29.00</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">1917.53</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">245</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">2.07</ram:GrossVolumeMeasure>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CONSOL AS PER MANIFE ST ATTACHED NOT REST RICTED</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">345.5</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>5.55</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">1917.53</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">1917.53</ram:WeightChargeTotalAmount>
+                    <ram:AgentTotalDuePayableAmount currencyID="EUR">29.0</ram:AgentTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">1946.53</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>HK</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

@@ -1,0 +1,115 @@
+<ManageProductLineItemRequest>
+	<CartId>2035</CartId>
+	<Email>icommerce@ibstest.com</Email>
+	<LineItem>
+		<addedBy>Admin</addedBy>
+		<itemIndex>2</itemIndex>
+		<comapnyId>TF</comapnyId>
+		<tenantId>TF</tenantId>
+		<searchCriteria>Test</searchCriteria>
+
+		<Product RefId="728">
+			<PassengerReferences>
+				<PassengerReference ID="1" />
+				<PassengerReference ID="2" />
+			</PassengerReferences>
+			<Hotel>
+				<TotalPrice>
+					<Currency>USD</Currency>
+					<GrossPrice Currency="USD" Amount="200.0"
+						Date="2016-05-30T15:00:19.774+05:30" />
+					<NetPrice Currency="USD" Amount="200.0"
+						Date="2016-05-30T15:00:19.774+05:30" />
+					<BasePrice Currency="USD" Amount="200.0"
+						Date="2016-05-30T15:00:19.773+05:30" />
+					<BaseCost Currency="USD" Amount="200.0"
+						Date="2016-05-30T15:00:19.773+05:30" />
+					<Discount Currency="USD" Amount="0.0"
+						Date="2016-05-30T15:00:19.773+05:30" />
+					<AgencyCommission Currency="USD" Amount="0.0"
+						Date="2016-05-30T15:00:19.774+05:30" />
+					<VendorCommission Currency="USD" Amount="0.0"
+						Date="2016-05-30T15:00:19.774+05:30" />
+					<MarkUp Currency="USD" Amount="0.0"
+						Date="2016-05-30T15:00:19.774+05:30" />
+					<GrossMargin Amount="0.0" />
+					<NetMargin Amount="0.0" />
+					<GrossMarginPct Amount="0.0" />
+					<NetMarginPct Amount="0.0" />
+				</TotalPrice>
+				<TotalInBookingCurrency Amount="0.0" />
+				<HotelReservations>
+					<HotelReservation>
+						<RoomStays>
+							<RoomStay>
+								<RoomRates>
+									<RoomRate RoomTypeCode="STD">
+										<Rates>
+											<Rate>
+												<Total AmountAfterTax="0" AmountBeforeTax="0"
+													CurrencyCode="USD" />
+											</Rate>
+										</Rates>
+										<Total AmountAfterTax="0" AmountBeforeTax="0"
+											CurrencyCode="USD" />
+									</RoomRate>
+								</RoomRates>
+								<GuestCounts>
+									<GuestCount AgeQualifyingCode="10" Count="2" />
+								</GuestCounts>
+								<TimeSpan End="2017-06-25" Start="2017-06-21" />
+								<Total AmountAfterTax="0" AmountBeforeTax="0"
+									CurrencyCode="USD" />
+								<BasicPropertyInfo HotelCityCode="ATL"
+									HotelCode="GLENN" HotelName="Glenn Hotel">
+									<Address>
+										<AddressLine>110 Marietta St NW, Atlanta, GA 30303, U
+										</AddressLine>
+										<CityName>ATL</CityName>
+										<CountryName Code="US" />
+									</Address>
+									<ContactNumbers>
+										<ContactNumber PhoneNumber="4049732363" />
+									</ContactNumbers>
+								</BasicPropertyInfo>
+								<Reference ID="H58864" ID_Context="TourPartner" Type="16" />
+								<Charges>
+									<Charge>
+										<Currency>USD</Currency>
+										<PaxType>ADULT</PaxType>
+										<ChargeLevel>PerPax</ChargeLevel>
+										<ChargeType>HOTEL</ChargeType>
+										<BaseCost Amount="100.0" />
+										<GrossPrice Amount="100.0" />
+										<NetPrice Amount="100.0" />
+										<AgencyCommission Amount="0" />
+										<VendorCommission Amount="0" />
+										<MarkUp Amount="0" />
+										<BasePrice Amount="100.0" />
+									</Charge>
+									<Charge>
+										<Currency>USD</Currency>
+										<PaxType>ADULT</PaxType>
+										<ChargeLevel>PerPax</ChargeLevel>
+										<ChargeType>HOTEL</ChargeType>
+										<BaseCost Amount="100.0" />
+										<GrossPrice Amount="100.0" />
+										<NetPrice Amount="100.0" />
+										<AgencyCommission Amount="0" />
+										<VendorCommission Amount="0" />
+										<MarkUp Amount="0" />
+										<BasePrice Amount="100.0" />
+									</Charge>
+								</Charges>
+							</RoomStay>
+						</RoomStays>
+					</HotelReservation>
+				</HotelReservations>
+			</Hotel>
+			<ProviderCode>TourPartner</ProviderCode>
+			<PriceCurrency>USD</PriceCurrency>
+			<ProductType>HTL</ProductType>
+		</Product>
+		<lineItemStatus>Y</lineItemStatus>
+	</LineItem>
+</ManageProductLineItemRequest>

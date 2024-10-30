@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-47597314_wutZxlUF1n7Zb4v8n6k</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T20:09:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>05747597314</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">REUAGT87ESDELTA/SCQ01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">REUAGT87ESDELTA/SCQ01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">AGT/DELTACARGO/CDG</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-47597314</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>SANDRA TABOADA NOVO</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>DELTACARGO</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>CDG</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-VIP</ram:ID>
+            <ram:AdditionalID>AFKL-C01|SKT-VIP</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">3220.0</ram:IncludedTareGrossWeightMeasure>
+            <ram:GrossVolumeMeasure unitCode="MTQ">24.28</ram:GrossVolumeMeasure>
+            <ram:TotalPieceQuantity>193</ram:TotalPieceQuantity>
+            <ram:ProductID>C01</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>INDUSTRIA DE DISEO TEXTIL SA</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>15143</ram:PostcodeCode>
+                    <ram:StreetName>INDITEX SA LB</ram:StreetName>
+                    <ram:CityName>LA CORUA</ram:CityName>
+                    <ram:CountryID>ES</ram:CountryID>
+                </ram:PostalStructuredAddress>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>ZARA USA INC</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>10110</ram:PostcodeCode>
+                    <ram:StreetName>5TH AVENUE SUITE 400</ram:StreetName>
+                    <ram:CityName>NEW YORK</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                    <ram:CountrySubDivisionID>NY</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>2175411282</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>FASHION LOGISTICS FORWARDERS SA</ram:Name>
+                <ram:CargoAgentID>7847297</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>ARTEIXO 15143</ram:StreetName>
+                    <ram:CityName>ARTEIXO 15143</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>1511</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:AssociatedParty>
+                <ram:Name>GEODIS USA INC</ram:Name>
+                <ram:RoleCode>NI</ram:RoleCode>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>90810</ram:PostcodeCode>
+                    <ram:StreetName>2155 EAST 220TH STREET</ram:StreetName>
+                    <ram:CityName>CALIFORNIA</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                    <ram:CountrySubDivisionID>CA</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>13105689200</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:AssociatedParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>LAX</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF076</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>LAX</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>SPX</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAW</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>SPX KC  ESRA00061 03SPX  EAW  DO NOT BREAKDOWN ULDS IN DESTIN</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>ATION</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>PMC72888AF-97 PMC69272AF-96</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>T</ram:ContentCode>
+                <ram:Content>US133471788</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>TD</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">6272.85</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">3220.0</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">24.28</ram:GrossVolumeMeasure>
+                    <ram:PieceQuantity>193</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>WEARING APPAREL AND ACCESSORIES  NOT RES TRICTED</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:AssociatedUnitLoadTransportEquipment>
+                        <ram:ID>69272</ram:ID>
+                        <ram:CharacteristicCode>PMC</ram:CharacteristicCode>
+                        <ram:OperatingParty>
+                            <ram:PrimaryID>AF</ram:PrimaryID>
+                        </ram:OperatingParty>
+                    </ram:AssociatedUnitLoadTransportEquipment>
+                    <ram:AssociatedUnitLoadTransportEquipment>
+                        <ram:ID>72888</ram:ID>
+                        <ram:CharacteristicCode>PMC</ram:CharacteristicCode>
+                        <ram:OperatingParty>
+                            <ram:PrimaryID>AF</ram:PrimaryID>
+                        </ram:OperatingParty>
+                    </ram:AssociatedUnitLoadTransportEquipment>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">4047.0</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>1.55</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">6272.85</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">6272.85</ram:WeightChargeTotalAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">6272.85</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>076</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>US</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

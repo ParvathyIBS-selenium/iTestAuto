@@ -1,0 +1,55 @@
+<BLSearchRQ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<ProviderCode>iTravel</ProviderCode>
+	<PriceCurrency>NOK</PriceCurrency>	
+	<Data>
+		<OTA_TourActivityAvailRQ EchoToken="11e6162-3b6f-4ae2-a171-2470b63" PrimaryLangID="ENG" Target="Production" TimeStamp="2017-05-30T14:51:00" Version="Version1">
+			<ProcessingInformation DisplayCurrency="NOK" LanguageCode="ENG" PricingCurrency="NOK"/>
+			<TourActivity>
+				<BasicInfo>
+					<TPA_Extensions>
+						<Brands> </Brands>
+						<RatePlan> </RatePlan>
+						<Types>
+							<Type> </Type>
+							<Type> </Type>
+						</Types>
+						<Suppliers>
+							<Supplier> </Supplier>
+						</Suppliers>
+						<Category> </Category>
+						<Themes> 
+						<Theme> </Theme>						
+						</Themes>
+						<ToughnessLevels>
+							<ToughnessLevel> </ToughnessLevel>
+						</ToughnessLevels>
+						<Contracts>
+							<Contract> </Contract>
+						</Contracts>
+					</TPA_Extensions>
+				</BasicInfo>
+				<Location>
+					<Address>
+						<CityName>BLR</CityName>
+						<PostalCode/>
+						<StateProv StateCode=""/>
+						<CountryName Code=""/>
+					</Address>
+				</Location>
+				<Schedule EndPeriod="2017-06-19" StartPeriod="2017-06-18"/>
+				<ParticipantCount Age="45" Quantity="2">
+					<QualifierInfo>Adult</QualifierInfo>
+					<TPA_Extensions>
+						<RPHDetails ResGuestRPH="1" UnitRPH="1"/>
+					</TPA_Extensions>
+				</ParticipantCount>																
+			</TourActivity>
+			<TPA_Extensions>
+				<TPA_Extension ItemType="ACT"/>
+			</TPA_Extensions>
+		</OTA_TourActivityAvailRQ>
+	</Data>
+	<mData>
+
+	</mData>
+</BLSearchRQ>

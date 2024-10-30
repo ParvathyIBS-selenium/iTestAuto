@@ -1,0 +1,360 @@
+<soapenv:Envelope
+    xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+    xmlns:edis="http://www.iata.org/IATA/EDIST">
+	     <soapenv:Header> 
+      <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd"> 
+         <wsse:UsernameToken> 
+            <wsse:Username>ALL@IVV</wsse:Username> 
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"></wsse:Password> 
+         </wsse:UsernameToken> 
+      </wsse:Security> 
+      <iCommHeader> 
+         <ConsumerCode>IVV</ConsumerCode> 
+         <ProviderCode>1A</ProviderCode> 
+      </iCommHeader> 
+   </soapenv:Header>
+    <soapenv:Body>
+        <OrderCreateRQ
+            xmlns="http://www.iata.org/IATA/EDIST"
+            xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EchoToken="8fdb1c621a7a4454aa3360556e7784d5" TimeStamp="2015-08-01T12:45:00Z" TransactionIdentifier="TRN12345" Version="1.1.4" xsi:schemaLocation="http://www.iata.org/IATA/EDIST ../OrderCreateRQ.xsd">
+            <PointOfSale>
+                <Location>
+                    <CountryCode>US</CountryCode>
+                    <CityCode>WAS</CityCode>
+                </Location>
+            </PointOfSale>
+            <Document>
+                <Name>NDC GATEWAY</Name>
+                <ReferenceVersion>1.0</ReferenceVersion>
+            </Document>
+            <Party>
+                <Sender>
+                    <AggregatorSender>
+                        <Name>Looks</Name>
+                        <Category>
+                            <Code>G</Code>
+                            <Definition>TP aggregator</Definition>
+                        </Category>
+                        <AggregatorID>1G</AggregatorID>
+                    </AggregatorSender>
+                </Sender>
+            </Party>
+            <Query>
+                <Passengers>
+                    <Passenger ObjectKey="PAX1">
+                        <PTC Quantity="1">ADT</PTC>
+                        <Age>
+                            <BirthDate>1968-09-17</BirthDate>
+                        </Age>
+                        <Name>
+                            <Surname>Anil</Surname>
+                            <Given>Puttarj</Given>
+                            <Middle>George</Middle>
+                        </Name>
+                        <ProfileID>123</ProfileID>
+                        <Contacts>
+                            <Contact>
+                                <EmailContact>
+                                    <Address>john.george@smith.com</Address>
+                                </EmailContact>
+                            </Contact>
+                            <Contact>
+                                <PhoneContact>
+                                    <Application>Emergency</Application>
+                                    <Number CountryCode="+1">9664597377</Number>
+                                </PhoneContact>
+                            </Contact>
+                            <Contact>
+                                <AddressContact>
+                                    <!--Application as per RESWG 2.2 recommendation-->
+                                    <Application>AddressAtOrigin</Application>
+                                    <Street>22 Main Street</Street>
+                                    <CityName>
+                                        <CityCode>FRA</CityCode>
+                                    </CityName>
+                                    <PostalCode>14201</PostalCode>
+                                    <CountryCode>DE</CountryCode>
+                                </AddressContact>
+                            </Contact>
+                        </Contacts>
+                        <!--Gender as per RESWG 2.1 recommendation-->
+                        <Gender>Male</Gender>
+                    </Passenger>
+                    <Passenger ObjectKey="PAX2">
+                        <PTC Quantity="1">ADT</PTC>
+                        <Age>
+                            <BirthDate>1968-09-17</BirthDate>
+                        </Age>
+                        <Name>
+                            <Surname>Shali</Surname>
+                            <Given>Puttarj</Given>
+                            <Middle>George</Middle>
+                        </Name>
+                        <ProfileID>123</ProfileID>
+                        <Contacts>
+                            <Contact>
+                                <EmailContact>
+                                    <Address>john.george@smith.com</Address>
+                                </EmailContact>
+                            </Contact>
+                            <Contact>
+                                <PhoneContact>
+                                    <Application>Emergency</Application>
+                                    <Number CountryCode="+1">9664597377</Number>
+                                </PhoneContact>
+                            </Contact>
+                            <Contact>
+                                <AddressContact>
+                                    <!--Application as per RESWG 2.2 recommendation-->
+                                    <Application>AddressAtOrigin</Application>
+                                    <Street>22 Main Street</Street>
+                                    <CityName>
+                                        <CityCode>FRA</CityCode>
+                                    </CityName>
+                                    <PostalCode>14201</PostalCode>
+                                    <CountryCode>DE</CountryCode>
+                                </AddressContact>
+                            </Contact>
+                        </Contacts>
+                        <!--Gender as per RESWG 2.1 recommendation-->
+                        <Gender>Male</Gender>
+                    </Passenger>
+                    <Passenger ObjectKey="PAX3">
+                        <PTC Quantity="1">CHD</PTC>
+                        <Age>
+                            <BirthDate>2012-09-17</BirthDate>
+                        </Age>
+                        <Name>
+                            <Surname>Joseph</Surname>
+                            <Given>Puttarj</Given>
+                            <Middle>George</Middle>
+                        </Name>
+                        <ProfileID>123</ProfileID>
+                        <Contacts>
+                            <Contact>
+                                <EmailContact>
+                                    <Address>john.george@smith.com</Address>
+                                </EmailContact>
+                            </Contact>
+                            <Contact>
+                                <PhoneContact>
+                                    <Application>Emergency</Application>
+                                    <Number CountryCode="+1">9664597377</Number>
+                                </PhoneContact>
+                            </Contact>
+                            <Contact>
+                                <AddressContact>
+                                    <!--Application as per RESWG 2.2 recommendation-->
+                                    <Application>AddressAtOrigin</Application>
+                                    <Street>22 Main Street</Street>
+                                    <CityName>
+                                        <CityCode>FRA</CityCode>
+                                    </CityName>
+                                    <PostalCode>14201</PostalCode>
+                                    <CountryCode>DE</CountryCode>
+                                </AddressContact>
+                            </Contact>
+                        </Contacts>
+                        <!--Gender as per RESWG 2.1 recommendation-->
+                        <Gender>Male</Gender>
+                    </Passenger>
+                    <Passenger ObjectKey="PAX4">
+                        <PTC Quantity="1">CHD</PTC>
+                        <Age>
+                            <BirthDate>2014-09-17</BirthDate>
+                        </Age>
+                        <Name>
+                            <Surname>Arjun</Surname>
+                            <Given>Puttarj</Given>
+                            <Middle>George</Middle>
+                        </Name>
+                        <ProfileID>123</ProfileID>
+                        <Contacts>
+                            <Contact>
+                                <EmailContact>
+                                    <Address>john.george@smith.com</Address>
+                                </EmailContact>
+                            </Contact>
+                            <Contact>
+                                <PhoneContact>
+                                    <Application>Emergency</Application>
+                                    <Number CountryCode="+1">9664597377</Number>
+                                </PhoneContact>
+                            </Contact>
+                            <Contact>
+                                <AddressContact>
+                                    <!--Application as per RESWG 2.2 recommendation-->
+                                    <Application>AddressAtOrigin</Application>
+                                    <Street>22 Main Street</Street>
+                                    <CityName>
+                                        <CityCode>FRA</CityCode>
+                                    </CityName>
+                                    <PostalCode>14201</PostalCode>
+                                    <CountryCode>DE</CountryCode>
+                                </AddressContact>
+                            </Contact>
+                        </Contacts>
+                        <!--Gender as per RESWG 2.1 recommendation-->
+                        <Gender>Male</Gender>
+                    </Passenger>
+                    <Passenger ObjectKey="PAX5">
+                        <PTC Quantity="1">INF</PTC>
+                        <PassengerAssociation>PAX1</PassengerAssociation>
+                        <Age>
+                            <BirthDate>2016-09-23</BirthDate>
+                        </Age>
+                        <Name>
+                            <Surname>Johan</Surname>
+                            <Given>PM</Given>
+                            <Middle>james</Middle>
+                        </Name>
+                        <ProfileID>125</ProfileID>
+                        <Contacts>
+                            <Contact>
+                                <EmailContact>
+                                    <Address>akhil@gmail.com</Address>
+                                </EmailContact>
+                            </Contact>
+                            <Contact>
+                                <PhoneContact>
+                                    <Application>Emergency</Application>
+                                    <Number CountryCode="+1">9664597377</Number>
+                                </PhoneContact>
+                            </Contact>
+                            <Contact>
+                                <AddressContact>
+                                    <Application>AddressAtOrigin</Application>
+                                    <Street>22 Main Street</Street>
+                                    <CityName>
+                                        <CityCode>NRT</CityCode>
+                                    </CityName>
+                                    <PostalCode>14201</PostalCode>
+                                    <CountryCode>DE</CountryCode>
+                                </AddressContact>
+                            </Contact>
+                        </Contacts>
+                        <Gender>Male</Gender>
+                    </Passenger>
+                </Passengers>
+                <OrderItems>
+                    <ShoppingResponse>
+                        <Owner>SK</Owner>
+                        <ResponseID>urn:uuid:2147454d-f93d-f9b4-2141-1e17f617a313</ResponseID>
+                        <Offers>
+                            <Offer>
+                                <OfferID Owner="SK">urn:uuid:2147454d-f93d-f9b4-2141-1e17f617a313 1A1SK</OfferID>
+                                <OfferItems>
+                                    <OfferItem>
+                                        <OfferItemID Owner="SK">urn:uuid:2147454d-f93d-f9b4-2141-1e17f617a313 1A1SK1</OfferItemID>
+                                    </OfferItem>
+                                </OfferItems>
+                            </Offer>
+                        </Offers>
+                    </ShoppingResponse>
+                </OrderItems>
+                <DataLists>
+                    <FlightSegmentList>
+                        <FlightSegment SegmentKey="SEG1">
+                            <Departure>
+                                <AirportCode>LYR</AirportCode>
+                                <Date>2017-04-18</Date>
+                                <Time>14:45</Time>
+                            </Departure>
+                            <Arrival>
+                                <AirportCode>OSL</AirportCode>
+                                <Date>2017-04-18</Date>
+                                <Time>19:05</Time>
+                            </Arrival>
+                            <MarketingCarrier>
+                                <AirlineID>SK</AirlineID>
+                                <FlightNumber>4425</FlightNumber>
+                            </MarketingCarrier>
+                            <OperatingCarrier>
+                                <AirlineID>SK</AirlineID>
+                                <FlightNumber>4425</FlightNumber>
+                            </OperatingCarrier>
+                            <Equipment>
+                                <AircraftCode>73W</AircraftCode>
+                            </Equipment>
+                            <FlightDetail>
+                                <Stops>
+                                    <StopQuantity>1</StopQuantity>
+                                    <StopLocations>
+                                        <StopLocation>
+                                            <AirportCode>TOS</AirportCode>
+                                            <ArrivalDate>2017-04-18</ArrivalDate>
+                                            <ArrivalTime>16:20</ArrivalTime>
+                                            <DepartureDate>2017-04-18</DepartureDate>
+                                            <DepartureTime>17:10</DepartureTime>
+                                        </StopLocation>
+                                    </StopLocations>
+                                </Stops>
+                            </FlightDetail>
+                            <ClassOfService>
+                                <Code>Y</Code>
+                                <MarketingName CabinDesignator="M"/>
+                            </ClassOfService>
+                        </FlightSegment>
+                        <FlightSegment SegmentKey="SEG2">
+                            <Departure>
+                                <AirportCode>OSL</AirportCode>
+                                <Date>2017-04-18</Date>
+                                <Time>20:15</Time>
+                            </Departure>
+                            <Arrival>
+                                <AirportCode>LHR</AirportCode>
+                                <Date>2017-04-18</Date>
+                                <Time>21:35</Time>
+                                <Terminal>
+                                    <Gate>2</Gate>
+                                </Terminal>
+                            </Arrival>
+                            <MarketingCarrier>
+                                <AirlineID>SK</AirlineID>
+                                <FlightNumber>815</FlightNumber>
+                            </MarketingCarrier>
+                            <OperatingCarrier>
+                                <AirlineID>SK</AirlineID>
+                                <FlightNumber>815</FlightNumber>
+                            </OperatingCarrier>
+                            <Equipment>
+                                <AircraftCode>73W</AircraftCode>
+                            </Equipment>
+                            <ClassOfService>
+                                <Code>Y</Code>
+                                <MarketingName CabinDesignator="M"/>
+                            </ClassOfService>
+                        </FlightSegment>
+                       
+                    </FlightSegmentList>
+                    <FlightList>
+                        <Flight FlightKey="AMADEUS11OD1FL1">
+                            <Journey>
+                                <Time>PT10H5M</Time>
+                            </Journey>
+                            <SegmentReferences OnPoint="LYR" OffPoint="LHR">SEG1 SEG2</SegmentReferences>
+                        </Flight>                       
+                    </FlightList>
+                    <OriginDestinationList>
+                        <OriginDestination OriginDestinationKey="AMADEUS11OD1">
+                            <DepartureCode>LYR</DepartureCode>
+                            <ArrivalCode>LHR</ArrivalCode>
+                            <FlightReferences OffPoint="LYR" OnPoint="LHR">AMADEUS11OD1FL1</FlightReferences>
+                        </OriginDestination>                       
+                    </OriginDestinationList>
+                </DataLists>
+                <Metadata>
+                    <Other>
+                        <OtherMetadata>
+                            <CurrencyMetadatas>
+                                <CurrencyMetadata MetadataKey="USD">
+                                    <Decimals>2</Decimals>
+                                </CurrencyMetadata>
+                            </CurrencyMetadatas>
+                        </OtherMetadata>
+                    </Other>
+                </Metadata>
+            </Query>
+        </OrderCreateRQ>
+    </soapenv:Body>
+</soapenv:Envelope>

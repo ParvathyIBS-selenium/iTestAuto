@@ -1,0 +1,1 @@
+Its better to create allotment and booking for the next day flight , to avoid any possible issues with the LAT .

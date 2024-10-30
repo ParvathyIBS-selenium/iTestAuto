@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:FlightManifest xmlns="iata:datamodel:3" xmlns:ns2="iata:flightmanifest:1">
+<ns2:MessageHeaderDocument>
+<ID>AF5050-01May2021_010521120933581</ID>
+<Name>Transport Loading Report</Name>
+<TypeCode>122</TypeCode>
+<IssueDateTime>2021-05-01T12:09:33</IssueDateTime>
+<PurposeCode>Creation</PurposeCode>
+<VersionID>2.00</VersionID>
+<SenderParty>
+<PrimaryID schemeID="C">TYOXBKZ</PrimaryID>
+</SenderParty>
+<SenderParty>
+<PrimaryID schemeID="P">TYOXBKZ</PrimaryID>
+</SenderParty>
+<RecipientParty>
+<PrimaryID schemeID="P">QVIBDAF</PrimaryID>
+</RecipientParty>
+<RecipientParty>
+<PrimaryID schemeID="C">QVIBDAF</PrimaryID>
+</RecipientParty>
+</ns2:MessageHeaderDocument>
+<ns2:BusinessHeaderDocument>
+<ID>AF505020210307AMS</ID>
+<IncludedHeaderNote>
+<Content>FlightManifest</Content>
+</IncludedHeaderNote>
+</ns2:BusinessHeaderDocument>
+<ns2:LogisticsTransportMovement>
+<StageCode>Main-Carriage</StageCode>
+<ModeCode>4</ModeCode>
+<Mode>AIR TRANSPORT</Mode>
+<ID>AF5050</ID>
+<SequenceNumeric>1</SequenceNumeric>
+<TotalGrossWeightMeasure unitCode="KGM">116</TotalGrossWeightMeasure>
+<TotalGrossVolumeMeasure unitCode="MTQ">5.8</TotalGrossVolumeMeasure>
+<TotalPackageQuantity>6</TotalPackageQuantity>
+<TotalPieceQuantity>6</TotalPieceQuantity>
+<DepartureEvent>
+<DepartureOccurrenceDateTime>2021-05-01T21:45:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceDepartureLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+</OccurrenceDepartureLocation>
+</DepartureEvent>
+</ns2:LogisticsTransportMovement>
+<ns2:ArrivalEvent>
+<ArrivalOccurrenceDateTime>2021-05-01T08:00:00</ArrivalOccurrenceDateTime>
+<ArrivalDateTimeTypeCode>S</ArrivalDateTimeTypeCode>
+<DepartureOccurrenceDateTime>2021-05-01T21:45:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceArrivalLocation>
+<ID>IAD</ID>
+<Name>%STAT</Name>
+<TypeCode>Airport</TypeCode>
+<FirstArrivalCountryID>US</FirstArrivalCountryID>
+</OccurrenceArrivalLocation>
+<AssociatedTransportCargo>
+<TypeCode>ULD</TypeCode>
+<UtilizedUnitLoadTransportEquipment>
+<ID>02377</ID>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">0.97</GrossVolumeMeasure>
+<PieceQuantity>10</PieceQuantity>
+<CharacteristicCode>AKE</CharacteristicCode>
+<OperatingParty>
+<PrimaryID schemeAgencyID="3">AF</PrimaryID>
+</OperatingParty>
+</UtilizedUnitLoadTransportEquipment>
+<IncludedMasterConsignment>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">0.97</GrossVolumeMeasure>
+<PackageQuantity>1</PackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<SummaryDescription>GENERAL CARGO</SummaryDescription>
+<TransportSplitDescription>S</TransportSplitDescription>
+<TransportContractDocument>
+<ID>057-78654446</ID>
+</TransportContractDocument>
+<OriginLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>IAD</ID>
+<Name>%STAT</Name>
+</FinalDestinationLocation>
+<HandlingSPHInstructions>
+<DescriptionCode>GEN</DescriptionCode>
+</HandlingSPHInstructions>
+<HandlingSPHInstructions>
+<DescriptionCode>SPX</DescriptionCode>
+</HandlingSPHInstructions>
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+</IncludedMasterConsignment>
+<IncludedMasterConsignment>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">0.97</GrossVolumeMeasure>
+<PackageQuantity>1</PackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<SummaryDescription>GENERAL CARGO</SummaryDescription>
+<TransportSplitDescription>S</TransportSplitDescription>
+<TransportContractDocument>
+<ID>057-78654450</ID>
+</TransportContractDocument>
+<OriginLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>CDG</ID>
+<Name>%STAT</Name>
+</FinalDestinationLocation>
+<HandlingSPHInstructions>
+<DescriptionCode>GEN</DescriptionCode>
+</HandlingSPHInstructions>
+<HandlingSPHInstructions>
+<DescriptionCode>SPX</DescriptionCode>
+</HandlingSPHInstructions>
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+</IncludedMasterConsignment>
+</AssociatedTransportCargo>
+</ns2:ArrivalEvent>
+
+</ns2:FlightManifest>

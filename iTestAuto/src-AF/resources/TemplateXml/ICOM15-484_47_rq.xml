@@ -1,0 +1,785 @@
+<?xml version="1.0" encoding="UTF-8"?><BookingRequest>
+   <Remarks>
+      <Remark>
+         <Type>BLR</Type>
+         <Text>Booking Level1</Text>
+      </Remark>
+      <Remark>
+         <Type>BLR</Type>
+         <Text>Booking Level2</Text>
+      </Remark>
+   </Remarks>
+   <BookingCurrency>INR</BookingCurrency>
+   <!--<PointOfSale>
+      <AgencyConsortium>Consortium</AgencyConsortium>
+      <BookingChannelType>B2E</BookingChannelType>
+      <customerProfileInd>false</customerProfileInd>
+      <Brand>IBS</Brand>
+      <CustomerProfileId>13614</CustomerProfileId>
+      <ISOCurrency>USD</ISOCurrency>
+      <Market>Asia</Market>
+      <OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+      <PseudoCityCode>A001</PseudoCityCode>
+      <RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+      <RequestTimeZone>GWT</RequestTimeZone>
+      <RequestingUserID>A-6264</RequestingUserID>
+      <RequestorId>HBSi</RequestorId>
+      <RequestorType>BUSINESSUSER</RequestorType>
+      <Role>BKGRole</Role>
+   </PointOfSale>-->
+   <!--<PointOfSale>
+      <AgencyConsortium>Consortium</AgencyConsortium>
+      <BookingChannelType>B2B</BookingChannelType>
+      <customerProfileInd>false</customerProfileInd>
+      <Brand>IBS</Brand>
+      <CustomerProfileId>13614</CustomerProfileId>
+      <ISOCurrency>USD</ISOCurrency>
+      <Market>Asia</Market>
+      <OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+      <PseudoCityCode>A001</PseudoCityCode>
+      <RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+      <RequestTimeZone>GWT</RequestTimeZone>
+      <RequestingUserID>A-6264</RequestingUserID>
+      <RequestorId>HBSi</RequestorId>
+      <RequestorType>AGENCY</RequestorType>
+      <Role>BKGRole</Role>
+   </PointOfSale>-->
+   <PointOfSale>
+      <AgencyConsortium>Consortium</AgencyConsortium>
+      <BookingChannelType>B2B</BookingChannelType>
+      <CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+      <ProfileType>CUSTOMERPROFILE</ProfileType>
+      <ProfileId>211</ProfileId>
+      <BookingContact>
+         <Address>Nandanam123</Address>
+         <City>Trivandrum</City>
+         <CountryCode>IND</CountryCode>
+         <Email>newone5fhdjsn@ibstest.com</Email>
+         <FirstName>aleena</FirstName>
+         <Language>ENG</Language>
+         <LastName>matt</LastName>
+         <PhoneNumber>9675346578</PhoneNumber>
+         <StateProv>TRV CENTRAL</StateProv>
+         <Street>Amritha Nagar</Street>
+         <ZipCode>688673</ZipCode>
+      </BookingContact>
+      <Brand>IBS</Brand>
+      <ISOCurrency>USD</ISOCurrency>
+      <Market>MK1</Market>
+      <OrganizationalUnitCode>FNDP</OrganizationalUnitCode>
+      <PseudoCityCode>A001</PseudoCityCode>
+      <RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+      <RequestTimeZone>GWT</RequestTimeZone>
+      <RequestingUserID>A-7020</RequestingUserID>
+      <RequestorId>A-7020</RequestorId>
+      <RequestorType>AGENCY</RequestorType>
+      <Role>HRG_Admin</Role>
+   </PointOfSale>
+   <Passengers>
+      <Passenger RefId="1">
+         <Remarks>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level1</Text>
+            </Remark>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level2</Text>
+            </Remark>
+			<Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level3</Text>
+            </Remark>
+         </Remarks>
+         <PaxType>A</PaxType>
+         <Age>50</Age>
+         <CustomerProfileId>A-9461</CustomerProfileId>
+         <Gender>M</Gender>
+         <DateOfBirth>1971-03-09</DateOfBirth>
+         <Title>MR</Title>
+         <FirstName>aNeeraj</FirstName>
+         <MiddleName></MiddleName>
+         <LastName>aPauli</LastName>
+         <SurnameSuffix>Dr.</SurnameSuffix>
+         <ResidenceCode>686514</ResidenceCode>
+         <Language>Eng</Language>
+         <Contacts>
+            <Contact>
+               <ContactType>H</ContactType>
+               <Address>
+                  <AddressLineOne>IBS software servicesi</AddressLineOne>
+                  <Street>akazhakkotam</Street>
+                  <City>Trivandrum</City>
+                  <ZipCode>688671</ZipCode>
+                  <CountryName>India</CountryName>
+                  <CountryCode>IN</CountryCode>
+                  <CityCode>TRV</CityCode>
+                  <StateProv>TRV CENTRAL</StateProv>
+                  <County>IN</County>
+               </Address>
+               <Email>icommerce@ibstest123.com</Email>
+               <PhoneDetails>
+                  <PhoneDetail>
+                     <PhoneType>H</PhoneType>
+                     <AreaCode>91</AreaCode>
+                     <PhoneNumber>9760827832</PhoneNumber>
+                     <PhoneTechType>MOBILE</PhoneTechType>
+                  </PhoneDetail>
+               </PhoneDetails>
+            </Contact>
+         </Contacts>
+         <Loyalties>
+            <Loyalty>
+               <ProgrammCode>PC2342</ProgrammCode>
+               <LoyaltyNumber>LN11</LoyaltyNumber>
+               <ProductType>HTL</ProductType>
+               <LoyaltyIssuer>ManojPA</LoyaltyIssuer>
+            </Loyalty>
+         </Loyalties>
+         <TravelDocuments>
+            <TravelDocument>
+               <DocumentId>X3401</DocumentId>
+               <DocumentType>PASSPORT</DocumentType>
+               <IssueDate>18-05-2013</IssueDate>
+               <IssueCountry>IN</IssueCountry>
+               <ExpiryDate>18-05-2018</ExpiryDate>
+               <IssueAuthority>INDIA</IssueAuthority>
+               <PlaceOfBirth>Kottayam</PlaceOfBirth>
+               <Nationality>Indian</Nationality>
+               <Language>Malayalam</Language>
+            </TravelDocument>
+         </TravelDocuments>
+         <Remarks>
+            <Remark>
+               <Type>CONFIDENTIAL</Type>
+               <Text>Passenger Level</Text>
+            </Remark>
+         </Remarks>
+      </Passenger>
+      <Passenger RefId="2">
+         <Remarks>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level1</Text>
+            </Remark>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level2</Text>
+            </Remark>
+			<Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level3</Text>
+            </Remark>
+         </Remarks>
+         <PaxType>C</PaxType>
+         <Age>10</Age>
+         <CustomerProfileId>A-7064</CustomerProfileId>
+         <Gender>M</Gender>
+         <DateOfBirth>2007-03-08</DateOfBirth>
+         <Title>MR</Title>
+         <FirstName>Raman</FirstName>
+         <MiddleName>Sanjeev</MiddleName>
+         <LastName>Bhaskar</LastName>
+         <SurnameSuffix>Dr.</SurnameSuffix>
+         <ResidenceCode>686513</ResidenceCode>
+         <Language>Eng</Language>
+         <Contacts>
+            <Contact>
+               <ContactType>H</ContactType>
+               <Address>
+                  <AddressLineOne>IBS software and services</AddressLineOne>
+                  <Street>kazhakikotam</Street>
+                  <City>Trivandrum</City>
+                  <ZipCode>688673</ZipCode>
+                  <CountryName>India</CountryName>
+                  <CountryCode>IN</CountryCode>
+                  <CityCode>TRV</CityCode>
+                  <StateProv>TRV CENTRAL</StateProv>
+                  <County>IN</County>
+               </Address>
+               <Email>icommerce@ibs123test.com</Email>
+               <PhoneDetails>
+                  <PhoneDetail>
+                     <PhoneType>H</PhoneType>
+                     <AreaCode>91</AreaCode>
+                     <PhoneNumber>9763827032</PhoneNumber>
+                     <PhoneTechType>MOBILE</PhoneTechType>
+                  </PhoneDetail>
+               </PhoneDetails>
+            </Contact>
+         </Contacts>
+         <Loyalties>
+            <Loyalty>
+               <ProgrammCode>PC2340</ProgrammCode>
+               <LoyaltyNumber>LN12</LoyaltyNumber>
+               <ProductType>HTL</ProductType>
+               <LoyaltyIssuer>ManojPAx</LoyaltyIssuer>
+            </Loyalty>
+         </Loyalties>
+         <TravelDocuments>
+            <TravelDocument>
+               <DocumentId>X3030</DocumentId>
+               <DocumentType>PASSPORT</DocumentType>
+               <IssueDate>18-05-2013</IssueDate>
+               <IssueCountry>IN</IssueCountry>
+               <ExpiryDate>18-05-2018</ExpiryDate>
+               <IssueAuthority>INDIA</IssueAuthority>
+               <PlaceOfBirth>Kottayam</PlaceOfBirth>
+               <Nationality>Indian</Nationality>
+               <Language>Malayalam</Language>
+            </TravelDocument>
+         </TravelDocuments>
+         <Remarks>
+            <Remark>
+               <Type>CONFIDENTIAL</Type>
+               <Text>Passenger Level</Text>
+            </Remark>
+         </Remarks>
+      </Passenger>
+	  <Passenger RefId="3">
+         <Remarks>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level1</Text>
+            </Remark>
+            <Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level2</Text>
+            </Remark>
+			<Remark>
+               <Type>BLR</Type>
+               <Text>Passenger Level3</Text>
+            </Remark>
+         </Remarks>
+         <PaxType>I</PaxType>
+         <Age>1</Age>
+         <CustomerProfileId>A-7409</CustomerProfileId>
+         <Gender>M</Gender>
+         <DateOfBirth>2016-03-08</DateOfBirth>
+         <Title>MR</Title>
+         <FirstName>Neela</FirstName>
+         <MiddleName>Jis</MiddleName>
+         <LastName>Paul</LastName>
+         <SurnameSuffix>Dr.</SurnameSuffix>
+         <ResidenceCode>686513</ResidenceCode>
+         <Language>Eng</Language>
+         <Contacts>
+            <Contact>
+               <ContactType>H</ContactType>
+               <Address>
+                  <AddressLineOne>IBS software services</AddressLineOne>
+                  <Street>kazhakkotam</Street>
+                  <City>Trivandrum</City>
+                  <ZipCode>688673</ZipCode>
+                  <CountryName>India</CountryName>
+                  <CountryCode>IN</CountryCode>
+                  <CityCode>TRV</CityCode>
+                  <StateProv>TRV CENTRAL</StateProv>
+                  <County>IN</County>
+               </Address>
+               <Email>icommerce@ibstest.com</Email>
+               <PhoneDetails>
+                  <PhoneDetail>
+                     <PhoneType>H</PhoneType>
+                     <AreaCode>91</AreaCode>
+                     <PhoneNumber>9763827832</PhoneNumber>
+                     <PhoneTechType>MOBILE</PhoneTechType>
+                  </PhoneDetail>
+               </PhoneDetails>
+            </Contact>
+         </Contacts>
+         <Loyalties>
+            <Loyalty>
+               <ProgrammCode>PC2342</ProgrammCode>
+               <LoyaltyNumber>LN11</LoyaltyNumber>
+               <ProductType>HTL</ProductType>
+               <LoyaltyIssuer>ManojPA</LoyaltyIssuer>
+            </Loyalty>
+         </Loyalties>
+         <TravelDocuments>
+            <TravelDocument>
+               <DocumentId>X3436</DocumentId>
+               <DocumentType>PASSPORT</DocumentType>
+               <IssueDate>18-01-2017</IssueDate>
+               <IssueCountry>IN</IssueCountry>
+               <ExpiryDate>18-05-2022</ExpiryDate>
+               <IssueAuthority>INDIA</IssueAuthority>
+               <PlaceOfBirth>Kottayam</PlaceOfBirth>
+               <Nationality>Indian</Nationality>
+               <Language>Malayalam</Language>
+            </TravelDocument>
+         </TravelDocuments>
+         <Remarks>
+            <Remark>
+               <Type>CONFIDENTIAL</Type>
+               <Text>Passenger Level</Text>
+            </Remark>
+         </Remarks>
+      </Passenger>	    
+   </Passengers>
+   <Products>
+      <Product RefId="700">
+         <PassengerReferences>
+            <PassengerReference ID="1"/>
+            <PassengerReference ID="2"/>
+			<PassengerReference ID="3"/>
+         </PassengerReferences>
+         <ProductType>AIR</ProductType>
+         <Brand>Amadeus</Brand>
+         <ProviderConfirmationId>PQR124</ProviderConfirmationId>
+         <ProviderCode>1A</ProviderCode>
+         <PriceCurrency>INR</PriceCurrency>
+         <IsOfflineProduct>false</IsOfflineProduct>
+         <ProductRemarks>
+            <ProductRemark>
+               <Type>CONFIDENTIAL</Type>
+               <Text>Product Level</Text>
+            </ProductRemark>
+            <ProductRemark PaxRefId="1">
+               <Type>CONFIDENTIAL</Type>
+               <Text>Product Pax Level</Text>
+            </ProductRemark>
+         </ProductRemarks>
+         <Air>
+            <Query>
+               <OrderItems>
+                  <OfferItem refs="1">
+                     <OfferItemID Owner="1A">ID1</OfferItemID>
+                     <OfferItemType>
+                        <DetailedFlightItem>
+                           <Charges>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>ADULT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>BASEFARE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="4000.0" Currency="INR"/>
+                                 <BasePrice Amount="4000.0" Currency="INR"/>
+                                 <GrossPrice Amount="4050.0" Currency="INR"/>
+                                 <NetPrice Amount="4050.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="50.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>ADULT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>TAX</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="165.0" Currency="INR"/>
+                                 <BasePrice Amount="165.0" Currency="INR"/>
+                                 <GrossPrice Amount="165.0" Currency="INR"/>
+                                 <NetPrice Amount="165.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>ADULT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>SURCHARGE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="0.0" Currency="INR"/>
+                                 <BasePrice Amount="0.0" Currency="INR"/>
+                                 <GrossPrice Amount="0.0" Currency="INR"/>
+                                 <NetPrice Amount="0.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                           </Charges>
+                           <Price>
+                              <!--Flight Price for Adult-->
+                              <BaseAmount Code="INR">3502.64</BaseAmount>
+                           </Price>
+                           <OriginDestination>
+                              <OriginDestinationKey>OD1</OriginDestinationKey>
+                              <TotalJourney>
+                                 <Time>01.35</Time>
+                                 <Distance>
+                                    <Value>0456</Value>
+                                 </Distance>
+                              </TotalJourney>
+                              <Flight>
+                                 <SegmentKey>SEG1</SegmentKey>
+                                 <!--<Indicators PricingInd="true"/>-->
+                                 <Departure>
+                                    <AirportCode>BLR</AirportCode>
+                                    <Date>2017-06-27</Date>
+                                    <Time>19:20</Time>
+                                    <Terminal>
+                                       <Gate>1</Gate>
+                                    </Terminal>
+                                 </Departure>
+                                 <Arrival>
+                                    <AirportCode>BOM</AirportCode>
+                                    <Date>2017-06-29</Date>
+                                    <Time>21:10</Time>
+                                    <Terminal>
+                                       <Gate>2</Gate>
+                                    </Terminal>
+                                 </Arrival>
+                                 <MarketingCarrier>
+                                    <AirlineID>AI</AirlineID>
+                                    <FlightNumber>610</FlightNumber>
+                                    <ResBookDesigCode>Y</ResBookDesigCode>
+                                 </MarketingCarrier>
+                                 <OperatingCarrier>
+                                    <AirlineID>AI</AirlineID>
+                                    <FlightNumber>610</FlightNumber>
+                                 </OperatingCarrier>
+                                 <Equipment>
+                                    <AircraftCode>319</AircraftCode>
+                                 </Equipment>
+                                 <ClassOfService>
+                                    <Code>M</Code>
+                                    <MarketingName CabinDesignator="M"/>
+                                 </ClassOfService>
+                              </Flight>
+                           </OriginDestination>
+                           <FareDetail>
+                              <FareComponent>
+                                 <!--OD wise split up of fares-->
+                                 <SegmentReference>SEG1</SegmentReference>
+                                 <PriceBreakdown>
+                                    <Price>
+                                       <BaseAmount Code="INR">1738</BaseAmount>
+                                       <Surcharges>
+                                          <Surcharge>
+                                             <Total Code="INR">86.41</Total>
+                                             <Breakdown>
+                                                <Fee>
+                                                   <Amount Code="INR">38.85</Amount>
+                                                </Fee>
+                                                <Fee>
+                                                   <Amount Code="INR">47.56</Amount>
+                                                </Fee>
+                                             </Breakdown>
+                                          </Surcharge>
+                                       </Surcharges>
+                                    </Price>
+                                 </PriceBreakdown>
+                                 <FareBasis>
+                                    <FareBasisCode>
+                                       <Code>MSAVER/WH</Code>
+                                      <Application>Requested</Application>
+                                    </FareBasisCode>
+                                 </FareBasis>
+                              </FareComponent>
+                              <TourCode>749</TourCode>
+                           </FareDetail>
+                        </DetailedFlightItem>
+                     </OfferItemType>
+                     <TimeLimits>
+                        <TimeLimit>
+                           <TicketByTimeLimit>
+                              <TicketBy>2017-11-01T12:52:21</TicketBy>
+                           </TicketByTimeLimit>
+                        </TimeLimit>
+                     </TimeLimits>
+                  </OfferItem>
+                  <OfferItem refs="2">
+                     <OfferItemID Owner="1A">ID1</OfferItemID>
+                     <OfferItemType>
+                        <DetailedFlightItem>
+                           <Charges>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>CHILD</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>BASEFARE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="4000.0" Currency="INR"/>
+                                 <BasePrice Amount="4000.0" Currency="INR"/>
+                                 <GrossPrice Amount="4050.0" Currency="INR"/>
+                                 <NetPrice Amount="4050.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="50.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>CHILD</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>TAX</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="165.0" Currency="INR"/>
+                                 <BasePrice Amount="165.0" Currency="INR"/>
+                                 <GrossPrice Amount="165.0" Currency="INR"/>
+                                 <NetPrice Amount="165.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>CHILD</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>SURCHARGE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="0.0" Currency="INR"/>
+                                 <BasePrice Amount="0.0" Currency="INR"/>
+                                 <GrossPrice Amount="0.0" Currency="INR"/>
+                                 <NetPrice Amount="0.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                           </Charges>
+                           <Price>
+                              <!--Flight Price for Adult-->
+                              <BaseAmount Code="INR">3502.64</BaseAmount>
+                           </Price>
+                           <OriginDestination>
+                              <OriginDestinationKey>OD1</OriginDestinationKey>
+                              <TotalJourney>
+                                 <Time>01.35</Time>
+                                 <Distance>
+                                    <Value>0456</Value>
+                                 </Distance>
+                              </TotalJourney>
+                              <Flight>
+                                 <SegmentKey>SEG1</SegmentKey>
+                                 <!--<Indicators PricingInd="true"/>-->
+                                 <Departure>
+                                    <AirportCode>HKG</AirportCode>
+                                    <Date>2018-12-27</Date>
+                                    <Time>02:00</Time>
+                                    <Terminal>
+                                       <Gate>1</Gate>
+                                    </Terminal>
+                                 </Departure>
+                                 <Arrival>
+                                    <AirportCode>DXB</AirportCode>
+                                    <Date>2018-12-30</Date>
+                                    <Time>06:30</Time>
+                                    <Terminal>
+                                       <Gate>1</Gate>
+                                    </Terminal>
+                                 </Arrival>
+                                 <MarketingCarrier>
+                                    <AirlineID>CX</AirlineID>
+                                    <FlightNumber>745</FlightNumber>
+                                    <ResBookDesigCode>Y</ResBookDesigCode>
+                                 </MarketingCarrier>
+                                 <OperatingCarrier>
+                                    <AirlineID>CX</AirlineID>
+                                    <FlightNumber>745</FlightNumber>
+                                 </OperatingCarrier>
+                                 <Equipment>
+                                    <AircraftCode>333</AircraftCode>
+                                 </Equipment>
+                                 <ClassOfService>
+                                    <Code>M</Code>
+                                    <MarketingName CabinDesignator="M"/>
+                                 </ClassOfService>
+                              </Flight>
+                           </OriginDestination>
+                           <FareDetail>
+                              <FareComponent>
+                                 <!--OD wise split up of fares-->
+                                 <SegmentReference>SEG1</SegmentReference>
+                                 <PriceBreakdown>
+                                    <Price>
+                                       <BaseAmount Code="INR">1738</BaseAmount>
+                                    </Price>
+                                 </PriceBreakdown>
+                                 <FareBasis>
+                                    <FareBasisCode>
+                                       <Code>MSAVER/WH</Code>
+                                       <Application>Requested</Application>
+                                    </FareBasisCode>
+                                 </FareBasis>
+                              </FareComponent>
+                              <TourCode>749</TourCode>
+                           </FareDetail>
+                        </DetailedFlightItem>
+                     </OfferItemType>
+                     <TimeLimits>
+                        <TimeLimit>
+                           <TicketByTimeLimit>
+                              <TicketBy>2017-11-01T12:52:21</TicketBy>
+                           </TicketByTimeLimit>
+                        </TimeLimit>
+                     </TimeLimits>
+                  </OfferItem>
+				  <OfferItem refs="3">
+                     <OfferItemID Owner="1A">ID3</OfferItemID>
+                     <OfferItemType>
+                        <DetailedFlightItem>
+                           <Charges>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>INFANT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>BASEFARE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="4000.0" Currency="INR"/>
+                                 <BasePrice Amount="4000.0" Currency="INR"/>
+                                 <GrossPrice Amount="4050.0" Currency="INR"/>
+                                 <NetPrice Amount="4050.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="50.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>INFANT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>TAX</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="165.0" Currency="INR"/>
+                                 <BasePrice Amount="165.0" Currency="INR"/>
+                                 <GrossPrice Amount="165.0" Currency="INR"/>
+                                 <NetPrice Amount="165.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                              <Charge>
+                                 <Currency>INR</Currency>
+                                 <PaxType>INFANT</PaxType>
+                                 <ChargeLevel>PerPax</ChargeLevel>
+                                 <ChargeType>SURCHARGE</ChargeType>
+                                 <IsCommissionable>false</IsCommissionable>
+                                 <BaseCost Amount="0.0" Currency="INR"/>
+                                 <BasePrice Amount="0.0" Currency="INR"/>
+                                 <GrossPrice Amount="0.0" Currency="INR"/>
+                                 <NetPrice Amount="0.0" Currency="INR"/>
+                                 <AgencyCommission Amount="0.0" Currency="INR"/>
+                                 <VendorCommission Amount="0.0" Currency="INR"/>
+                                 <MarkUp Amount="0.0" Currency="INR"/>
+                              </Charge>
+                           </Charges>
+                           <Price>
+                              <!--Flight Price for Adult-->
+                              <BaseAmount Code="INR">3502.64</BaseAmount>
+                           </Price>
+                           <OriginDestination>
+                              <OriginDestinationKey>OD1</OriginDestinationKey>
+                              <TotalJourney>
+                                 <Time>01.35</Time>
+                                 <Distance>
+                                    <Value>0456</Value>
+                                 </Distance>
+                              </TotalJourney>
+                              <Flight>
+                                 <SegmentKey>SEG1</SegmentKey>
+                                 <!--<Indicators PricingInd="true"/>-->
+                                 <Departure>
+                                    <AirportCode>BLR</AirportCode>
+                                    <Date>2017-10-11</Date>
+                                    <Time>19:20</Time>
+                                    <Terminal>
+                                       <Gate>1</Gate>
+                                    </Terminal>
+                                 </Departure>
+                                 <Arrival>
+                                    <AirportCode>BOM</AirportCode>
+                                    <Date>2017-10-11</Date>
+                                    <Time>21:10</Time>
+                                    <Terminal>
+                                       <Gate>2</Gate>
+                                    </Terminal>
+                                 </Arrival>
+                                 <MarketingCarrier>
+                                    <AirlineID>AI</AirlineID>
+                                    <FlightNumber>610</FlightNumber>
+                                    <ResBookDesigCode>Y</ResBookDesigCode>
+                                 </MarketingCarrier>
+                                 <OperatingCarrier>
+                                    <AirlineID>AI</AirlineID>
+                                    <FlightNumber>610</FlightNumber>
+                                 </OperatingCarrier>
+                                 <Equipment>
+                                    <AircraftCode>319</AircraftCode>
+                                 </Equipment>
+                                 <ClassOfService>
+                                    <Code>M</Code>
+                                    <MarketingName CabinDesignator="M"/>
+                                 </ClassOfService>
+                              </Flight>
+                           </OriginDestination>
+                           <FareDetail>
+                              <FareComponent>
+                                 <!--OD wise split up of fares-->
+                                 <SegmentReference>SEG1</SegmentReference>
+                                 <PriceBreakdown>
+                                    <Price>
+                                       <BaseAmount Code="INR">1738</BaseAmount>
+                                       <Surcharges>
+                                          <Surcharge>
+                                             <Total Code="INR">86.41</Total>
+                                             <Breakdown>
+                                                <Fee>
+                                                   <Amount Code="INR">38.85</Amount>
+                                                </Fee>
+                                                <Fee>
+                                                   <Amount Code="INR">47.56</Amount>
+                                                </Fee>
+                                             </Breakdown>
+                                          </Surcharge>
+                                       </Surcharges>
+                                    </Price>
+                                 </PriceBreakdown>
+                                 <FareBasis>
+                                    <FareBasisCode>
+                                       <Code>MSAVER/WH</Code>
+                                      <Application>Requested</Application>
+                                    </FareBasisCode>
+                                 </FareBasis>
+                              </FareComponent>
+                              <TourCode>749</TourCode>
+                           </FareDetail>
+                        </DetailedFlightItem>
+                     </OfferItemType>
+                     <TimeLimits>
+                        <TimeLimit>
+                           <TicketByTimeLimit>
+                              <TicketBy>2017-11-01T12:52:21</TicketBy>
+                           </TicketByTimeLimit>
+                        </TimeLimit>
+                     </TimeLimits>
+                  </OfferItem>
+               </OrderItems>
+               <DataLists>
+                  <OriginDestinationList>
+                     <OriginDestination OriginDestinationKey="OD1">
+                        <DepartureCode>HKG</DepartureCode>
+                        <ArrivalCode>DXB</ArrivalCode>
+                        <FlightReferences>AMADEUS11OD1FL1</FlightReferences>
+                     </OriginDestination>
+                  </OriginDestinationList>
+                  <FlightList>
+                     <Flight FlightKey="AMADEUS11OD1FL1">
+                        <SegmentReferences>SEG1</SegmentReferences>
+                     </Flight>
+                  </FlightList>
+               </DataLists>
+            </Query>
+            <TotalPrice>
+              <Currency>INR</Currency>
+               <BaseCost Amount="8330.0" Currency="INR"/>
+               <BasePrice Amount="8330.0" Currency="INR"/>
+               <Discount Amount="0.0" Currency="INR"/>
+               <GrossPrice Amount="8430.0" Currency="INR"/>
+               <NetPrice Amount="  .0" Currency="INR"/>
+            </TotalPrice>
+         </Air>
+      </Product>
+   </Products>
+   <Payments>
+      <Payment>
+         <FopCode>FOP002</FopCode>
+         <FopType>CA</FopType>
+         <Cash>
+            <referenceNumber>1234</referenceNumber>
+         </Cash>
+         <PaymentAmount Amount="20000.00" Currency="INR"/>
+         <PaymentId>0</PaymentId>
+      </Payment>
+   </Payments>
+</BookingRequest>

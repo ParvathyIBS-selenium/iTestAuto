@@ -1,0 +1,52 @@
+<CancellationRequest>
+	<SuperPnrNumber>AA2MM2</SuperPnrNumber>
+	<Version>1493277362811</Version>
+	<PointOfSale>
+		<AgencyConsortium>Consortium</AgencyConsortium>
+		<BookingChannelType>B2B</BookingChannelType>
+		<CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+		<ProfileType>CUSTOMERPROFILE</ProfileType>
+		<!-- <ProfileId>210</ProfileId> -->
+		<BookingContact>
+			<Address>Nandanam</Address>
+			<City>Trivandrum</City>
+			<Country>IND</Country>
+			<Email>122234@ibstest.com</Email>
+			<FirstName>Aleenddd</FirstName>
+			<Language>ENG</Language>
+			<LastName>matt</LastName>
+			<PhoneNumber>9675346578</PhoneNumber>
+			<StateProv>TRV CENTRAL</StateProv>
+			<Street>Amritha Nagar</Street>
+			<ZipCode>688673</ZipCode>
+		</BookingContact>
+		<Brand>IBS</Brand>
+		<CustomerProfileId>13614</CustomerProfileId>
+		<ISOCurrency>INR</ISOCurrency>
+		<Market>Asia</Market>
+		<OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+		<PseudoCityCode>A001</PseudoCityCode>
+		<RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+		<RequestTimeZone>GWT</RequestTimeZone>
+		<RequestingUserID>A-6264</RequestingUserID>
+		<RequestorId>HBSi</RequestorId>
+		<RequestorType>AGENCY</RequestorType>
+		<Role>BKGRole</Role>
+	</PointOfSale>
+	<!-- <ProductRequests> <ProductRequest Action="DELETE" RefId="18028"> <ProductIndicator> 
+		<skipCxlFeeComputation>true</skipCxlFeeComputation> <CanContinueWithLatestFeeInd>true</CanContinueWithLatestFeeInd> 
+		</ProductIndicator> <OverridenFees> <Fee> <FeeType>CancellationFee</FeeType> 
+		<FeeRuleId>1</FeeRuleId> <FeeRuleCategory>AIR</FeeRuleCategory> <Currency>INR</Currency> 
+		<ChargeLevel>Fee</ChargeLevel> <ChargeType>AMD</ChargeType> <FeeAmount Currency="INR" 
+		Amount="5300.0"/> <ProviderFeeAmount/> <CanContinueWithLatestFeeInd>true</CanContinueWithLatestFeeInd> 
+		<OverridenFeeAmount> <OverridenAmount Currency="INR" Amount="1000.0" Date="2016-06-23T16:30:43.236+05:30"/> 
+		<OverridenProviderFeeAmount Currency="INR" Amount="10.0" Date="2016-06-23T16:30:43.236+05:30"/> 
+		<OriginalAmount Currency="INR" Amount="5300.0" Date="2016-06-23T16:30:43.236+05:30"/> 
+		<OriginalProviderFeeAmount/> <IsOverridden>true</IsOverridden> <IsProviderFeeOverriden>true</IsProviderFeeOverriden> 
+		<IsProviderFeeWaived>false</IsProviderFeeWaived> <IsWaived>false</IsWaived> 
+		</OverridenFeeAmount> <IsRepricedFee>false</IsRepricedFee> <CreatedOn>2016-02-02</CreatedOn> 
+		<Remarks> <Remark> <Type>Reason</Type> <Text>Fee Offer</Text> </Remark> </Remarks> 
+		</Fee> </OverridenFees> <Product RefId="18028" LeadItemIndicator="true"></Product> 
+		</ProductRequest> </ProductRequests> -->
+</CancellationRequest>
+

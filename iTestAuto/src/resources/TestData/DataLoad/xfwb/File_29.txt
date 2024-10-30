@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-03921536_5jHjOfbxGvBTNWWvFF8</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T12:32:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>NPZC3STXVFU5A4</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">REUAGT82SHNK/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">REUAGT82SHNK/CDG01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">AGT/SCHENKER/CDG</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-03921536</ram:ID>
+            <ram:SenderAssignedID>CDG35623749</ram:SenderAssignedID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>B SCHENKER</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>B SCHENKER</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>CDG ROISSY</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-XAG</ram:ID>
+            <ram:AdditionalID>AFKL-M25|SKT-XAG</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">206</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>2</ram:TotalPieceQuantity>
+            <ram:ProductID>M25</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>SOCIETE AIR FRANCE</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>95703</ram:PostcodeCode>
+                    <ram:StreetName>45 RUE DE PARIS</ram:StreetName>
+                    <ram:CityName>ROISSY EN FRANCE</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>0141566615</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>AIR SENEGAL SA MAINTENANCE</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:StreetName>BP 15-DIASS-MBOUR-THIESAEROPORT BLAISE DIAGNE</ram:StreetName>
+                    <ram:CityName>REPUBLIQUE DU SEN</ram:CityName>
+                    <ram:CountryID>SN</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>X</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>SCHENKER FRANCE SAS</ram:Name>
+                <ram:AccountID>111 200147080</ram:AccountID>
+                <ram:CargoAgentID>2047080</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>ROISSY CDG</ram:StreetName>
+                    <ram:CityName>ROISSY CDG</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>9516</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>DSS</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF718</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>DSS</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>SPX</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAP</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>CUSTOMS STATUS. X</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>SCHENKERAEROPARTS CRITICAL AB EAPSTA</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>FR RA 10009-10</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>SPX</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>CIN OK</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>0141566615</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>X</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>SN</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>M</ram:ContentCode>
+                <ram:Content>23FRD3370084128271</ram:Content>
+                <ram:SubjectCode>EXP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>M</ram:ContentCode>
+                <ram:Content>23FRD3370084186704</ram:Content>
+                <ram:SubjectCode>EXP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>M</ram:ContentCode>
+                <ram:Content>23FRD3370084186720</ram:Content>
+                <ram:SubjectCode>EXP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>RA</ram:ContentCode>
+                <ram:Content>10009-10</ram:Content>
+                <ram:SubjectCode>ISS</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ED</ram:ContentCode>
+                <ram:Content>1299</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CH</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">31.30</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>SC</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">8.83</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">947.60</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">206.0</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">0.86</ram:GrossVolumeMeasure>
+                    <ram:PackageQuantity>3</ram:PackageQuantity>
+                    <ram:PieceQuantity>2</ram:PieceQuantity>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>NEW AIRCRAFT PARTS NOT RESTRICTED CRT ROUE ROUE GONFLEE A SA PR DSSSZN L L2 H 3H06442 130 130 50 3I03312 34 27 21 VOLUME. 0.864 SLAC. 3</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>Q</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">206.0</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>4.60</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">947.60</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">947.60</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">40.13</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">987.73</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>718</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>SN</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

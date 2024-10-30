@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoTransportMovement
+  xmlns:ram="iata:datamodel:3"
+  xmlns:rsm="iata:transportmovement:1"
+  xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:transportmovement:1 TransportMovement_1.xsd">
+  <rsm:TransportMovement>
+    <rsm:MessageHeaderDocument>
+      <ram:ID>66aab523-d4bd-4375-90ff-8b53ae1885d2</ram:ID>
+      <ram:Name>Transport equipment movement report</ram:Name>
+      <ram:TypeCode>265</ram:TypeCode>
+      <ram:IssueDateTime>2022-01-25T13:26:00.000</ram:IssueDateTime>
+      <ram:PurposeCode>Creation</ram:PurposeCode>
+      <ram:VersionID>1.00</ram:VersionID>
+      <ram:SenderParty>
+        <ram:PrimaryID schemeID="C">ORYOAAF</ram:PrimaryID>
+      </ram:SenderParty>
+      <ram:SenderParty>
+        <ram:PrimaryID schemeID="T">ORYOAAF</ram:PrimaryID>
+      </ram:SenderParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="C">ORYTBXH</ram:PrimaryID>
+      </ram:RecipientParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="T">ORYTBXH</ram:PrimaryID>
+      </ram:RecipientParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="T">QVIFMAF</ram:PrimaryID>
+      </ram:RecipientParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="T">TLSSCAF</ram:PrimaryID>
+      </ram:RecipientParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="T">TLSSPAF</ram:PrimaryID>
+      </ram:RecipientParty>
+      <ram:RecipientParty>
+        <ram:PrimaryID schemeID="T">XDTAC7X</ram:PrimaryID>
+      </ram:RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:TransportMovementHeader>
+      <ram:FlightManifestID>AF27625010000CDG</ram:FlightManifestID>
+      <ram:SpecifiedTransportMovement>
+        <ram:SequenceNumeric>1</ram:SequenceNumeric>
+        <ram:StageCode>Main-Carriage</ram:StageCode>
+        <ram:ModeCode listID="Recommendation 19" listAgencyID="6" listVersionID="2">4</ram:ModeCode>
+        <ram:Mode>Air transport</ram:Mode>
+        <ram:ID>AF276</ram:ID>
+        <ram:UsedLogisticsTransportMeans>
+          <ram:OperatorParty>
+            <ram:ID>AF</ram:ID>
+          </ram:OperatorParty>
+        </ram:UsedLogisticsTransportMeans>
+        <ram:FirstRegistrationID>FGSQD</ram:FirstRegistrationID>
+        <ram:DepartureEvent>
+          <ram:OccurrenceDepartureLocation>
+            <ram:TypeCode>Airport</ram:TypeCode>
+            <ram:ID>CDG</ram:ID>
+          </ram:OccurrenceDepartureLocation>
+          <ram:DepartureOccurrenceDateTime>2022-01-25T00:00:00.000</ram:DepartureOccurrenceDateTime>
+          <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+        </ram:DepartureEvent>
+        <ram:CargoLoadIndicator>true</ram:CargoLoadIndicator>
+        <ram:SealConformanceIndicator>false</ram:SealConformanceIndicator>
+        <ram:SealCheckIndicator>false</ram:SealCheckIndicator>
+        <ram:SealExemptionIndicator>false</ram:SealExemptionIndicator>
+        <ram:ItineraryRoute>
+          <ram:StartLocation>
+            <ram:TypeCode>Airport</ram:TypeCode>
+            <ram:ID>CDG</ram:ID>
+          </ram:StartLocation>
+          <ram:EndLocation>
+            <ram:TypeCode>Airport</ram:TypeCode>
+            <ram:ID>NRT</ram:ID>
+          </ram:EndLocation>
+        </ram:ItineraryRoute>
+      </ram:SpecifiedTransportMovement>
+    </rsm:TransportMovementHeader>
+    <rsm:TransportMovementEvent>
+      <ram:MovementTypeCode>AD</ram:MovementTypeCode>
+      <ram:OccurrenceMovementLocation>
+        <ram:TypeCode>Airport</ram:TypeCode>
+        <ram:ID>CDG</ram:ID>
+      </ram:OccurrenceMovementLocation>
+      <ram:MovementOccurrenceDateTime>2022-01-25T13:05:00.000</ram:MovementOccurrenceDateTime>
+      <ram:SpecifiedDelayEvent>
+        <ram:InstanceID>1</ram:InstanceID>
+        <ram:ReasonTypeCode>32</ram:ReasonTypeCode>
+        <ram:ReasonDescription>32</ram:ReasonDescription>
+        <ram:SubReasonTypeCode>UNKNOWN</ram:SubReasonTypeCode>
+        <ram:SubReasonDescription>UNKNOWN</ram:SubReasonDescription>
+        <ram:OccurrenceDelayPeriod>
+          <ram:DurationMeasure unitCode="MIN">50</ram:DurationMeasure>
+        </ram:OccurrenceDelayPeriod>
+      </ram:SpecifiedDelayEvent>
+      <ram:SpecifiedOSIInstructions>
+        <ram:Description>PBLM JOINT FLAPERON NON VU SUR ARV</ram:Description>
+      </ram:SpecifiedOSIInstructions>
+    </rsm:TransportMovementEvent>
+    <rsm:TransportMovementEvent>
+      <ram:MovementTypeCode>EA</ram:MovementTypeCode>
+      <ram:OccurrenceMovementLocation>
+        <ram:TypeCode>Airport</ram:TypeCode>
+        <ram:ID>NRT</ram:ID>
+      </ram:OccurrenceMovementLocation>
+      <ram:MovementOccurrenceDateTime>2022-01-25T00:38:00.000</ram:MovementOccurrenceDateTime>
+      <ram:SpecifiedOSIInstructions>
+        <ram:Description>PBLM JOINT FLAPERON NON VU SUR ARV</ram:Description>
+      </ram:SpecifiedOSIInstructions>
+    </rsm:TransportMovementEvent>
+    <rsm:TransportMovementEvent>
+      <ram:MovementTypeCode>EB</ram:MovementTypeCode>
+      <ram:OccurrenceMovementLocation>
+        <ram:TypeCode>Airport</ram:TypeCode>
+        <ram:ID>NRT</ram:ID>
+      </ram:OccurrenceMovementLocation>
+      <ram:MovementOccurrenceDateTime>2022-01-25T00:59:00.000</ram:MovementOccurrenceDateTime>
+    </rsm:TransportMovementEvent>
+  </rsm:TransportMovement>
+  <originalMessage>
+    <type>CIMP</type>
+  </originalMessage>
+  <state></state>
+</ef:CargoTransportMovement>

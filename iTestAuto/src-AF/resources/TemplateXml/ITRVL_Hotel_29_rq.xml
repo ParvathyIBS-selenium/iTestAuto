@@ -1,0 +1,244 @@
+<BookingRequest>
+	<BookingCurrency>USD</BookingCurrency>
+	<PointOfSale>
+		<AgencyConsortium>Consortium</AgencyConsortium>
+		<BookingChannelType>B2B</BookingChannelType>
+		<CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+		<ProfileType>CUSTOMERPROFILE</ProfileType>
+		<!-- <ProfileId>210</ProfileId> -->
+		<BookingContact>
+			<Address>Nandanam</Address>
+			<City>Trivandrum</City>
+			<Country>IND</Country>
+			<Email>122234@ibstest.com</Email>
+			<FirstName>Aleenddd</FirstName>
+			<Language>ENG</Language>
+			<LastName>matt</LastName>
+			<PhoneNumber>9675346578</PhoneNumber>
+			<StateProv>TRV CENTRAL</StateProv>
+			<Street>Amritha Nagar</Street>
+			<ZipCode>688673</ZipCode>
+		</BookingContact>
+		<Brand>IBS</Brand>
+		<CustomerProfileId>13614</CustomerProfileId>
+		<ISOCurrency>USD</ISOCurrency>
+		<Market>Asia</Market>
+		<OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+		<PseudoCityCode>A001</PseudoCityCode>
+		<RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+		<RequestTimeZone>GWT</RequestTimeZone>
+		<RequestingUserID>A-6264</RequestingUserID>
+		<RequestorId>HBSi</RequestorId>
+		<RequestorType>AGENCY</RequestorType>
+		<Role>BKGRole</Role>
+	</PointOfSale>
+
+	<Passengers>
+		<Passenger RefId="1">
+			<PaxType>A</PaxType>
+			<Age>50</Age>
+			<CustomerProfileId>A-7464</CustomerProfileId>
+			<Gender>M</Gender>
+			<DateOfBirth>1971-03-08</DateOfBirth>
+			<Title>MR</Title>
+			<FirstName>Albin</FirstName>
+			<MiddleName>Jis</MiddleName>
+			<LastName>Paul</LastName>
+			<SurnameSuffix>Dr.</SurnameSuffix>
+			<ResidenceCode>686513</ResidenceCode>
+			<Language>Eng</Language>
+			<Contacts>
+				<Contact>
+					<ContactType>H</ContactType>
+					<Address>
+						<AddressLineOne>IBS software services</AddressLineOne>
+						<Street>kazhakkotam</Street>
+						<City>Trivandrum</City>
+						<ZipCode>688673</ZipCode>
+						<CountryName>India</CountryName>
+						<CountryCode>IN</CountryCode>
+						<CityCode>TRV</CityCode>
+						<StateProv>TRV CENTRAL</StateProv>
+						<County>IN</County>
+					</Address>
+					<Email>itraveltest@ibstest.com</Email>
+					<PhoneDetails>
+						<PhoneDetail IsPrimary="true">
+							<PhoneType>O</PhoneType>
+							<AreaCode>91</AreaCode>
+							<PhoneNumber>9763827832</PhoneNumber>
+							<PhoneTechType>5</PhoneTechType>
+						</PhoneDetail>
+						<PhoneDetail>
+							<PhoneType>H</PhoneType>
+							<AreaCode>91</AreaCode>
+							<PhoneNumber>9763827835</PhoneNumber>
+							<PhoneTechType>5</PhoneTechType>
+						</PhoneDetail>
+					</PhoneDetails>
+				</Contact>
+			</Contacts>
+			<Loyalties>
+				<Loyalty>
+					<ProgrammCode>PC2342</ProgrammCode>
+					<LoyaltyNumber>LN11</LoyaltyNumber>
+					<ProductType>AIR</ProductType>
+				</Loyalty>
+			</Loyalties>
+			<TravelDocuments>
+				<TravelDocument>
+					<DocumentId>X3432</DocumentId>
+					<DocumentType>PASSPORT</DocumentType>
+					<IssueDate>18-05-2013</IssueDate>
+					<IssueCountry>IN</IssueCountry>
+					<ExpiryDate>18-05-2018</ExpiryDate>
+					<IssueAuthority>INDIA</IssueAuthority>
+					<PlaceOfBirth>Kottayam</PlaceOfBirth>
+					<Nationality>Indian</Nationality>
+					<Language>Malayalam</Language>
+				</TravelDocument>
+			</TravelDocuments>
+			<Remarks>
+				<Remark>
+					<Type>CONFIDENTIAL</Type>
+					<Text>Passenger Level</Text>
+				</Remark>
+			</Remarks>
+		</Passenger>
+	</Passengers>
+	<Products>
+		<Product RefId="709">
+			<IsOfflinePaymentCollected>false</IsOfflinePaymentCollected>
+			<PassengerReferences>
+				<PassengerReference ID="1">
+				</PassengerReference>
+			</PassengerReferences>
+			<ProductType>HTL</ProductType>
+			<Brand>TourPartner</Brand>
+			<ProviderCode>HBSi</ProviderCode>
+			<ProviderConfirmationId>6726KFmPbo</ProviderConfirmationId>
+			<SupplierId>Expedia</SupplierId>
+			<PriceCurrency>USD</PriceCurrency>
+			<IsOfflineProduct>true</IsOfflineProduct>
+			<ProductRemarks>
+				<ProductRemark>
+					<Type>CONFIDENTIAL</Type>
+					<Text>Product Level</Text>
+				</ProductRemark>
+				<ProductRemark PaxRefId="1">
+					<Type>CONFIDENTIAL</Type>
+					<Text>Product Pax Level</Text>
+				</ProductRemark>
+			</ProductRemarks>
+			<Hotel>
+				<HotelReservations>
+					<HotelReservation>
+						<UniqueID Type="14" ID="48679" ID_Context="i_Com" />
+						<RoomStays>
+							<RoomStay AvailabilityStatus="AvailableForSale">
+								<RoomTypes>
+									<RoomType NumberOfUnits="1" RoomTypeCode="DELUXE">
+										<RoomDescription Name="DELUXE">
+											<Text />
+										</RoomDescription>
+									</RoomType>
+								</RoomTypes>
+								<RatePlans>
+									<RatePlan RatePlanCode="BAR3">
+										<RatePlanDescription Name="BAR3">
+											<Text />
+										</RatePlanDescription>
+									</RatePlan>
+								</RatePlans>
+								<RoomRates>
+									<RoomRate EffectiveDate="2016-12-05" ExpireDate="2016-12-06"
+										NumberOfUnits="1" RatePlanCode="BAR3" RoomTypeCode="DELUXE">
+										<Rates>
+											<Rate EffectiveDate="2016-12-05" ExpireDate="2016-12-06"
+												RateTimeUnit="Day" UnitMultiplier="1">
+												<Base AmountAfterTax="82.34" AmountBeforeTax="82.34"
+													CurrencyCode="USD" />
+												<Total AmountAfterTax="82.34" AmountBeforeTax="82.34"
+													CurrencyCode="USD" />
+											</Rate>
+										</Rates>
+										<RoomRateDescription>
+											<Text>2016-12-05 Unit rate Guest 0 Set rate (unit rate): Net:
+												29.83 Sell: 29.83 Guest 1 Set rate (unit rate): Net: 29.83
+												Sell: 29.83 Mealplan rate Guest 0 Set rate (mealplan rate):
+												Net: 0 Sell: 0 Guest 1 Set rate (mealplan rate): Net: 0
+												Sell: 0 Product rates
+											</Text>
+										</RoomRateDescription>
+									</RoomRate>
+								</RoomRates>
+								<GuestCounts>
+									<GuestCount AgeQualifyingCode="10" Count="2"
+										ResGuestRPH="1" />
+								</GuestCounts>
+								<TimeSpan Duration="P1N" End="2017-06-27" Start="2017-06-26" />
+								<Total AmountAfterTax="82.34" AmountBeforeTax="82.34"
+									CurrencyCode="USD" />
+								<BasicPropertyInfo HotelCityCode="Paris"
+									HotelCode="48672" HotelName="Hotel du Louvre">
+									<Address>
+										<AddressLine>test</AddressLine>
+										<CityName>Paris</CityName>
+										<CountryName>FRA</CountryName>
+									</Address>
+								</BasicPropertyInfo>
+								<Reference ID="48672" ID_Context="HBSi" Type="16" />
+								<Charges>
+									<Charge>
+										<Currency>USD</Currency>
+										<ChargeLevel>Once</ChargeLevel>
+										<ChargeType>HOTEL</ChargeType>
+										<IsCommissionable>true</IsCommissionable>
+										<BaseCost Amount="80.34" Currency="USD" />
+										<BasePrice Amount="82.34" Currency="USD" />
+										<GrossPrice Amount="82.34" Currency="USD" />
+										<NetPrice Amount="90.57" Currency="USD" />
+										<AgencyCommission Amount="8.23" Currency="USD" />
+										<AgencyCommissionPercentage>10.0</AgencyCommissionPercentage>
+										<VendorCommission Amount="0.0" Currency="USD" />
+										<MarkUp Amount="0.0" Currency="USD" />
+										<PaxId>1</PaxId>
+									</Charge>
+
+								</Charges>
+							</RoomStay>
+						</RoomStays>
+					</HotelReservation>
+				</HotelReservations>
+				<UniqueID Type="14" ID="48403" ID_Context="Default" />
+				<TotalPrice>
+					<Currency>USD</Currency>
+					<BaseCost Amount="164.68" Currency="USD" />
+					<BasePrice Amount="164.68" Currency="USD" />
+					<Discount Amount="0.0" Currency="USD" />
+					<GrossPrice Amount="164.68" Currency="USD" />
+					<NetPrice Amount="172.91" Currency="USD" />
+					<AgencyCommission Amount="8.23" Currency="USD" />
+					<AgencyCommissionPercentage>10.0</AgencyCommissionPercentage>
+					<VendorCommission Amount="0.0" Currency="USD" />
+					<MarkUp Amount="0.0" Currency="USD" />
+					<GrossProfit Amount="0.0" Currency="USD" />
+					<NetProfit Amount="0.0" Currency="USD" />
+					<GrossProfitMargin Amount="0.0" Currency="USD" />
+					<NetProfitMargin Amount="0.0" Currency="USD" />
+				</TotalPrice>
+			</Hotel>
+		</Product>
+	</Products>
+	<Payments>
+		<Payment>
+			<FopCode>FOP002</FopCode>
+			<FopType>CA</FopType>
+			<Cash>
+				<referenceNumber>1234</referenceNumber>
+			</Cash>
+			<PaymentAmount Currency="USD" Amount="140000.0" />
+			<PaymentId>0</PaymentId>
+		</Payment>
+	</Payments>
+</BookingRequest>

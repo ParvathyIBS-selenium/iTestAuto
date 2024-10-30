@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:Waybill xmlns="iata:datamodel:3" xmlns:ns2="iata:waybill:1">
+<ns2:MessageHeaderDocument>
+<ID>057-94984584_230521134417257</ID>
+<Name>AIR WAYBILL</Name>
+<TypeCode>740</TypeCode>
+<IssueDateTime>2021-05-23T13:44:17</IssueDateTime>
+<PurposeCode>Creation</PurposeCode>
+<VersionID>3.00</VersionID>
+<SenderParty>
+<PrimaryID schemeID="C">SPLJXKL</PrimaryID>
+</SenderParty>
+<SenderParty>
+<PrimaryID schemeID="P">SPLJXKL</PrimaryID>
+</SenderParty>
+<RecipientParty>
+<PrimaryID schemeID="P">QVIUSAF</PrimaryID>
+</RecipientParty>
+<RecipientParty>
+<PrimaryID schemeID="C">QVIUSAF</PrimaryID>
+</RecipientParty>
+</ns2:MessageHeaderDocument>
+<ns2:BusinessHeaderDocument>
+<ID>057-94984584</ID>
+<IncludedHeaderNote>
+<ContentCode>D</ContentCode>
+<Content>Direct</Content>
+</IncludedHeaderNote>
+<SignatoryConsignorAuthentication>
+<Signatory>HEPPNER</Signatory>
+</SignatoryConsignorAuthentication>
+<SignatoryCarrierAuthentication>
+<ActualDateTime>2021-05-23T00:00:00</ActualDateTime>
+<Signatory>KALYN</Signatory>
+<IssueAuthenticationLocation>
+<Name>TOURS</Name>
+</IssueAuthenticationLocation>
+</SignatoryCarrierAuthentication>
+</ns2:BusinessHeaderDocument>
+<ns2:MasterConsignment>
+<NilCarriageValueIndicator>true</NilCarriageValueIndicator>
+<NilCustomsValueIndicator>true</NilCustomsValueIndicator>
+<NilInsuranceValueIndicator>true</NilInsuranceValueIndicator>
+<TotalChargePrepaidIndicator>true</TotalChargePrepaidIndicator>
+<TotalDisbursementPrepaidIndicator>true</TotalDisbursementPrepaidIndicator>
+<IncludedTareGrossWeightMeasure unitCode="KGM">556</IncludedTareGrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">2.6</GrossVolumeMeasure>
+<TotalPieceQuantity>3</TotalPieceQuantity>
+<ConsignorParty>
+<Name>PANALPINA WELTTRANSPORT DEUTSCHLAND</Name>
+<AccountID>102375</AccountID>
+<PostalStructuredAddress>
+<StreetName>RIEDEMANNWEG 58 HAUS 4</StreetName>
+<CityName>AMS</CityName>
+<CountryID>TR</CountryID>
+<CountryName>TURKEY</CountryName>
+<CountrySubDivisionName>BERLIN</CountrySubDivisionName>
+</PostalStructuredAddress>
+<DefinedTradeContact>
+<DirectTelephoneCommunication>
+<CompleteNumber>0306959170</CompleteNumber>
+</DirectTelephoneCommunication>
+</DefinedTradeContact>
+</ConsignorParty>
+<ConsigneeParty>
+<Name>PANALPINA WELTTRANSPORT DEUTSCHLAND</Name>
+<AccountID>102375</AccountID>
+<PostalStructuredAddress>
+<PostcodeCode></PostcodeCode>
+<StreetName>RIEDEMANNWEG 58 HAUS 4</StreetName>
+<CityName>AMS</CityName>
+<CountryID>TR</CountryID>
+<CountryName>TURKEY</CountryName>
+<CountrySubDivisionName>BERLIN</CountrySubDivisionName>
+</PostalStructuredAddress>
+<DefinedTradeContact>
+<DirectTelephoneCommunication>
+<CompleteNumber>0306959170</CompleteNumber>
+</DirectTelephoneCommunication>
+</DefinedTradeContact>
+</ConsigneeParty>
+<FreightForwarderParty>
+<Name>PANALPINA WELTTRANSPORT GMBH</Name>
+<AccountID>102375</AccountID>
+<CargoAgentID>2347053</CargoAgentID>
+<FreightForwarderAddress>
+<StreetName>RIEDEMANNWEG 58,AIRP.BUERO CENT.,H4</StreetName>
+<CityName>AMS</CityName>
+<CountryID>DE</CountryID>
+<CountryName>GERMANY</CountryName>
+</FreightForwarderAddress>
+<SpecifiedCargoAgentLocation>
+<ID>1011</ID>
+</SpecifiedCargoAgentLocation>
+</FreightForwarderParty>
+<OriginLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>PEK</ID>
+<Name>CAPITAL INTERNATIONAL AIRPORT</Name>
+</FinalDestinationLocation>
+<SpecifiedLogisticsTransportMovement>
+<StageCode>Main-Carriage</StageCode>
+<SequenceNumeric>1</SequenceNumeric>
+<UsedLogisticsTransportMeans>
+<Name>AF</Name>
+</UsedLogisticsTransportMeans>
+<ArrivalEvent>
+<OccurrenceArrivalLocation>
+<ID>PEK</ID>
+<Name>CAPITAL INTERNATIONAL AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+</OccurrenceArrivalLocation>
+</ArrivalEvent>
+<DepartureEvent>
+<OccurrenceDepartureLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+</OccurrenceDepartureLocation>
+</DepartureEvent>
+</SpecifiedLogisticsTransportMovement>
+<IncludedCustomsNote>
+<ContentCode>RA</ContentCode>
+<Content>FR RA 05009-11 0215</Content>
+<SubjectCode>ISS</SubjectCode>
+<CountryID>FR</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>ED</ContentCode>
+<Content>0521</Content>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>SM</ContentCode>
+<Content>AOM-EDD</Content>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>SD</ContentCode>
+<Content>25MAY210915</Content>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>T</ContentCode>
+<Content>EUROPEAN VAT NUMBERFR77769800202</Content>
+<SubjectCode>SHP</SubjectCode>
+<CountryID>FR</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>CP</ContentCode>
+<Content>LAUT PAULINE</Content>
+<SubjectCode>SHP</SubjectCode>
+<CountryID>FR</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>CT</ContentCode>
+<Content>33247323333</Content>
+<SubjectCode>SHP</SubjectCode>
+<CountryID>FR</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>T</ContentCode>
+<Content>USCI 91110105X000624120</Content>
+<SubjectCode>CNE</SubjectCode>
+<CountryID>CN</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>CP</ContentCode>
+<Content>FU LUCIA</Content>
+<SubjectCode>CNE</SubjectCode>
+<CountryID>CN</CountryID>
+</IncludedCustomsNote>
+<IncludedCustomsNote>
+<ContentCode>CT</ContentCode>
+<Content>00861057407237</Content>
+<SubjectCode>CNE</SubjectCode>
+<CountryID>CN</CountryID>
+</IncludedCustomsNote>
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+<ApplicableOriginCurrencyExchange>
+<SourceCurrencyCode>EUR</SourceCurrencyCode>
+</ApplicableOriginCurrencyExchange>
+<ApplicableLogisticsServiceCharge>
+<TransportPaymentMethodCode>PP</TransportPaymentMethodCode>
+</ApplicableLogisticsServiceCharge>
+<ApplicableLogisticsAllowanceCharge>
+<ID>CG</ID>
+<PrepaidIndicator>true</PrepaidIndicator>
+<PartyTypeCode>C</PartyTypeCode>
+<ActualAmount currencyID="EUR">3.5</ActualAmount>
+</ApplicableLogisticsAllowanceCharge>
+<ApplicableLogisticsAllowanceCharge>
+<ID>AW</ID>
+<PrepaidIndicator>true</PrepaidIndicator>
+<PartyTypeCode>A</PartyTypeCode>
+<ActualAmount>20</ActualAmount>
+</ApplicableLogisticsAllowanceCharge>
+<ApplicableLogisticsAllowanceCharge>
+<ID>MS</ID>
+<PrepaidIndicator>true</PrepaidIndicator>
+<PartyTypeCode>C</PartyTypeCode>
+<ActualAmount currencyID="EUR">14.46</ActualAmount>
+</ApplicableLogisticsAllowanceCharge>
+<ApplicableLogisticsAllowanceCharge>
+<ID>CH</ID>
+<PrepaidIndicator>true</PrepaidIndicator>
+<PartyTypeCode>C</PartyTypeCode>
+<ActualAmount>27</ActualAmount>
+</ApplicableLogisticsAllowanceCharge>
+<ApplicableLogisticsAllowanceCharge>
+<ID>SC</ID>
+<PrepaidIndicator>true</PrepaidIndicator>
+<PartyTypeCode>A</PartyTypeCode>
+<ActualAmount currencyID="EUR">14.46</ActualAmount>
+</ApplicableLogisticsAllowanceCharge>
+<ApplicableRating>
+<TypeCode>F</TypeCode>
+<TotalChargeAmount currencyID="EUR">889.6</TotalChargeAmount>
+<ConsignmentItemQuantity>1</ConsignmentItemQuantity>
+<IncludedMasterConsignmentItem>
+<SequenceNumeric>1</SequenceNumeric>
+<TypeCode listAgencyID="1">13021970</TypeCode>
+<GrossWeightMeasure unitCode="KGM">556</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">2.6</GrossVolumeMeasure>
+<PieceQuantity>3</PieceQuantity>
+<Information>NDA</Information>
+<NatureIdentificationTransportCargo>
+<Identification>CONSOLIDATION</Identification>
+</NatureIdentificationTransportCargo>
+<ApplicableFreightRateServiceCharge>
+<CategoryCode>Q</CategoryCode>
+<ChargeableWeightMeasure unitCode="KGM">556</ChargeableWeightMeasure>
+<AppliedRate>1.6</AppliedRate>
+<AppliedAmount currencyID="EUR">889.6</AppliedAmount>
+</ApplicableFreightRateServiceCharge>
+</IncludedMasterConsignmentItem>
+</ApplicableRating>
+<ApplicableTotalRating>
+<TypeCode>F</TypeCode>
+<ApplicablePrepaidCollectMonetarySummation>
+<PrepaidIndicator>true</PrepaidIndicator>
+<WeightChargeTotalAmount currencyID="EUR">889.6</WeightChargeTotalAmount>
+<AgentTotalDuePayableAmount currencyID="EUR">34.46</AgentTotalDuePayableAmount>
+<CarrierTotalDuePayableAmount currencyID="EUR">44.96</CarrierTotalDuePayableAmount>
+<GrandTotalAmount currencyID="EUR">969.02</GrandTotalAmount>
+</ApplicablePrepaidCollectMonetarySummation>
+</ApplicableTotalRating>
+</ns2:MasterConsignment>
+</ns2:Waybill>

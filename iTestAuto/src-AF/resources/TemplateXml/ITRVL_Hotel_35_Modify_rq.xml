@@ -1,0 +1,422 @@
+<ModifyBookingRequest>
+	<SuperPnrNumber>T22AAP</SuperPnrNumber>
+	<Version>1495446120054</Version>
+	<BookingCurrency>USD</BookingCurrency>
+	<SkipConsistenyCheckInd>true</SkipConsistenyCheckInd>
+	<PointOfSale>
+		<pnrPosId>58398</pnrPosId>
+		<ISOCurrency>USD</ISOCurrency>
+		<PseudoCityCode>A001</PseudoCityCode>
+		<RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+		<RequestTimeZone>GWT</RequestTimeZone>
+		<RequestorType>AGENCY</RequestorType>
+		<RequestorId>HBSi</RequestorId>
+		<RequestingUserID>A-6264</RequestingUserID>
+		<BookingChannelType>B2B</BookingChannelType>
+		<Market>Asia</Market>
+		<AgencyConsortium>Consortium</AgencyConsortium>
+		<OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+		<Role>BKGRole</Role>
+		<Brand>IBS</Brand>
+		<BookingContact>
+			<FirstName>Aleenddd</FirstName>
+			<LastName>matt</LastName>
+			<Email>yuy55ui1@ibstest.com</Email>
+			<PhoneNumber>9675346578</PhoneNumber>
+			<Language>ENG</Language>
+			<AddressLineOne>Nandanam</AddressLineOne>
+			<Street>Amritha Nagar</Street>
+			<City>Trivandrum</City>
+			<StateProv>TRV CENTRAL</StateProv>
+			<ZipCode>688673</ZipCode>
+		</BookingContact>
+		<CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+		<ProfileType>CUSTOMERPROFILE</ProfileType>
+	</PointOfSale>
+	<ProductRequests>
+		<ProductRequest Action="ADD" RefId="31458">
+			<Product RefId="31458">
+				<ProductType>HTL</ProductType>
+
+				<PassengerReferences>
+					<PassengerReference ID="185247973" />
+				</PassengerReferences>
+				<GroupCode>GROUP1233</GroupCode>
+				<IsOfflineProduct>true</IsOfflineProduct>
+				<ProviderConfirmationId>672Qp27XhM</ProviderConfirmationId>
+				<LeadPassengerRefId>185247973</LeadPassengerRefId>
+				<ProviderCode>HBSi</ProviderCode>
+				<PriceCurrency>USD</PriceCurrency>
+				<Hotel>
+					<HotelReservations>
+						<HotelReservation>
+							<UniqueID Type="16" ID="48681" ID_Context="HBSi" />
+							<RoomStays>
+
+
+
+
+
+								<RoomStay AvailabilityStatus="AvailableForSale">
+									<CancelPenalties>
+										<CancelPenalty PolicyCode="CXP">
+											<Deadline AbsoluteDeadline="2017-06-13T00:00:00" />
+
+											<AmountPercent Percent="2" />
+										</CancelPenalty>
+
+									</CancelPenalties>
+
+
+									<RoomTypes>
+										<RoomType NumberOfUnits="1" RoomTypeCode="STANDARD">
+											<RoomDescription Name="STANDARD">
+												<Text>STANDARD</Text>
+											</RoomDescription>
+										</RoomType>
+									</RoomTypes>
+									<RatePlans>
+										<RatePlan RatePlanCode="EMIR04">
+											<RatePlanDescription Name="EMIR04">
+												<Text>EMIR04</Text>
+											</RatePlanDescription>
+											<MealsIncluded MealPlanCodes="Breakfast" />
+										</RatePlan>
+									</RatePlans>
+									<RoomRates>
+										<RoomRate EffectiveDate="2017-06-26" ExpireDate="2017-06-27"
+											NumberOfUnits="1" RatePlanCode="EMIR04" RoomTypeCode="STANDARD">
+											<Rates>
+												<Rate EffectiveDate="2017-06-26" ExpireDate="2017-06-27"
+													RateTimeUnit="Day" UnitMultiplier="1">
+													<Base AmountAfterTax="4517.34" AmountBeforeTax="4517.34"
+														CurrencyCode="USD" />
+													<Total AmountAfterTax="4517.34" AmountBeforeTax="4517.34"
+														CurrencyCode="USD" />
+												</Rate>
+											</Rates>
+											<RoomRateDescription>
+												<Text>2017-06-26
+													Unit rate
+													Guest 0
+													Set rate (unit rate): Net:
+													33.25 Sell: 33.25
+
+													Guest 1
+													Set rate (unit rate): Net: 33.25
+													Sell: 33.25
+
+													Mealplan rate
+													Guest 0
+
+													Guest 1
+
+													Product rates
+												</Text>
+											</RoomRateDescription>
+										</RoomRate>
+									</RoomRates>
+									<GuestCounts>
+										<GuestCount AgeQualifyingCode="10" Count="1"
+											ResGuestRPH="185247973" />
+
+									</GuestCounts>
+									<TimeSpan Duration="P1N" End="2017-06-27" Start="2017-06-26" />
+									<Total AmountAfterTax="4517.34" AmountBeforeTax="4517.34"
+										CurrencyCode="USD" />
+									<BasicPropertyInfo HotelCityCode="LAS"
+										ChainCode="HRG" HotelCode="49358" HotelName="HRG1" ChainName="Hurtigruten">
+										<Address>
+											<AddressLine>3477 Las Vegas Blvd South</AddressLine>
+											<CityName>LAS</CityName>
+											<PostalCode>89111</PostalCode>
+											<StateProv StateCode="GA" />
+											<CountryName />
+										</Address>
+									</BasicPropertyInfo>
+									<Reference ID="49358" ID_Context="HBSi" Type="16" />
+									<Charges>
+
+										<Charge>
+											<Currency>USD</Currency>
+											<PaxId>185247973</PaxId>
+											<PaxType>A</PaxType>
+											<ChargeLevel>PerPax</ChargeLevel>
+											<ChargeType>HOTEL</ChargeType>
+											<IsCommissionable>true</IsCommissionable>
+											<BaseCost Amount="2258.67" Currency="USD"></BaseCost>
+											<BasePrice Amount="2258.67" Currency="USD"></BasePrice>
+											<GrossPrice Amount="2258.67" Currency="USD"></GrossPrice>
+											<NetPrice Amount="2258.67" Currency="USD"></NetPrice>
+											<AgencyCommission Amount="0.0" Currency="USD"></AgencyCommission>
+											<VendorCommission Amount="0.0" Currency="USD"></VendorCommission>
+											<MarkUp Amount="0.0" Currency="USD"></MarkUp>
+										</Charge>
+									</Charges>
+								</RoomStay>
+
+
+
+
+
+
+							</RoomStays>
+						</HotelReservation>
+					</HotelReservations>
+					<UniqueID Type="16" ID="48681" ID_Context="HBSi" />
+					<TotalPrice>
+						<Currency>USD</Currency>
+						<BaseCost Amount="4517.34" Currency="USD"></BaseCost>
+						<BasePrice Amount="4517.34" Currency="USD"></BasePrice>
+						<Discount Amount="0.0" Currency="USD"></Discount>
+						<GrossPrice Amount="4517.34" Currency="USD"></GrossPrice>
+						<NetPrice Amount="4517.34" Currency="USD"></NetPrice>
+						<AgencyCommission Amount="0.0" Currency="USD"></AgencyCommission>
+						<VendorCommission Amount="0.0" Currency="USD"></VendorCommission>
+						<MarkUp Amount="0.0" Currency="USD"></MarkUp>
+						<GrossProfit Amount="0.0" Currency="USD"></GrossProfit>
+						<NetProfit Amount="0.0" Currency="USD"></NetProfit>
+						<GrossProfitMargin>0.0</GrossProfitMargin>
+						<NetProfitMargin>0.0</NetProfitMargin>
+					</TotalPrice>
+				</Hotel>
+			</Product>
+		</ProductRequest>
+		<ProductRequest Action="ADD" RefId="31459">
+			<Product RefId="185247973">
+				<PassengerReferences>
+					<PassengerReference ID="185247973" />
+
+				</PassengerReferences>
+				<LeadPassengerRefId>185247973</LeadPassengerRefId>
+				<GroupCode>GROUP1233</GroupCode>
+				<ProductType>AIR</ProductType>
+				<Brand>Amadeus</Brand>
+				<IsOfflinePaymentCollected>false</IsOfflinePaymentCollected>
+				<ProviderCode>1A</ProviderCode>
+				<PriceCurrency>USD</PriceCurrency>
+				<IsOfflineProduct>true</IsOfflineProduct>
+				<ProductRemarks>
+					<ProductRemark>
+						<Type>CONFIDENTIAL</Type>
+						<Text>Product Level</Text>
+					</ProductRemark>
+				</ProductRemarks>
+				<Air>
+					<Query>
+						<OrderItems>
+							<OfferItem refs="185247973">
+								<OfferItemID Owner="1A">ID1</OfferItemID>
+								<OfferItemType>
+									<DetailedFlightItem>
+										<Charges>
+											<Charge>
+												<Currency>USD</Currency>
+												<PaxType>ADULT</PaxType>
+												<ChargeLevel>PerPax</ChargeLevel>
+												<ChargeType>TAX</ChargeType>
+												<isCommissionable>true</isCommissionable>
+												<BaseCost Amount="121.77" Currency="USD" />
+												<BasePrice Amount="121.77" Currency="USD" />
+												<GrossPrice Amount="121.77" Currency="USD" />
+												<NetPrice Amount="121.77" Currency="USD" />
+												<AgencyCommission Amount="0.0" Currency="USD" />
+												<VendorCommission Amount="0.0" Currency="USD" />
+												<MarkUp Amount="0.0" Currency="USD" />
+											</Charge>
+											<Charge>
+												<Currency>USD</Currency>
+												<ChargeLevel>Once</ChargeLevel>
+												<ChargeType>TAX</ChargeType>
+												<isCommissionable>true</isCommissionable>
+												<BaseCost Amount="121.77" Currency="USD" />
+												<BasePrice Amount="121.77" Currency="USD" />
+												<GrossPrice Amount="121.77" Currency="USD" />
+												<NetPrice Amount="121.77" Currency="USD" />
+												<AgencyCommission Amount="0.0" Currency="USD" />
+												<VendorCommission Amount="0.0" Currency="USD" />
+												<MarkUp Amount="0.0" Currency="USD" />
+											</Charge>
+										</Charges>
+										<Price>
+
+											<BaseAmount Code="INR">3502.64</BaseAmount>
+											<Surcharges>
+												<Surcharge>
+													<Total Code="INR">86.41</Total>
+													<Breakdown>
+														<Fee>
+															<Amount Code="INR">38.85</Amount>
+														</Fee>
+														<Fee>
+															<Amount Code="INR">47.56</Amount>
+														</Fee>
+													</Breakdown>
+												</Surcharge>
+											</Surcharges>
+											<Taxes>
+												<Total Code="INR">83.28</Total>
+												<Breakdown>
+													<Tax refs="pax1">
+														<Amount Code="INR">64.09</Amount>
+														<TaxCode>UO</TaxCode>
+														<Description>UO</Description>
+													</Tax>
+													<Tax refs="pax1">
+														<Amount Code="INR">3.75</Amount>
+														<TaxCode>WG</TaxCode>
+														<Description>INTERNATIONAL SAFETY AND SECURITY CHARGE
+														</Description>
+													</Tax>
+													<Tax refs="pax1">
+														<Amount Code="INR">15.44</Amount>
+														<TaxCode>QR</TaxCode>
+														<Description>QR</Description>
+													</Tax>
+												</Breakdown>
+											</Taxes>
+										</Price>
+										<OriginDestination>
+											<OriginDestinationKey>OD1</OriginDestinationKey>
+											<TotalJourney>
+												<Time>01.35</Time>
+												<Distance>
+													<Value>0456</Value>
+												</Distance>
+											</TotalJourney>
+											<Flight>
+												<SegmentKey>SEG1</SegmentKey>
+												<Indicators PricingInd="true" />
+												<Departure>
+													<AirportCode>LHR</AirportCode>
+													<Date>2017-05-22</Date>
+													<Time>20:45</Time>
+													<Terminal>
+														<Gate>4</Gate>
+													</Terminal>
+												</Departure>
+												<Arrival>
+													<AirportCode>AUH</AirportCode>
+													<Date>2017-05-23</Date>
+													<Time>07:05</Time>
+													<Terminal>
+														<Gate>3</Gate>
+													</Terminal>
+												</Arrival>
+												<MarketingCarrier>
+													<AirlineID>EY</AirlineID>
+													<FlightNumber>18</FlightNumber>
+													<ResBookDesigCode>U</ResBookDesigCode>
+												</MarketingCarrier>
+												<OperatingCarrier>
+													<AirlineID>EY</AirlineID>
+													<FlightNumber>18</FlightNumber>
+												</OperatingCarrier>
+												<Equipment>
+													<AircraftCode>388</AircraftCode>
+												</Equipment>
+
+												<ClassOfService>
+													<Code>M</Code>
+													<MarketingName CabinDesignator="M" />
+												</ClassOfService>
+											</Flight>
+										</OriginDestination>
+										<FareDetail>
+											<FareComponent>
+
+												<SegmentReference>SEG1</SegmentReference>
+												<PriceBreakdown>
+													<Price>
+														<BaseAmount Code="INR">1738</BaseAmount>
+														<Surcharges>
+															<Surcharge>
+																<Total Code="INR">86.41</Total>
+																<Breakdown>
+																	<Fee>
+																		<Amount Code="INR">38.85</Amount>
+																	</Fee>
+																	<Fee>
+																		<Amount Code="INR">47.56</Amount>
+																	</Fee>
+																</Breakdown>
+															</Surcharge>
+														</Surcharges>
+													</Price>
+												</PriceBreakdown>
+												<FareBasis>
+													<FareBasisCode>
+														<Code>MSAVER/WH</Code>
+														<Application>Requested</Application>
+													</FareBasisCode>
+												</FareBasis>
+											</FareComponent>
+
+											<TourCode>749</TourCode>
+										</FareDetail>
+									</DetailedFlightItem>
+								</OfferItemType>
+								<TimeLimits>
+									<TimeLimit>
+										<TicketByTimeLimit>
+											<TicketBy>2017-11-01T12:52:21</TicketBy>
+										</TicketByTimeLimit>
+									</TimeLimit>
+								</TimeLimits>
+							</OfferItem>
+
+						</OrderItems>
+						<DataLists>
+							<OriginDestinationList>
+								<OriginDestination OriginDestinationKey="OD1">
+									<DepartureCode>TRV</DepartureCode>
+									<ArrivalCode>DXB</ArrivalCode>
+									<FlightReferences>AMADEUS11OD1FL1</FlightReferences>
+								</OriginDestination>
+
+							</OriginDestinationList>
+							<FlightList>
+								<Flight FlightKey="AMADEUS11OD1FL1">
+									<SegmentReferences>SEG1</SegmentReferences>
+								</Flight>
+							</FlightList>
+						</DataLists>
+					</Query>
+					<TotalPrice>
+						<Currency>USD</Currency>
+						<BaseCost Amount="243.54" Currency="USD" />
+						<BasePrice Amount="243.54" Currency="USD" />
+						<Discount Amount="0.0" Currency="USD" />
+						<GrossPrice Amount="243.54" Currency="USD" />
+						<NetPrice Amount="243.54" Currency="USD" />
+						<AgencyCommission Amount="0.0" Currency="USD" />
+						<VendorCommission Amount="0.0" Currency="USD" />
+						<MarkUp Amount="0.0" Currency="USD" />
+						<GrossProfit Amount="0.0" Currency="USD" />
+						<NetProfit Amount="0.0" Currency="USD" />
+						<GrossProfitMargin Amount="0.0" Currency="USD" />
+						<NetProfitMargin Amount="0.0" Currency="USD" />
+					</TotalPrice>
+				</Air>
+			</Product>
+
+
+		</ProductRequest>
+	</ProductRequests>
+
+	<PaymentRequests>
+		<PaymentRequest Action="ADD">
+			<Payment>
+				<FopCode>FOP001</FopCode>
+				<FopCode>FOP001</FopCode>
+				<FopType>CA</FopType>
+				<Cash>
+					<referenceNumber>1234</referenceNumber>
+				</Cash>
+				<PaymentAmount Currency="USD" Amount="10000000.0" />
+				<PaymentId>0</PaymentId>
+			</Payment>
+		</PaymentRequest>
+
+	</PaymentRequests>
+</ModifyBookingRequest>

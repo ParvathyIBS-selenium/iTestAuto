@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoFreightBookedList
+  xmlns:ram="iata:datamodel:3"
+  xmlns:rsm="iata:freightbookedlist:1"
+  xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd">
+	<rsm:FreightBookedList>
+		<rsm:MessageHeaderDocument>
+			<ram:ID>AF055-28MAR2021_n80ZUpB7dS2Bt4DO7lB</ram:ID>
+			<ram:Name>Transport Loading Instructions</ram:Name>
+			<ram:TypeCode>121</ram:TypeCode>
+			<ram:IssueDateTime>2021-03-26T16:07:00.000Z</ram:IssueDateTime>
+			<ram:PurposeCode>Creation</ram:PurposeCode>
+			<ram:VersionID>2.00</ram:VersionID>
+			<ram:SenderParty>
+				<ram:PrimaryID schemeID="C">QVIFMAF</ram:PrimaryID>
+			</ram:SenderParty>
+			<ram:SenderParty>
+				<ram:PrimaryID schemeID="T">QVIFMAF</ram:PrimaryID>
+			</ram:SenderParty>
+			<ram:RecipientParty>
+				<ram:PrimaryID schemeID="P">QVIBDAF</ram:PrimaryID>
+			</ram:RecipientParty>
+			<ram:RecipientParty>
+				<ram:PrimaryID schemeID="T">QVIBGAF</ram:PrimaryID>
+			</ram:RecipientParty>
+		</rsm:MessageHeaderDocument>
+		<rsm:BusinessHeaderDocument>
+			<ram:ID>AF05520210328IAD</ram:ID>
+		</rsm:BusinessHeaderDocument>
+		<rsm:LogisticsTransportMovement>
+			<ram:StageCode>Main-Carriage</ram:StageCode>
+			<ram:ModeCode>0</ram:ModeCode>
+			<ram:Mode/>
+			<ram:ID>AF055</ram:ID>
+			<ram:SequenceNumeric>1</ram:SequenceNumeric>
+			<ram:DepartureEvent>
+				<ram:DepartureOccurrenceDateTime>2021-03-28T00:00:00.000</ram:DepartureOccurrenceDateTime>
+				<ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+				<ram:OccurrenceDepartureLocation>
+					<ram:ID>IAD</ram:ID>
+					<ram:TypeCode>Airport</ram:TypeCode>
+				</ram:OccurrenceDepartureLocation>
+			</ram:DepartureEvent>
+		</rsm:LogisticsTransportMovement>
+		<rsm:ArrivalEvent>
+			<ram:OccurrenceArrivalLocation>
+				<ram:ID>CDG</ram:ID>
+				<ram:TypeCode>Airport</ram:TypeCode>
+			</ram:OccurrenceArrivalLocation>
+			<ram:AssociatedTransportCargo>
+				<ram:TypeCode/>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">19</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">0.08</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>PHARMACEUTICAL</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-91082386</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>ABV</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>ICE</ram:Description>
+						<ram:DescriptionCode>ICE</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>COL</ram:Description>
+						<ram:DescriptionCode>COL</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-MEC PRDCODE AFKL-S51 SKT-MEC</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    148   31MAR21 CDG  ABV  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">19</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">35</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">53</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">43</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">141</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">0.41</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>6</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>PHARMACEUTICAL</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-91082412</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>ACC</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>RDS</ram:Description>
+						<ram:DescriptionCode>RDS</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>COL</ram:Description>
+						<ram:DescriptionCode>COL</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-MEC PRDCODE AFKL-S51 SKT-MEC</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    584   30MAR21 CDG  ACC  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>5</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">140</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">35</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">38</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">58</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">1</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">22</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">30</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">20</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">476</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">3.57</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>4</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95496472</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>BCN</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    650M  30MAR21 CDG  BCN  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>4</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">476</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">80</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">120</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">93</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">2090.3</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">30</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>17</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>CONSOLIDATION A</ram:SummaryDescription>
+					<ram:TransportSplitDescription>P</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-41171082</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>FRA</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD03PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    300M  29MAR21 CDG  FRA  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">127</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">119</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">81</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">121</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">127</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">119</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">81</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">144</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">127</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">121</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">101</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">91</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">127</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">121</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">81</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">144</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>3</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">381</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">81</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">121</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">132</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">127</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">101</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">121</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">144</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>9</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">1143</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">101</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">121</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">154</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">69.7</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>0</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>CONSOLIDATION A</ram:SummaryDescription>
+					<ram:TransportSplitDescription>P</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-41171082</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>FRA</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    300M  29MAR21 CDG  FRA  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">11</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">0.03</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95496413</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>DUR</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    5300  29MAR21 CDG  JNB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">11</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">45</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">45</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">15</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">549</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">8.24</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>6</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95495761</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>JNB</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>HEA</ram:Description>
+						<ram:DescriptionCode>HEA</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    5300  31MAR21 CDG  JNB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>4</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">380</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">100</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">100</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">147</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">168</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">100</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">160</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">147</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">1</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">30</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">36</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">8</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">521</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">1.48</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95496295</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>JNB</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>HEA</ram:Description>
+						<ram:DescriptionCode>HEA</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    5300  31MAR21 CDG  JNB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">521</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">101</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">121</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">119</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">750</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">10.38</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>6</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95496402</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>JNB</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    5300  31MAR21 CDG  JNB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>6</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">750</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">101</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">121</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">139</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">1899</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">15.78</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>9</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>VARIOUS GOODS</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-96084133</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>ROB</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>XPH</ram:Description>
+						<ram:DescriptionCode>XPH</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>HEA</ram:Description>
+						<ram:DescriptionCode>HEA</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-XAG PRDCODE AFKL-M25 SKT-XAG</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    520   30MAR21 CDG  ROB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>9</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">1899</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">104</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">147</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">114</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">140</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">1.02</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>4</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>PHARMACEUTICAL</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-96084144</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>ROB</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>COL</ram:Description>
+						<ram:DescriptionCode>COL</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>PIL</ram:Description>
+						<ram:DescriptionCode>PIL</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-MEC PRDCODE AFKL-S51 SKT-MEC</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:HandlingInstructions>
+						<ram:Description>FLT AF    520   30MAR21 CDG  ROB  AF </ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>4</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">140</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">63</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">63</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">63</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+				<ram:IncludedMasterConsignment>
+					<ram:GrossWeightMeasure unitCode="KGM">93</ram:GrossWeightMeasure>
+					<ram:GrossVolumeMeasure unitCode="MTQ">0.98</ram:GrossVolumeMeasure>
+					<ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+					<ram:SummaryDescription>GENERAL CARGO</ram:SummaryDescription>
+					<ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+					<ram:TransportContractDocument>
+						<ram:ID>057-95496332</ram:ID>
+					</ram:TransportContractDocument>
+					<ram:OriginLocation>
+						<ram:ID>IAD</ram:ID>
+					</ram:OriginLocation>
+					<ram:FinalDestinationLocation>
+						<ram:ID>CDG</ram:ID>
+					</ram:FinalDestinationLocation>
+					<ram:HandlingInstructions>
+						<ram:Description>00PMD00PLD00CNR-PRD-DIM PRDCODE AFKL-R21 SKT-DIM</ram:Description>
+						<ram:DescriptionCode>OSI</ram:DescriptionCode>
+					</ram:HandlingInstructions>
+					<ram:TransportLogisticsPackage>
+						<ram:ItemQuantity>1</ram:ItemQuantity>
+						<ram:GrossWeightMeasure unitCode="KGM">93</ram:GrossWeightMeasure>
+						<ram:LinearSpatialDimension>
+							<ram:WidthMeasure unitCode="CMT">100</ram:WidthMeasure>
+							<ram:LengthMeasure unitCode="CMT">120</ram:LengthMeasure>
+							<ram:HeightMeasure unitCode="CMT">82</ram:HeightMeasure>
+						</ram:LinearSpatialDimension>
+					</ram:TransportLogisticsPackage>
+				</ram:IncludedMasterConsignment>
+			</ram:AssociatedTransportCargo>
+		</rsm:ArrivalEvent>
+	</rsm:FreightBookedList>
+	<originalMessage>
+		<type>CIMP</type>
+	</originalMessage>
+	<state>AIRLINE</state>
+</ef:CargoFreightBookedList>

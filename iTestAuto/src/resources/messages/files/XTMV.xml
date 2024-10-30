@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:TransportMovement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:transportmovement:1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:transportmovement:1 TransportMovement_1.xsd">
+    <rsm:MessageHeaderDocument>
+        <ram:ID>1b9e4a5c-b0ae-4e4b-b0c2-6b5ddca004d3</ram:ID>
+        <ram:Name>Transport equipment movement report</ram:Name>
+        <ram:TypeCode>265</ram:TypeCode>
+        <ram:IssueDateTime>2024-09-20T11:22:39.000</ram:IssueDateTime>
+        <ram:PurposeCode>Creation</ram:PurposeCode>
+        <ram:VersionID>2.00</ram:VersionID>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:SenderParty>
+            <ram:PrimaryID schemeID="T">QVIBDAF</ram:PrimaryID>
+        </ram:SenderParty>
+        <ram:RecipientParty>
+            <ram:PrimaryID schemeID="C">TYOXBKZ</ram:PrimaryID>
+        </ram:RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:TransportMovementHeader>
+        <ram:FlightManifestID>AF803021090000CDG</ram:FlightManifestID>
+        <ram:SpecifiedTransportMovement>
+            <ram:SequenceNumeric>1</ram:SequenceNumeric>
+            <ram:StageCode>Main carriage</ram:StageCode>
+            <ram:ModeCode listID="Recommendation 19" listAgencyID="6" listVersionID="2">4</ram:ModeCode>
+            <ram:Mode>Air transport</ram:Mode>
+            <ram:ID>AF8030</ram:ID>
+            <ram:UsedLogisticsTransportMeans>
+                <ram:Name></ram:Name>
+                <ram:OperatorParty>
+                    <ram:ID>AF</ram:ID>
+                </ram:OperatorParty>
+            </ram:UsedLogisticsTransportMeans>
+            <ram:FirstRegistrationID>FHPNG</ram:FirstRegistrationID>
+            <ram:SupplementalTypeCode></ram:SupplementalTypeCode>
+            <ram:DepartureEvent>
+                <ram:OccurrenceDepartureLocation>
+                    <ram:TypeCode>airport</ram:TypeCode>
+                    <ram:ID>AMS</ram:ID>
+                    <ram:Name></ram:Name>
+                </ram:OccurrenceDepartureLocation>
+                <ram:DepartureOccurrenceDateTime>2024-09-20T10:35:00.000</ram:DepartureOccurrenceDateTime>
+                <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+            </ram:DepartureEvent>
+            <ram:CargoLoadIndicator>true</ram:CargoLoadIndicator>
+            <ram:SealConformanceIndicator>false</ram:SealConformanceIndicator>
+            <ram:SealCheckIndicator>false</ram:SealCheckIndicator>
+            <ram:SealExemptionIndicator>false</ram:SealExemptionIndicator>
+            <ram:SealIssuerName></ram:SealIssuerName>
+            <ram:ItineraryRoute>
+                <ram:StartLocation>
+                    <ram:TypeCode>airport</ram:TypeCode>
+                    <ram:ID>AMS</ram:ID>
+                    <ram:Name></ram:Name>
+                </ram:StartLocation>
+                <ram:EndLocation>
+                    <ram:TypeCode>airport</ram:TypeCode>
+                    <ram:ID>CDG</ram:ID>
+                    <ram:Name></ram:Name>
+                </ram:EndLocation>
+            </ram:ItineraryRoute>
+        </ram:SpecifiedTransportMovement>
+    </rsm:TransportMovementHeader>
+    <rsm:TransportMovementEvent>
+        <ram:MovementTypeCode>AD</ram:MovementTypeCode>
+        <ram:OccurrenceMovementLocation>
+            <ram:TypeCode>airport</ram:TypeCode>
+            <ram:ID>AMS</ram:ID>
+            <ram:Name></ram:Name>
+        </ram:OccurrenceMovementLocation>
+        <ram:MovementOccurrenceDateTime>2024-09-20T16:00:00.000</ram:MovementOccurrenceDateTime>
+    </rsm:TransportMovementEvent>
+    <rsm:TransportMovementEvent>
+        <ram:MovementTypeCode>AA</ram:MovementTypeCode>
+        <ram:OccurrenceMovementLocation>
+            <ram:TypeCode>airport</ram:TypeCode>
+            <ram:ID>CDG</ram:ID>
+            <ram:Name></ram:Name>
+        </ram:OccurrenceMovementLocation>
+        <ram:MovementOccurrenceDateTime>2024-09-20T23:00:00.000</ram:MovementOccurrenceDateTime>
+    </rsm:TransportMovementEvent>
+</rsm:TransportMovement>

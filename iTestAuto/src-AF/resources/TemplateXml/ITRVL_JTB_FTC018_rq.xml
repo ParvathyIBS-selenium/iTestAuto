@@ -1,0 +1,155 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security
+			xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken>
+				<wsse:Username>ALL@IVV</wsse:Username>
+				<wsse:Password
+					Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"></wsse:Password>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<iCommHeader>
+			<ConsumerCode>HRG</ConsumerCode>
+			<ProviderCode>1A</ProviderCode>
+		</iCommHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+
+		<AirShoppingRQ xmlns="http://www.iata.org/IATA/EDIST"
+			xmlns:xs="http://www.w3.org/2001/XMLSchema-instance">
+			<PointOfSale>
+				<Location>
+					<CountryCode />
+					<CityCode />
+				</Location>
+				<AugmentationPoint>
+					<AugPoint Key="ISOCurrency">
+						<xs:Value>AUD</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestorType">
+						<xs:Value>AGENCY</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestorID">
+						<xs:Value>AgnAir</xs:Value>
+					</AugPoint>
+					<AugPoint Key="RequestingUserID">
+						<xs:Value>AgnAirAgent</xs:Value>
+					</AugPoint>
+					<AugPoint Key="BookingChannelType">
+						<xs:Value>B2B</xs:Value>
+					</AugPoint>
+					<AugPoint Key="Market">
+						<xs:Value>MK1</xs:Value>
+					</AugPoint>
+					<AugPoint Key="AgencyConsortium">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="OrganizationalUnitCode">
+						<xs:Value>TST8</xs:Value>
+					</AugPoint>
+					<AugPoint Key="Role">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="ProfileID">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_FirstName">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_LastName">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Email">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_PhoneNumber">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Language">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Address">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_Street">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_StateProv">
+						<xs:Value />
+					</AugPoint>
+					<AugPoint Key="Primary_ZipCode">
+						<xs:Value />
+					</AugPoint>
+					<Lists>
+						<List ListKey="" ListName="Brand">
+							<AugPointAssoc KeyRef="OrganizationalUnitCode" />
+						</List>
+					</Lists>
+				</AugmentationPoint>
+				<RequestTime Zone="UTC+5.5" />
+			</PointOfSale>
+			<Parameters>
+				<CurrCodes>
+					<CurrCode>AUD</CurrCode>
+				</CurrCodes>
+			</Parameters>
+			<Travelers>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="2">ADT</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+			</Travelers>
+			<CoreQuery>
+				<OriginDestinations>
+					<OriginDestination OriginDestinationKey="OD1">
+						<Departure>
+							<AirportCode>NRT</AirportCode>
+							<Date>2017-09-16</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>DXB</AirportCode>
+						</Arrival>
+					</OriginDestination>
+					<OriginDestination OriginDestinationKey="OD2">
+						<Departure>
+							<AirportCode>DXB</AirportCode>
+							<Date>2017-09-19</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>NRT</AirportCode>
+						</Arrival>
+					</OriginDestination>
+				</OriginDestinations>
+			</CoreQuery>
+			<Preferences>
+				<!--<Preference> <CabinPreferences> <CabinType refs="OD1"> <Code>M</Code> 
+					</CabinType> </CabinPreferences> </Preference> <Preference> <CabinPreferences> 
+					<CabinType refs="OD2"> <Code>M</Code> </CabinType> </CabinPreferences> </Preference> 
+					<Preference> <TransferPreferences> <Connection refs="OD1"> <MaxNumber>1</MaxNumber> 
+					<Code PreferencesLevel="Required">HKG</Code> </Connection> </TransferPreferences> 
+					</Preference> <Preference> <TransferPreferences> <Connection refs="OD2"> 
+					<MaxNumber>1</MaxNumber> <Code PreferencesLevel="Required">HKG</Code> </Connection> 
+					</TransferPreferences> </Preference> -->
+				<Preference>
+					<AirlinePreferences>
+						<Airline PreferencesLevel="Required">
+							<AirlineID>TG</AirlineID>
+						</Airline>
+					</AirlinePreferences>
+				</Preference>
+				<!--<Preference> <AlliancePreferences> <Alliance PreferencesLevel="Required"> 
+					<Code>*A</Code> </Alliance> </AlliancePreferences> </Preference> -->
+				<!--<Preference> Use this in case of no preference <FlightPreferences> 
+					<Characteristic> <NonStopPreferences>Preferred</NonStopPreferences> </Characteristic> 
+					</FlightPreferences> </Preference> -->
+				<!--<Preference> <FarePreferences> <Types> <Type>70J</Type> </Types> 
+					</FarePreferences> </Preference> -->
+			</Preferences>
+			<!--<Metadata> <Shopping> <ShopMetadataGroup> <Fare> <FareDetail> <FareComponent 
+				refs="OD1"> <FareBasis> <RBD>V</RBD> </FareBasis> </FareComponent> <FareComponent 
+				refs="OD2"> <FareBasis> <RBD>V</RBD> </FareBasis> </FareComponent> </FareDetail> 
+				</Fare> </ShopMetadataGroup> </Shopping> </Metadata> -->
+		</AirShoppingRQ>
+	</soapenv:Body>
+</soapenv:Envelope>

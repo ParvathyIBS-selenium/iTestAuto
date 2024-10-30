@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?><soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+	<soapenv:Header>
+		<wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+			<wsse:UsernameToken>
+				<wsse:Username>ALL@IVV</wsse:Username>
+				<wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText"/>
+			</wsse:UsernameToken>
+		</wsse:Security>
+		<iCommHeader>
+			<ProviderCode>1A</ProviderCode>
+		</iCommHeader>
+	</soapenv:Header>
+	<soapenv:Body>
+		<AirShoppingRQ xmlns="http://www.iata.org/IATA/EDIST" Version="1.1.4">
+			<PointOfSale>
+				<Location>
+					<CountryCode>US</CountryCode>
+					<CityCode>WAS</CityCode>
+				</Location>
+				<RequestTime Zone="EST">2017-02-01T07:38:00</RequestTime>
+				<TouchPoint>
+					<Device>
+						<Code>2</Code>
+						<Definition>Web Browser</Definition>
+						<Position>
+							<Latitude>38.89756</Latitude>
+							<Longitude>-77.03650</Longitude>
+							<NAC>8KD7V PGGM0</NAC>
+						</Position>
+					</Device>
+					<Event>
+						<Code>9</Code>
+						<Definition>Shop</Definition>
+					</Event>
+				</TouchPoint>
+			</PointOfSale>
+			<Document>
+				<Name>LH NDC GATEWAY</Name>
+				<ReferenceVersion>1.0</ReferenceVersion>
+			</Document>
+			<Party>
+				<Sender>
+					<AggregatorSender>
+						<Name>iTravel</Name>
+						<Category>
+							<Code>M</Code>
+							<Definition>NDC aggregator</Definition>
+						</Category>
+						<AggregatorID>1P</AggregatorID>
+					</AggregatorSender>
+				</Sender>
+				<Participants>
+					<Participant>
+						<TravelAgencyParticipant SequenceNumber="1">
+							<Name>USD Travel</Name>
+							<Type>TravelAgency</Type>
+							<Contacts>
+								<Contact>
+									<EmailContact>
+										<Address>ndc@usdtravel.com</Address>
+									</EmailContact>
+								</Contact>
+							</Contacts>
+							<PseudoCity>1F8</PseudoCity>
+							<IATA_Number>2212345</IATA_Number>
+							<AgencyID Owner="LH">1001</AgencyID>
+							<AgentUser>
+								<Name>John Smith</Name>
+								<AgentUserID>1980</AgentUserID>
+								<UserRole>Admin</UserRole>
+							</AgentUser>
+						</TravelAgencyParticipant>
+					</Participant>
+				</Participants>
+			</Party>
+			<Parameters>
+				<Pricing>
+					<OverrideCurrency>NOK</OverrideCurrency>
+				</Pricing>
+			</Parameters>
+			<Travelers>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="2">ADT</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="2">CHD</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+				<Traveler>
+					<AnonymousTraveler>
+						<PTC Quantity="1">INF</PTC>
+					</AnonymousTraveler>
+				</Traveler>
+			</Travelers>
+			<CoreQuery>
+				<OriginDestinations>
+					<OriginDestination OriginDestinationKey="OD1">
+						<Departure>
+							<AirportCode>SSS</AirportCode>
+							<Date>2017-05-08</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>LHR</AirportCode>
+						</Arrival>
+					</OriginDestination>					
+				</OriginDestinations>
+			</CoreQuery>
+			<Preferences>
+			  <Preference>	 
+		<AirlinePreferences>
+                    <Airline PreferencesContext=" " PreferencesLevel="">
+                         <AirlineID refs=" VA"/>
+                    </Airline>
+               </AirlinePreferences>
+     </Preference>
+			</Preferences>
+		</AirShoppingRQ>
+
+	</soapenv:Body>
+</soapenv:Envelope>

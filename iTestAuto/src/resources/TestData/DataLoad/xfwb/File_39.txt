@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-45128414_KmT6x1wQL0dhTHl0WmH</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-11T07:18:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>110718</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">TDVAGT01DSGLBCR</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">TDVAGT01DSGLBCR</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">FFW/CWIDGEOC05PRO/CDG</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-45128414</ram:ID>
+            <ram:SenderAssignedID>C10018739</ram:SenderAssignedID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryConsignorAuthentication>
+                <ram:Signatory>KATIA LAMOUR</ram:Signatory>
+            </ram:SignatoryConsignorAuthentication>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-11T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>WALBAUM SA</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>REIMS</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-COL</ram:ID>
+            <ram:AdditionalID>AFKL-S23|SKT-COL</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">18</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>S23</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>SCHREIBER FRANCE SAS</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>55110</ram:PostcodeCode>
+                    <ram:StreetName>2 GRANDE RUE</ram:StreetName>
+                    <ram:CityName>CLERY LE PETIT</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>33329748200</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>SCHREIBER FOODS INC</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>54301</ram:PostcodeCode>
+                    <ram:StreetName>400 N WASHINGTON ST</ram:StreetName>
+                    <ram:CityName>GREEN BAY</ram:CityName>
+                    <ram:CountryID>US</ram:CountryID>
+                    <ram:CountrySubDivisionID>WI</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>19203284899</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>WALBAUM SA</ram:Name>
+                <ram:AccountID>5116</ram:AccountID>
+                <ram:CargoAgentID>2047074</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>REIMS</ram:StreetName>
+                    <ram:CityName>REIMS</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>5116</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>ORD</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF136</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>ORD</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>NSC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>KEEP BETWEEN  2  8 C  AF2 AIRFAST DOOR TO AIRPORT</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>SC</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>WALBAUM SA HAS REVIEWED ALL</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>AVAILABLE DOCUMENTATION AND HAS</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>DETERMINED THAT NONE OF THE CARGO</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>BEING OFFERED IN THIS CONSIGNMENT</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>OR CONSOLIDATION HAS EITHER</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>ORIGINATED IN TRANSFERRED FROM OR</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>TRANSITED THROUGH ANY POINT IN</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>AFGHANISTAN EGYPT SOMALIA SYRIAN</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>ST</ram:ContentCode>
+                <ram:Content>ARAB REPUBLIC YEMEN.</ram:Content>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>33329748200</ram:Content>
+                <ram:SubjectCode>SHP</ram:SubjectCode>
+                <ram:CountryID>FR</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:IncludedCustomsNote>
+                <ram:ContentCode>CT</ram:ContentCode>
+                <ram:Content>19203284899</ram:Content>
+                <ram:SubjectCode>CNE</ram:SubjectCode>
+                <ram:CountryID>US</ram:CountryID>
+            </ram:IncludedCustomsNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>SC</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">37.35</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>AW</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">30.8</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">273.43</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">18</ram:GrossWeightMeasure>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CHEESE SAMPLES   FDA 3014031059 SCHREIBER CLERY PERISHABLE</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:TransportLogisticsPackage>
+                        <ram:ItemQuantity>1</ram:ItemQuantity>
+                        <ram:LinearSpatialDimension>
+                            <ram:WidthMeasure unitCode="CMT">39</ram:WidthMeasure>
+                            <ram:LengthMeasure unitCode="CMT">60</ram:LengthMeasure>
+                            <ram:HeightMeasure unitCode="CMT">47</ram:HeightMeasure>
+                        </ram:LinearSpatialDimension>
+                    </ram:TransportLogisticsPackage>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>N</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">18.5</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>14.78</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">273.43</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">273.43</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">68.15</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">341.58</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>136</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>US</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

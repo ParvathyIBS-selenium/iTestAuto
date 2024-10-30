@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-46044865_GAq5fxec98HvXHaGZmV</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>740</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-12T05:38:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">HDQZBFX</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="T">HDQZBFX</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="O">HDQFMFX</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">QVIFMAF</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="T">QVIFMAF</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-46044865</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>D</ram:ContentCode>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-12T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>ADEL JEMMI</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>CDG</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-XPS</ram:ID>
+            <ram:AdditionalID>AFKL-M21|SKT-XPS</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">7</ram:IncludedTareGrossWeightMeasure>
+            <ram:TotalPieceQuantity>1</ram:TotalPieceQuantity>
+            <ram:ProductID>M21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>FEDEX EXPRESS FR   TNT HUB GB2</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>95704</ram:PostcodeCode>
+                    <ram:StreetName>24 RUE DU TRAIT DUNION</ram:StreetName>
+                    <ram:CityName>ROISSY CDG CEDEX</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>33148147922</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>GLOBEX SENEGAL SA</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:StreetName>LOT 15 ROUTE DE NGOR</ram:StreetName>
+                    <ram:CityName>DAKAR</ram:CityName>
+                    <ram:CountryID>SN</ram:CountryID>
+                </ram:PostalStructuredAddress>
+            </ram:ConsigneeParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>DSS</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>DSS</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>NOA  PLEASE NOTIFY CONSIGNEE UPON ARRIVAL</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>VISA ROUTE XXX-12 Non soumis a EAD1 SLAC CONS 012345678912</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>SHIPMENT DOES NOT CONTAIN DANGEROUS GOODS</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:HandlingOSIInstructions>
+                <ram:Description>  NON EUROPEAN MATERIAL</ram:Description>
+            </ram:HandlingOSIInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>EQUATION AGENT HABILITE N  AGREEME</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>T1</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">100</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">7</ram:GrossWeightMeasure>
+                    <ram:PackageQuantity>1</ram:PackageQuantity>
+                    <ram:PieceQuantity>1</ram:PieceQuantity>
+                    <ram:Information>NDA</ram:Information>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>COURIER MATERIALS</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>M</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">7</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>100.00</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">100.00</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">100</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">0</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">100</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>SN</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

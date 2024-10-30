@@ -1,0 +1,70 @@
+<BLSearchRQ>
+<ProviderCode>HBSi</ProviderCode>
+      <PointOfSale>
+         <AgencyConsortium>Consortium</AgencyConsortium>
+         <BookingChannelType>B2B</BookingChannelType>
+         <customerProfileInd>false</customerProfileInd>
+         <BookingContact>
+         <AddressLineOne>H</AddressLineOne>
+         <CitizenCountryCodes>
+            <CountryCode>
+               <element>IN</element>
+               <element>USA</element>
+            </CountryCode>
+         </CitizenCountryCodes>
+         <City>Trivandrum</City>
+         <Country>India</Country>
+         <Email>newonefive957@ibstest.com</Email>
+         <FirstName>aleens</FirstName>
+         <Language>ENG</Language>
+         <LastName>matt</LastName>
+         <PaxType>A</PaxType>
+         <PhoneNumber>9675346578</PhoneNumber>
+         <StateProv>TRV CENTRAL</StateProv>
+         <Street>Amritha Nagar</Street>
+         <ZipCode>688673</ZipCode>
+      </BookingContact>
+         <Brand>IBS</Brand>
+         <ISOCurrency>USD</ISOCurrency>
+         <Market></Market>
+         <OrganizationalUnitCode></OrganizationalUnitCode>
+         <PseudoCityCode>A001</PseudoCityCode>
+         <RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+         <RequestTimeZone>GWT</RequestTimeZone>
+         <RequestingUserID>A-6264</RequestingUserID>
+         <RequestorId>John_hw_1234</RequestorId>
+         <RequestorType>5</RequestorType>
+         <Role>BKGRole</Role>
+      </PointOfSale>
+         <Data>
+      <OTA_HotelAvailRQ PrimaryLangID="ENG" Target="Production" Version="1.003" >
+         <AvailRequestSegments>
+           <AvailRequestSegment>
+               <HotelSearchCriteria>
+                  <Criterion>
+                     <HotelRef HotelCityCode="LYR"/>                   
+                     <StayDateRange Start="2017-07-18" End="2017-07-19"/>
+                     <RatePlanCandidates>
+                        <RatePlanCandidate RatePlanCode="*"  RPH="1"></RatePlanCandidate>
+                     </RatePlanCandidates>
+                     <RoomStayCandidates>
+                      <RoomStayCandidate Quantity="1" RPH="1" RatePlanCandidateRPH="1" RoomCategory="4" RoomType="*" RoomTypeCode="*">					   
+                           <GuestCounts IsPerRoom="true">
+                              <GuestCount  Age="30" AgeQualifyingCode="10" Count="1" ResGuestRPH="1"/>
+                              
+                           </GuestCounts>
+                        </RoomStayCandidate>
+                     </RoomStayCandidates>
+                     <TPA_Extensions>
+                    
+                     <Availability AvailabilityStatus=""/>
+                     
+                      </TPA_Extensions>
+                  </Criterion>
+               </HotelSearchCriteria>
+            </AvailRequestSegment>
+         </AvailRequestSegments>
+      </OTA_HotelAvailRQ>
+  </Data>
+
+</BLSearchRQ>

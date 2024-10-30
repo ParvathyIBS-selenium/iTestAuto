@@ -1,0 +1,1 @@
+Test steps to process the SSM / ASM messages can be removed once the proper configuration is done in the system (MSG003, MSg008)

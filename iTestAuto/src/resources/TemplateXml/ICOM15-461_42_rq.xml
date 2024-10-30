@@ -1,0 +1,151 @@
+<BLSearchRQ>
+    <ProviderCode>1A</ProviderCode>
+    <Data>
+        <AirShoppingRQ >
+            <PointOfSale>
+                <RequestTime Zone="EST">2015-02-01T07:38:00</RequestTime>
+                <Location>
+                    <CountryCode>US</CountryCode>
+                    <CityCode>WAS</CityCode>
+                </Location>
+                <TouchPoint>
+                    <Device>
+                        <Code>2</Code>
+                        <Definition>Web Browser</Definition>
+                        <Position>
+                            <Latitude>38.89756</Latitude>
+                            <Longitude>-77.03650</Longitude>
+                            <NAC>8KD7V PGGM0</NAC>
+                        </Position>
+                    </Device>
+                    <Event>
+                        <Code>9</Code>
+                        <Definition>Shop</Definition>
+                    </Event>
+                </TouchPoint>
+            </PointOfSale>
+            <Parameters>
+                <Pricing>
+                    <OverrideCurrency>JPY</OverrideCurrency>
+                </Pricing>
+            </Parameters>
+            <Party>
+                <Sender>
+                    <AggregatorSender>
+                        <Name>Worldspan</Name>
+                        <Category>
+                            <Code>M</Code>
+                            <Definition>NDC aggregator</Definition>
+                        </Category>
+                        <AggregatorID>1P</AggregatorID>
+                    </AggregatorSender>
+                </Sender>
+                <Participants>
+                    <Participant>
+                        <TravelAgencyParticipant SequenceNumber="1">
+                            <Name>USD Travel</Name>
+                            <Type>TravelAgency</Type>
+                            <Contacts>
+                                <Contact>
+                                    <EmailContact>
+                                        <Address>ndc@usdtravel.com</Address>
+                                    </EmailContact>
+                                </Contact>
+                            </Contacts>
+                            <PseudoCity>1F8</PseudoCity>
+                            <IATA_Number>2212345</IATA_Number>
+                            <AgencyID Owner="LH">1001</AgencyID>
+                            <AgentUser>
+                                <Name>John Smith</Name>
+                                <AgentUserID>1980</AgentUserID>
+                                <UserRole>Admin</UserRole>
+                            </AgentUser>
+                        </TravelAgencyParticipant>
+                    </Participant>
+                </Participants>
+            </Party>
+            <Document>
+                <Name>LH NDC GATEWAY</Name>
+                <ReferenceVersion>1.0</ReferenceVersion>
+            </Document>
+            <Travellers>
+                <Traveller>
+                    <AnonymousTraveller>
+                        <PTC Quantity="1">ADT</PTC>
+                    </AnonymousTraveller>
+                </Traveller>
+            </Travellers>
+            <CoreQuery>
+                <Attribute>
+                    <OriginDestination OriginDestinationKey="OD1">
+                  <Departure>
+                     <AirportCode>TRV</AirportCode>
+                     <Date>2017-09-23</Date>
+                  </Departure>
+                  <Arrival>
+                     <AirportCode>DXB</AirportCode>
+                  </Arrival>
+               </OriginDestination>
+           
+                                <OriginDestination OriginDestinationKey="OD2">
+                                                <Departure>
+                                                <AirportCode>LHR</AirportCode>
+                                                <Date>2017-12-24</Date>
+                                                </Departure>
+                                                <Arrival>
+                                                 <AirportCode>MEL</AirportCode>
+                                                 </Arrival>
+                  </OriginDestination>
+                </Attribute>
+            </CoreQuery>
+           <Preferences>
+            <Preference>
+               <!--<AirlinePreferences>
+                  <Airline PreferencesLevel="Required">
+                     <AirlineID>EK</AirlineID>
+                  </Airline>-->
+                 <!--<Airline PreferencesLevel="Required">
+                     <AirlineID>BA</AirlineID>
+                  </Airline>-->
+               <!--</AirlinePreferences>-->
+              <!--<AlliancePreferences>
+                <Alliance PreferencesLevel="Required">
+                                <Code>*O</Code>
+                </Alliance>
+            </AlliancePreferences>-->
+            <!--<TransferPreferences>
+                        <Connection refs="OD1">
+                            <Codes>
+                                <Code>BOM</Code>
+                            </Codes>
+                        </Connection>
+                    </TransferPreferences>-->
+             
+              <!--<FlightPreferences>
+                  <Characteristic>
+                     <NonStopPreferences>Preferred</NonStopPreferences>
+                  </Characteristic>
+               </FlightPreferences>-->
+              <FarePreferences>
+                <Types>
+                  <Type>
+                    <Code>@34$$</Code>
+                  </Type>
+                </Types>
+              </FarePreferences>
+           </Preference>
+         </Preferences>
+        </AirShoppingRQ>
+    </Data>
+    <mData>
+     <!-- <AdvancedSearchParameters>
+        <Parameter>
+        <Name>Price</Name>
+        <Range>
+        <MinValue>30000</MinValue>
+        <MaxValue>40000</MaxValue>
+        </Range>
+        </Parameter>
+        </AdvancedSearchParameters>-->
+    </mData>
+</BLSearchRQ>

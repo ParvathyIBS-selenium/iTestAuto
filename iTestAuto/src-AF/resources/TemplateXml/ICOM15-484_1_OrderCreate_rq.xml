@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BookingRequest>
+	<BookingCurrency>NOK</BookingCurrency>
+	<BookingContact>
+		<Address>Nandanam</Address>
+		<City>Trivandrum</City>
+		<Country>IND</Country>
+		<Email>122234@ibstest.com</Email>
+		<FirstName>å¤ªéƒŽ</FirstName>
+		<Language>ENG</Language>
+		<LastName>å¤ªéƒŽ</LastName>
+		<PhoneNumber>9675346578</PhoneNumber>
+		<StateProv>TRV CENTRAL</StateProv>
+		<Street>Amritha Nagar</Street>
+		<ZipCode>688673</ZipCode>
+		<ContactType>AGENCY</ContactType>
+		<CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+		<FirstName_En>Aleenddd eng</FirstName_En>
+		<LastName_En>matt eng</LastName_En>
+		<AddressLineOne_En>Nandanam eng </AddressLineOne_En>
+		<AddressLineTwo_En>Nandanam eng</AddressLineTwo_En>
+	</BookingContact>
+	<Passengers>
+		<Passenger RefId="1">
+			<PaxType>A</PaxType>
+			<Age>50</Age>
+			<CustomerProfileId>A-7464</CustomerProfileId>
+			<Gender>M</Gender>
+			<DateOfBirth>1971-03-08</DateOfBirth>
+			<Title>MR</Title>
+			<FirstName>Ajit</FirstName>
+			<MiddleName>Jis</MiddleName>
+			<LastName>Paul</LastName>
+			<FirstName_En>Ajit</FirstName_En>
+			<MiddleName_En>Jis</MiddleName_En>
+			<LastName_En>Paul</LastName_En>
+			<SurnameSuffix>Dr.</SurnameSuffix>
+			<ResidenceCode>686513</ResidenceCode>
+			<Language>Eng</Language>
+			<Contacts>
+				<Contact>
+					<ContactType>H</ContactType>
+					<Address>
+						<AddressLineOne>IBS software services</AddressLineOne>
+						<Street>kazhakkotam</Street>
+						<AddressLineOne_En>IBS software services Eng</AddressLineOne_En>
+						<Street_En>kazhakkotam Eng</Street_En>
+						<City>Trivandrum</City>
+						<ZipCode>688673</ZipCode>
+						<CountryName>India</CountryName>
+						<CountryCode>IN</CountryCode>
+						<CityCode>TRV</CityCode>
+						<StateProv>TRV CENTRAL</StateProv>
+						<County>IN</County>
+					</Address>
+					<Email>itraveltest@ibstest.com</Email>
+					<PhoneDetails>
+						<PhoneDetail>
+							<PhoneType>H</PhoneType>
+							<AreaCode>91</AreaCode>
+							<PhoneNumber>9763827832</PhoneNumber>
+							<PhoneTechType>MOBILE</PhoneTechType>
+						</PhoneDetail>
+					</PhoneDetails>
+				</Contact>
+			</Contacts>
+			<Loyalties>
+				<Loyalty>
+					<ProgrammCode>PC2342</ProgrammCode>
+					<LoyaltyNumber>LN11</LoyaltyNumber>
+					<ProductType>HTL</ProductType>
+					<LoyaltyIssuer>ManojPA</LoyaltyIssuer>
+				</Loyalty>
+			</Loyalties>
+			<TravelDocuments>
+				<TravelDocument>
+					<DocumentId>X3432</DocumentId>
+					<DocumentType>PASSPORT</DocumentType>
+					<IssueDate>18-05-2013</IssueDate>
+					<IssueCountry>IN</IssueCountry>
+					<ExpiryDate>18-05-2018</ExpiryDate>
+					<IssueAuthority>INDIA</IssueAuthority>
+					<PlaceOfBirth>Kottayam</PlaceOfBirth>
+					<Nationality>Indian</Nationality>
+					<Language>Malayalam</Language>
+					<FirstName>å¤ªéƒŽ</FirstName>
+					<MiddleName>å¤ªéƒŽ</MiddleName>
+					<FirstName_En>Azad Eng</FirstName_En>
+					<MiddleName_En>Jis Eng</MiddleName_En>
+					<LastName_En>Paule Eng</LastName_En>
+				</TravelDocument>
+			</TravelDocuments>
+		</Passenger>
+	</Passengers>
+	<Products>
+		<Product RefId="710">
+			<PassengerReferences>
+				<PassengerReference ID="1">
+					<Remarks>
+						<Remark>
+							<Type>OSI</Type>
+							<Text>PRODUCT REMARK 1</Text>
+							<AdditionalRemark>Additional Remark</AdditionalRemark>
+							<CreatedBy>A-7019</CreatedBy>
+							<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+							<IsEdited>false</IsEdited>
+							<Text_En>PRODUCT REMARK 1</Text_En>
+							<AdditionalRemark_En>Additional English</AdditionalRemark_En>
+						</Remark>
+						<Remark PaxRefId="1">
+							<Type>SSR</Type>
+							<Text>PAX LEVEL OSI REMARK 2</Text>
+							<AdditionalRemark>Additional Remark</AdditionalRemark>
+							<CreatedBy>A-7019</CreatedBy>
+							<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+							<IsEdited>false</IsEdited>
+							<Text_En>PAX LEVEL OSI REMARK 2</Text_En>
+							<AdditionalRemark_En>Additional English</AdditionalRemark_En>
+						</Remark>
+					</Remarks>
+				</PassengerReference>
+			</PassengerReferences>
+			<ProductType>AIR</ProductType>
+			<Brand>Amadeus</Brand>
+			<ProviderConfirmationId>PQR123</ProviderConfirmationId>
+			<ProviderCode>1A</ProviderCode>
+			<PriceCurrency>NOK</PriceCurrency>
+			<IsOfflineProduct>false</IsOfflineProduct>
+			<Remarks>
+				<Remark>
+					<Type>OSI</Type>
+					<Text>PRODUCT REMARK 1</Text>
+					<AdditionalRemark>Additional Remark</AdditionalRemark>
+					<CreatedBy>A-7019</CreatedBy>
+					<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+					<IsEdited>false</IsEdited>
+					<Text_En>PRODUCT REMARK 1</Text_En>
+					<AdditionalRemark_En>Additional English</AdditionalRemark_En>
+				</Remark>
+				<Remark PaxRefId="1">
+					<Type>SSR</Type>
+					<Text>PAX LEVEL OSI REMARK 2</Text>
+					<AdditionalRemark>Additional Remark</AdditionalRemark>
+					<CreatedBy>A-7019</CreatedBy>
+					<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+					<IsEdited>false</IsEdited>
+					<Text_En>PAX LEVEL OSI REMARK 2</Text_En>
+					<AdditionalRemark_En>Additional English</AdditionalRemark_En>
+				</Remark>
+			</Remarks>
+			<Air>
+				<Query>
+					<OrderItems>
+						<OfferItem refs="1">
+							<OfferItemID Owner="1A">ID1</OfferItemID>
+							<OfferItemType>
+								<DetailedFlightItem>
+									<Charges>
+										<Charge>
+											<Currency>NOK</Currency>
+											<PaxId>1</PaxId>
+											<PaxType>ADULT</PaxType>
+											<ChargeLevel>PerPax</ChargeLevel>
+											<ChargeType>BASEFARE</ChargeType>
+											<IsCommissionable>false</IsCommissionable>
+											<BaseCost Amount="5000.0" Currency="NOK" />
+											<BasePrice Amount="5000.0" Currency="NOK" />
+											<GrossPrice Amount="5100.0" Currency="NOK" />
+											<NetPrice Amount="5100.0" Currency="NOK" />
+											<AgencyCommission Amount="0.0" Currency="NOK" />
+											<VendorCommission Amount="0.0" Currency="NOK" />
+											<MarkUp Amount="100.0" Currency="NOK" />
+										</Charge>
+										<Charge>
+											<Currency>NOK</Currency>
+											<PaxId>1</PaxId>
+											<PaxType>ADULT</PaxType>
+											<ChargeLevel>PerPax</ChargeLevel>
+											<ChargeType>TAX</ChargeType>
+											<IsCommissionable>false</IsCommissionable>
+											<BaseCost Amount="200.0" Currency="NOK" />
+											<BasePrice Amount="200.0" Currency="NOK" />
+											<GrossPrice Amount="200.0" Currency="NOK" />
+											<NetPrice Amount="200.0" Currency="NOK" />
+											<AgencyCommission Amount="0.0" Currency="NOK" />
+											<VendorCommission Amount="0.0" Currency="NOK" />
+											<MarkUp Amount="0.0" Currency="NOK" />
+										</Charge>
+									</Charges>
+									<Price>
+										<!--Flight Price for Adult -->
+										<BaseAmount Code="NOK">3502.64</BaseAmount>
+										<Surcharges>
+											<Surcharge>
+												<Total Code="NOK">86.41</Total>
+												<Breakdown>
+													<Fee>
+														<Amount Code="NOK">38.85</Amount>
+													</Fee>
+													<Fee>
+														<Amount Code="NOK">47.56</Amount>
+													</Fee>
+												</Breakdown>
+											</Surcharge>
+										</Surcharges>
+										<Taxes>
+											<Total Code="NOK">83.28</Total>
+											<Breakdown>
+												<Tax refs="pax1">
+													<Amount Code="NOK">64.09</Amount>
+													<TaxCode>UO</TaxCode>
+													<Description>UO</Description>
+												</Tax>
+												<Tax refs="pax1">
+													<Amount Code="NOK">3.75</Amount>
+													<TaxCode>WG</TaxCode>
+													<Description>INTERNATIONAL SAFETY AND SECURITY CHARGE
+													</Description>
+												</Tax>
+												<Tax refs="pax1">
+													<Amount Code="NOK">15.44</Amount>
+													<TaxCode>QR</TaxCode>
+													<Description>QR</Description>
+												</Tax>
+											</Breakdown>
+										</Taxes>
+									</Price>
+									<OriginDestination>
+										<OriginDestinationKey>OD1</OriginDestinationKey>
+										<TotalJourney>
+											<Time>01.35</Time>
+											<Distance>
+												<Value>0456</Value>
+											</Distance>
+										</TotalJourney>
+										<Flight>
+											<Remarks>
+												<Remark>
+													<Type>OSI</Type>
+													<Text>PRODUCT REMARK 1</Text>
+													<AdditionalRemark>Additional Remark</AdditionalRemark>
+													<CreatedBy>A-7019</CreatedBy>
+													<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+													<IsEdited>false</IsEdited>
+													<Text_En>PRODUCT REMARK 1</Text_En>
+													<AdditionalRemark_En>Additional English
+													</AdditionalRemark_En>
+												</Remark>
+												<Remark PaxRefId="1">
+													<Type>SSR</Type>
+													<Text>PAX LEVEL OSI REMARK 2</Text>
+													<AdditionalRemark>Additional Remark</AdditionalRemark>
+													<CreatedBy>A-7019</CreatedBy>
+													<CreatedOn>2017-05-25T14:28:46.986+05:30</CreatedOn>
+													<IsEdited>false</IsEdited>
+													<Text_En>PAX LEVEL OSI REMARK 2</Text_En>
+													<AdditionalRemark_En>Additional English
+													</AdditionalRemark_En>
+												</Remark>
+											</Remarks>
+											<SegmentKey>SEG1</SegmentKey>
+											<!--<Indicators PricingInd="true"/> -->
+											<Departure>
+												<AirportCode>COK</AirportCode>
+												<Date>2017-08-13</Date>
+												<Time>09:20</Time>
+												<Terminal>
+													<Gate>3</Gate>
+												</Terminal>
+											</Departure>
+											<Arrival>
+												<AirportCode>DXB</AirportCode>
+												<Date>2017-08-13</Date>
+												<Time>12:10</Time>
+												<Terminal>
+													<Gate>1</Gate>
+												</Terminal>
+											</Arrival>
+											<MarketingCarrier>
+												<AirlineID>AI</AirlineID>
+												<FlightNumber>933</FlightNumber>
+												<ResBookDesigCode>V</ResBookDesigCode>
+											</MarketingCarrier>
+											<OperatingCarrier>
+												<AirlineID>AI</AirlineID>
+												<FlightNumber>933</FlightNumber>
+											</OperatingCarrier>
+											<Equipment>
+												<AircraftCode>788</AircraftCode>
+											</Equipment>
+											<ClassOfService>
+												<Code>Y</Code>
+												<MarketingName CabinDesignator="V" />
+											</ClassOfService>
+										</Flight>
+									</OriginDestination>
+
+									<FareDetail>
+										<FareComponent>
+											<!--OD wise split up of fares -->
+											<SegmentReference>SEG1</SegmentReference>
+											<PriceBreakdown>
+												<Price>
+													<BaseAmount Code="NOK">1738</BaseAmount>
+													<Surcharges>
+														<Surcharge>
+															<Total Code="NOK">86.41</Total>
+															<Breakdown>
+																<Fee>
+																	<Amount Code="NOK">38.85</Amount>
+																</Fee>
+																<Fee>
+																	<Amount Code="NOK">47.56</Amount>
+																</Fee>
+															</Breakdown>
+														</Surcharge>
+													</Surcharges>
+												</Price>
+											</PriceBreakdown>
+											<FareBasis>
+												<FareBasisCode>
+													<Code>YOW</Code>
+													<Application>Requested</Application>
+												</FareBasisCode>
+											</FareBasis>
+										</FareComponent>
+										<FareComponent>
+											<!--OD wise split up of fares -->
+											<SegmentReference>SEG2</SegmentReference>
+											<PriceBreakdown>
+												<Price>
+													<BaseAmount Code="NOK">1738</BaseAmount>
+													<Surcharges>
+														<Surcharge>
+															<Total Code="NOK">86.41</Total>
+															<Breakdown>
+																<Fee>
+																	<Amount Code="NOK">38.85</Amount>
+																</Fee>
+																<Fee>
+																	<Amount Code="NOK">47.56</Amount>
+																</Fee>
+															</Breakdown>
+														</Surcharge>
+													</Surcharges>
+												</Price>
+											</PriceBreakdown>
+											<FareBasis>
+												<FareBasisCode>
+													<Code>YOW</Code>
+													<Application>Requested</Application>
+												</FareBasisCode>
+											</FareBasis>
+										</FareComponent>
+
+										<TourCode>749</TourCode>
+									</FareDetail>
+								</DetailedFlightItem>
+							</OfferItemType>
+							<TimeLimits>
+								<TimeLimit>
+									<TicketByTimeLimit>
+										<TicketBy>2017-11-01T00:00:00Z</TicketBy>
+									</TicketByTimeLimit>
+								</TimeLimit>
+							</TimeLimits>
+						</OfferItem>
+					</OrderItems>
+					<DataLists>
+						<OriginDestinationList>
+							<OriginDestination OriginDestinationKey="OD1">
+								<DepartureCode>COK</DepartureCode>
+								<ArrivalCode>DXB</ArrivalCode>
+								<FlightReferences>AMADEUS11OD1FL1</FlightReferences>
+							</OriginDestination>
+						</OriginDestinationList>
+						<FlightList>
+							<Flight FlightKey="AMADEUS11OD1FL1">
+								<SegmentReferences>SEG1</SegmentReferences>
+							</Flight>
+						</FlightList>
+					</DataLists>
+				</Query>
+				<TotalPrice>
+					<Currency>NOK</Currency>
+					<BaseCost Amount="5200.0" Currency="NOK" />
+					<BasePrice Amount="5200.0" Currency="NOK" />
+					<Discount Amount="0.0" Currency="NOK" />
+					<GrossPrice Amount="5300.0" Currency="NOK" />
+					<NetPrice Amount="5300.0" Currency="NOK" />
+					<AgencyCommission Amount="0.0" Currency="NOK" />
+					<VendorCommission Amount="0.0" Currency="NOK" />
+					<MarkUp Amount="200.0" Currency="NOK" />
+					<GrossMargin Amount="200.0" Currency="NOK" />
+					<NetMargin Amount="200.0" Currency="NOK" />
+					<GrossMarginPct Amount="1.19" Currency="NOK" />
+					<NetMarginPct Amount="1.19" Currency="NOK" />
+				</TotalPrice>
+			</Air>
+		</Product>
+	</Products>
+	<Payments>
+		<Payment>
+			<FopCode>FOP001</FopCode>
+			<FopType>CA</FopType>
+			<ReceivedFrom>DON</ReceivedFrom>
+			<Cash>
+				<referenceNumber>1234</referenceNumber>
+			</Cash>
+			<PaymentAmount Amount="20000" Currency="NOK" />
+		</Payment>
+	</Payments>
+</BookingRequest>

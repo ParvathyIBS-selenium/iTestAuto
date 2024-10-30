@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ef:CargoWaybillTypeElement xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:waybill:1" xmlns:ef="http://www.af-klm.com/services/cargo/data-v1/xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="iata:waybill:1 Waybill_1.xsd">
+    <rsm:Waybill>
+        <rsm:MessageHeaderDocument>
+            <ram:ID>057-47846713_OzJR03hGpbIwBuBKg8p</ram:ID>
+            <ram:Name>Air Waybill</ram:Name>
+            <ram:TypeCode>741</ram:TypeCode>
+            <ram:IssueDateTime>2023-09-12T14:02:00.000</ram:IssueDateTime>
+            <ram:PurposeCode>Creation</ram:PurposeCode>
+            <ram:VersionID>3.00</ram:VersionID>
+            <ram:ConversationID>121402</ram:ConversationID>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="C">RUSAGT82KINT/DFW01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="P">RUSAGT82KINT/DFW01</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:SenderParty>
+                <ram:PrimaryID schemeID="O">PARFFAF</ram:PrimaryID>
+            </ram:SenderParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="C">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+            <ram:RecipientParty>
+                <ram:PrimaryID schemeID="P">REUAIR08AFR</ram:PrimaryID>
+            </ram:RecipientParty>
+        </rsm:MessageHeaderDocument>
+        <rsm:BusinessHeaderDocument>
+            <ram:ID>057-47846713</ram:ID>
+            <ram:IncludedHeaderNote>
+                <ram:ContentCode>C</ram:ContentCode>
+                <ram:Content>Consolidation</ram:Content>
+            </ram:IncludedHeaderNote>
+            <ram:SignatoryCarrierAuthentication>
+                <ram:ActualDateTime>2023-09-12T00:00:00.000</ram:ActualDateTime>
+                <ram:Signatory>KWE KINTETSU</ram:Signatory>
+                <ram:IssueAuthenticationLocation>
+                    <ram:Name>FRPAR</ram:Name>
+                </ram:IssueAuthenticationLocation>
+            </ram:SignatoryCarrierAuthentication>
+        </rsm:BusinessHeaderDocument>
+        <rsm:MasterConsignment>
+            <ram:ID>PRD-XPS</ram:ID>
+            <ram:AdditionalID>AFKL-M21|SKT-XPS</ram:AdditionalID>
+            <ram:NilCarriageValueIndicator>true</ram:NilCarriageValueIndicator>
+            <ram:NilCustomsValueIndicator>true</ram:NilCustomsValueIndicator>
+            <ram:NilInsuranceValueIndicator>true</ram:NilInsuranceValueIndicator>
+            <ram:TotalChargePrepaidIndicator>true</ram:TotalChargePrepaidIndicator>
+            <ram:TotalDisbursementPrepaidIndicator>true</ram:TotalDisbursementPrepaidIndicator>
+            <ram:IncludedTareGrossWeightMeasure unitCode="KGM">32.0</ram:IncludedTareGrossWeightMeasure>
+            <ram:GrossVolumeMeasure unitCode="MTQ">0.14</ram:GrossVolumeMeasure>
+            <ram:TotalPieceQuantity>2</ram:TotalPieceQuantity>
+            <ram:ProductID>M21</ram:ProductID>
+            <ram:ConsignorParty>
+                <ram:Name>KINTETSU WORLD EXPRESS FRANCE SAS</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>95973</ram:PostcodeCode>
+                    <ram:StreetName>294-296 AVENUE DU BOIS DE LA PIE</ram:StreetName>
+                    <ram:CityName>ROISSY CHARLES-D</ram:CityName>
+                    <ram:CountryID>FR</ram:CountryID>
+                    <ram:CountrySubDivisionID>95</ram:CountrySubDivisionID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>33141843333</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                    <ram:FaxCommunication>
+                        <ram:CompleteNumber>33141843335</ram:CompleteNumber>
+                    </ram:FaxCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsignorParty>
+            <ram:ConsigneeParty>
+                <ram:Name>KINTETSU WORLD EXPRESS SOUTH AFRICA</ram:Name>
+                <ram:PostalStructuredAddress>
+                    <ram:PostcodeCode>1620</ram:PostcodeCode>
+                    <ram:StreetName>BLOCK F WINGFIELD PARK</ram:StreetName>
+                    <ram:CityName>GAUTENG</ram:CityName>
+                    <ram:CountryID>ZA</ram:CountryID>
+                </ram:PostalStructuredAddress>
+                <ram:DefinedTradeContact>
+                    <ram:DirectTelephoneCommunication>
+                        <ram:CompleteNumber>27115735700</ram:CompleteNumber>
+                    </ram:DirectTelephoneCommunication>
+                    <ram:FaxCommunication>
+                        <ram:CompleteNumber>27113971796</ram:CompleteNumber>
+                    </ram:FaxCommunication>
+                </ram:DefinedTradeContact>
+            </ram:ConsigneeParty>
+            <ram:FreightForwarderParty>
+                <ram:Name>KINTETSU WORLD EXPRESS  FRANCE  S.A</ram:Name>
+                <ram:CargoAgentID>2047089</ram:CargoAgentID>
+                <ram:FreightForwarderAddress>
+                    <ram:StreetName>PARIS  FR</ram:StreetName>
+                    <ram:CityName>PARIS  FR</ram:CityName>
+                </ram:FreightForwarderAddress>
+                <ram:SpecifiedCargoAgentLocation>
+                    <ram:ID>9514</ram:ID>
+                </ram:SpecifiedCargoAgentLocation>
+            </ram:FreightForwarderParty>
+            <ram:OriginLocation>
+                <ram:ID>CDG</ram:ID>
+            </ram:OriginLocation>
+            <ram:FinalDestinationLocation>
+                <ram:ID>JNB</ram:ID>
+            </ram:FinalDestinationLocation>
+            <ram:SpecifiedLogisticsTransportMovement>
+                <ram:StageCode>Main-Carriage</ram:StageCode>
+                <ram:ID>AF990</ram:ID>
+                <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                <ram:UsedLogisticsTransportMeans>
+                    <ram:Name>AF</ram:Name>
+                </ram:UsedLogisticsTransportMeans>
+                <ram:ArrivalEvent>
+                    <ram:OccurrenceArrivalLocation>
+                        <ram:ID>JNB</ram:ID>
+                    </ram:OccurrenceArrivalLocation>
+                </ram:ArrivalEvent>
+                <ram:DepartureEvent>
+                    <ram:ScheduledOccurrenceDateTime>2023-09-12T00:00:00.000</ram:ScheduledOccurrenceDateTime>
+                    <ram:OccurrenceDepartureLocation>
+                        <ram:ID>CDG</ram:ID>
+                    </ram:OccurrenceDepartureLocation>
+                </ram:DepartureEvent>
+            </ram:SpecifiedLogisticsTransportMovement>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>ECC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>NSC</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSPHInstructions>
+                <ram:DescriptionCode>EAW</ram:DescriptionCode>
+            </ram:HandlingSPHInstructions>
+            <ram:HandlingSSRInstructions>
+                <ram:Description>NO POUCH</ram:Description>
+            </ram:HandlingSSRInstructions>
+            <ram:IncludedAccountingNote>
+                <ram:ContentCode>GEN</ram:ContentCode>
+                <ram:Content>AIRPORT AIRPORT-EQUATION</ram:Content>
+            </ram:IncludedAccountingNote>
+            <ram:AssociatedConsignmentCustomsProcedure>
+                <ram:GoodsStatusCode>X</ram:GoodsStatusCode>
+            </ram:AssociatedConsignmentCustomsProcedure>
+            <ram:ApplicableOriginCurrencyExchange>
+                <ram:SourceCurrencyCode>EUR</ram:SourceCurrencyCode>
+            </ram:ApplicableOriginCurrencyExchange>
+            <ram:ApplicableLogisticsServiceCharge>
+                <ram:TransportPaymentMethodCode>PX</ram:TransportPaymentMethodCode>
+            </ram:ApplicableLogisticsServiceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>XB</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">80.00</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableLogisticsAllowanceCharge>
+                <ram:ID>CG</ram:ID>
+                <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                <ram:PartyTypeCode>C</ram:PartyTypeCode>
+                <ram:ActualAmount currencyID="EUR">4.80</ram:ActualAmount>
+            </ram:ApplicableLogisticsAllowanceCharge>
+            <ram:ApplicableRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:TotalChargeAmount currencyID="EUR">614.08</ram:TotalChargeAmount>
+                <ram:IncludedMasterConsignmentItem>
+                    <ram:SequenceNumeric>1</ram:SequenceNumeric>
+                    <ram:GrossWeightMeasure unitCode="KGM">32.0</ram:GrossWeightMeasure>
+                    <ram:GrossVolumeMeasure unitCode="MTQ">0.14</ram:GrossVolumeMeasure>
+                    <ram:PieceQuantity>2</ram:PieceQuantity>
+                    <ram:NatureIdentificationTransportCargo>
+                        <ram:Identification>CONSOLIDATION AS PER ATTACHED MANIFEST</ram:Identification>
+                    </ram:NatureIdentificationTransportCargo>
+                    <ram:ApplicableFreightRateServiceCharge>
+                        <ram:CategoryCode>N</ram:CategoryCode>
+                        <ram:ChargeableWeightMeasure unitCode="KGM">32</ram:ChargeableWeightMeasure>
+                        <ram:AppliedRate>19.19</ram:AppliedRate>
+                        <ram:AppliedAmount currencyID="EUR">614.08</ram:AppliedAmount>
+                    </ram:ApplicableFreightRateServiceCharge>
+                </ram:IncludedMasterConsignmentItem>
+            </ram:ApplicableRating>
+            <ram:ApplicableTotalRating>
+                <ram:TypeCode>F</ram:TypeCode>
+                <ram:ApplicablePrepaidCollectMonetarySummation>
+                    <ram:PrepaidIndicator>true</ram:PrepaidIndicator>
+                    <ram:WeightChargeTotalAmount currencyID="EUR">614.08</ram:WeightChargeTotalAmount>
+                    <ram:CarrierTotalDuePayableAmount currencyID="EUR">84.80</ram:CarrierTotalDuePayableAmount>
+                    <ram:GrandTotalAmount currencyID="EUR">698.88</ram:GrandTotalAmount>
+                </ram:ApplicablePrepaidCollectMonetarySummation>
+            </ram:ApplicableTotalRating>
+        </rsm:MasterConsignment>
+    </rsm:Waybill>
+    <originalMessage>
+        <type>CIMP</type>
+    </originalMessage>
+    <state>CUSTOMER</state>
+    <senderRole>CUSTOMER</senderRole>
+    <operationalFlight>
+        <carrierCode>AF</carrierCode>
+        <flightNumber>990</flightNumber>
+    </operationalFlight>
+    <origin>
+        <country>FR</country>
+    </origin>
+    <finalDestination>
+        <country>ZA</country>
+    </finalDestination>
+</ef:CargoWaybillTypeElement>
+

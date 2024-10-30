@@ -1,0 +1,39 @@
+<RetrieveBookingRequest>
+	<SuperPnrNumber>E742A2</SuperPnrNumber>
+	<PointOfSale>
+		<AgencyConsortium>Consortium</AgencyConsortium>
+		<BookingChannelType>B2B</BookingChannelType>
+		<customerProfileInd>false</customerProfileInd>
+		<BookingContact>
+			<Address>H</Address>
+			<CitizenCountryCodes>
+				<CountryCode>
+					<element>IN</element>
+					<element>USA</element>
+				</CountryCode>
+			</CitizenCountryCodes>
+			<City>Trivandrum</City>
+			<Country>India</Country>
+			<Email>newonefive957@ibstest.com</Email>
+			<FirstName>aleens</FirstName>
+			<Language>ENG</Language>
+			<LastName>matt</LastName>
+			<PhoneNumber>9675346578</PhoneNumber>
+			<StateProv>TRV CENTRAL</StateProv>
+			<Street>Amritha Nagar</Street>
+			<ZipCode>688673</ZipCode>
+		</BookingContact>
+		<Brand>IBS</Brand>
+		<CustomerProfileId>13614</CustomerProfileId>
+		<ISOCurrency>USD</ISOCurrency>
+		<Market>Asia</Market>
+		<OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+		<PseudoCityCode>A001</PseudoCityCode>
+		<RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+		<RequestTimeZone>GWT</RequestTimeZone>
+		<RequestingUserID>A-6264</RequestingUserID>
+		<RequestorId>HBSi</RequestorId>
+		<RequestorType>AGENCY</RequestorType>
+		<Role>BKGRole</Role>
+	</PointOfSale>
+</RetrieveBookingRequest>

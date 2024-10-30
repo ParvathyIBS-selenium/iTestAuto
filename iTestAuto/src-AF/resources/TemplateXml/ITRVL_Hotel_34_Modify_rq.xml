@@ -1,0 +1,355 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModifyBookingRequest>
+	<SuperPnrNumber>N4AAAB</SuperPnrNumber>
+	<Version>1495194387498</Version>
+	<BookingCurrency>USD</BookingCurrency>
+	<SkipConsistenyCheckInd>true</SkipConsistenyCheckInd>
+	<PointOfSale>
+		<pnrPosId>58398</pnrPosId>
+		<ISOCurrency>USD</ISOCurrency>
+		<PseudoCityCode>A001</PseudoCityCode>
+		<RequestTime>2015-10-07T00:00:00+05:30</RequestTime>
+		<RequestTimeZone>GWT</RequestTimeZone>
+		<RequestorType>AGENCY</RequestorType>
+		<RequestorId>HBSi</RequestorId>
+		<RequestingUserID>A-6264</RequestingUserID>
+		<BookingChannelType>B2B</BookingChannelType>
+		<Market>Asia</Market>
+		<AgencyConsortium>Consortium</AgencyConsortium>
+		<OrganizationalUnitCode>FNHR</OrganizationalUnitCode>
+		<Role>BKGRole</Role>
+		<Brand>IBS</Brand>
+		<BookingContact>
+			<FirstName>Aleenddd</FirstName>
+			<LastName>matt</LastName>
+			<Email>yuy55ui1@ibstest.com</Email>
+			<PhoneNumber>9675346578</PhoneNumber>
+			<Language>ENG</Language>
+			<AddressLineOne>Nandanam</AddressLineOne>
+			<Street>Amritha Nagar</Street>
+			<City>Trivandrum</City>
+			<StateProv>TRV CENTRAL</StateProv>
+			<ZipCode>688673</ZipCode>
+		</BookingContact>
+		<CreateCustomerProfileInd>false</CreateCustomerProfileInd>
+		<ProfileType>CUSTOMERPROFILE</ProfileType>
+	</PointOfSale>
+	<PassengerRequests>
+		<PassengerRequest Action="ADD" RefId="1">
+			<Passenger RefId="1">
+				<PaxType>A</PaxType>
+				<Age>30</Age>
+				<CustomerType>I</CustomerType>
+				<Gender>F</Gender>
+				<DateOfBirth>1971-03-08</DateOfBirth>
+				<Title>MRS</Title>
+				<FirstName>Neera</FirstName>
+				<MiddleName>mikka</MiddleName>
+				<LastName>Paul</LastName>
+				<AssociatedPaxRefId>38303</AssociatedPaxRefId>
+				<Language>EN</Language>
+				<Status>ACTIVE</Status>
+				<IsLeadPassenger>false</IsLeadPassenger>
+				<CitizenCountryCodes>
+					<CountryCode>IN</CountryCode>
+					<CountryCode>USA</CountryCode>
+				</CitizenCountryCodes>
+				<PhysChallengedInd>false</PhysChallengedInd>
+				<CustomerProfileCreationInd>false</CustomerProfileCreationInd>
+				<Contacts>
+					<Contact ID="0">
+						<ContactType>H</ContactType>
+						<Address>
+							<AddressLineOne>IBS software services</AddressLineOne>
+							<Street>kazhakkotam</Street>
+							<City>Trivandrum</City>
+							<ZipCode>688673</ZipCode>
+							<CountryName>India</CountryName>
+							<CountryCode>IN</CountryCode>
+							<CityCode>TRV</CityCode>
+							<StateProv>TRV CENTRAL</StateProv>
+							<County>IN</County>
+						</Address>
+						<Email>icommarchtest996095@ibstest.com</Email>
+						<PhoneDetails>
+							<PhoneDetail IsPrimary="true">
+								<PhoneType>H</PhoneType>
+								<PhoneNumber>9763827832</PhoneNumber>
+								<PhoneTechType>VOICE</PhoneTechType>
+								<AreaCode>91</AreaCode>
+							</PhoneDetail>
+						</PhoneDetails>
+					</Contact>
+				</Contacts>
+				<Loyalties>
+					<Loyalty ID="0">
+						<ProgrammCode>PC2342</ProgrammCode>
+						<LoyaltyNumber>LN11</LoyaltyNumber>
+						<ProductType>AIR</ProductType>
+					</Loyalty>
+				</Loyalties>
+				<TravelDocuments>
+					<TravelDocument ID="0">
+						<DocumentId>X3432</DocumentId>
+						<DMSDocumentId>A123</DMSDocumentId>
+						<DocumentType>PASSPORT</DocumentType>
+						<IssueDate>2014-03-08</IssueDate>
+						<IssueCountry>IND</IssueCountry>
+						<ExpiryDate>2018-03-08</ExpiryDate>
+						<IssueAuthority>INDIA</IssueAuthority>
+						<PlaceOfBirth>Kottayam</PlaceOfBirth>
+						<Nationality>Indian</Nationality>
+						<Language>Malayalam</Language>
+						<FirstName>Varun</FirstName>
+						<MiddleName>S</MiddleName>
+						<LastName>George</LastName>
+						<DateOfBirth>1971-03-08</DateOfBirth>
+					</TravelDocument>
+					<TravelDocument ID="0">
+						<DocumentId>X3432</DocumentId>
+						<DMSDocumentId>A123</DMSDocumentId>
+						<DocumentType>PASSPORT</DocumentType>
+						<IssueDate>2014-03-08</IssueDate>
+						<IssueCountry>IND</IssueCountry>
+						<ExpiryDate>2018-03-08</ExpiryDate>
+						<IssueAuthority>INDIA</IssueAuthority>
+						<PlaceOfBirth>Kottayam</PlaceOfBirth>
+						<Nationality>Indian</Nationality>
+						<Language>Malayalam</Language>
+						<FirstName>Varun</FirstName>
+						<MiddleName>S</MiddleName>
+						<LastName>George</LastName>
+						<DateOfBirth>1971-03-08</DateOfBirth>
+					</TravelDocument>
+				</TravelDocuments>
+				<Remarks>
+					<Remark ID="0">
+						<Type>Pax1</Type>
+						<Text>Need Special Attention</Text>
+						<CreatedBy>A-7019</CreatedBy>
+						<CreatedOn>2017-03-24T14:06:06.93+05:30</CreatedOn>
+						<IsEdited>false</IsEdited>
+					</Remark>
+				</Remarks>
+			</Passenger>
+		</PassengerRequest>
+	</PassengerRequests>
+	<ProductRequests>
+		<ProductRequest Action="ADD" RefId="1">
+			<Product RefId="1">
+				<PassengerReferences>
+					<PassengerReference ID="1" />
+
+				</PassengerReferences>
+				<ProductType>AIR</ProductType>
+				<Brand>Amadeus</Brand>
+				<IsOfflinePaymentCollected>false</IsOfflinePaymentCollected>
+				<ProviderCode>1A</ProviderCode>
+				<PriceCurrency>USD</PriceCurrency>
+				<IsOfflineProduct>true</IsOfflineProduct>
+				<ProductRemarks>
+					<ProductRemark>
+						<Type>CONFIDENTIAL</Type>
+						<Text>Product Level</Text>
+					</ProductRemark>
+				</ProductRemarks>
+				<Air>
+					<Query>
+						<OrderItems>
+							<OfferItem refs="1">
+								<OfferItemID Owner="1A">ID1</OfferItemID>
+								<OfferItemType>
+									<DetailedFlightItem>
+										<Charges>
+											<Charge>
+												<Currency>USD</Currency>
+												<PaxType>ADULT</PaxType>
+												<ChargeLevel>PerPax</ChargeLevel>
+												<ChargeType>TAX</ChargeType>
+												<isCommissionable>true</isCommissionable>
+												<BaseCost Amount="121.77" Currency="USD" />
+												<BasePrice Amount="121.77" Currency="USD" />
+												<GrossPrice Amount="121.77" Currency="USD" />
+												<NetPrice Amount="121.77" Currency="USD" />
+												<AgencyCommission Amount="0.0" Currency="USD" />
+												<VendorCommission Amount="0.0" Currency="USD" />
+												<MarkUp Amount="0.0" Currency="USD" />
+											</Charge>
+											<Charge>
+												<Currency>USD</Currency>
+												<ChargeLevel>Once</ChargeLevel>
+												<ChargeType>TAX</ChargeType>
+												<isCommissionable>true</isCommissionable>
+												<BaseCost Amount="121.77" Currency="USD" />
+												<BasePrice Amount="121.77" Currency="USD" />
+												<GrossPrice Amount="121.77" Currency="USD" />
+												<NetPrice Amount="121.77" Currency="USD" />
+												<AgencyCommission Amount="0.0" Currency="USD" />
+												<VendorCommission Amount="0.0" Currency="USD" />
+												<MarkUp Amount="0.0" Currency="USD" />
+											</Charge>
+										</Charges>
+										<Price>
+
+											<BaseAmount Code="INR">3502.64</BaseAmount>
+											<Surcharges>
+												<Surcharge>
+													<Total Code="INR">86.41</Total>
+													<Breakdown>
+														<Fee>
+															<Amount Code="INR">38.85</Amount>
+														</Fee>
+														<Fee>
+															<Amount Code="INR">47.56</Amount>
+														</Fee>
+													</Breakdown>
+												</Surcharge>
+											</Surcharges>
+											<Taxes>
+												<Total Code="INR">83.28</Total>
+												<Breakdown>
+													<Tax refs="pax1">
+														<Amount Code="INR">64.09</Amount>
+														<TaxCode>UO</TaxCode>
+														<Description>UO</Description>
+													</Tax>
+													<Tax refs="pax1">
+														<Amount Code="INR">3.75</Amount>
+														<TaxCode>WG</TaxCode>
+														<Description>INTERNATIONAL SAFETY AND SECURITY CHARGE
+														</Description>
+													</Tax>
+													<Tax refs="pax1">
+														<Amount Code="INR">15.44</Amount>
+														<TaxCode>QR</TaxCode>
+														<Description>QR</Description>
+													</Tax>
+												</Breakdown>
+											</Taxes>
+										</Price>
+										<OriginDestination>
+											<OriginDestinationKey>OD1</OriginDestinationKey>
+											<TotalJourney>
+												<Time>01.35</Time>
+												<Distance>
+													<Value>0456</Value>
+												</Distance>
+											</TotalJourney>
+											<Flight>
+												<SegmentKey>SEG1</SegmentKey>
+												<Indicators PricingInd="true" />
+												<Departure>
+													<AirportCode>LHR</AirportCode>
+													<Date>2017-05-22</Date>
+													<Time>20:45</Time>
+													<Terminal>
+														<Gate>4</Gate>
+													</Terminal>
+												</Departure>
+												<Arrival>
+													<AirportCode>AUH</AirportCode>
+													<Date>2017-05-23</Date>
+													<Time>07:05</Time>
+													<Terminal>
+														<Gate>3</Gate>
+													</Terminal>
+												</Arrival>
+												<MarketingCarrier>
+													<AirlineID>EY</AirlineID>
+													<FlightNumber>18</FlightNumber>
+													<ResBookDesigCode>U</ResBookDesigCode>
+												</MarketingCarrier>
+												<OperatingCarrier>
+													<AirlineID>EY</AirlineID>
+													<FlightNumber>18</FlightNumber>
+												</OperatingCarrier>
+												<Equipment>
+													<AircraftCode>388</AircraftCode>
+												</Equipment>
+
+												<ClassOfService>
+													<Code>M</Code>
+													<MarketingName CabinDesignator="M" />
+												</ClassOfService>
+											</Flight>
+										</OriginDestination>
+										<FareDetail>
+											<FareComponent>
+
+												<SegmentReference>SEG1</SegmentReference>
+												<PriceBreakdown>
+													<Price>
+														<BaseAmount Code="INR">1738</BaseAmount>
+														<Surcharges>
+															<Surcharge>
+																<Total Code="INR">86.41</Total>
+																<Breakdown>
+																	<Fee>
+																		<Amount Code="INR">38.85</Amount>
+																	</Fee>
+																	<Fee>
+																		<Amount Code="INR">47.56</Amount>
+																	</Fee>
+																</Breakdown>
+															</Surcharge>
+														</Surcharges>
+													</Price>
+												</PriceBreakdown>
+												<FareBasis>
+													<FareBasisCode>
+														<Code>MSAVER/WH</Code>
+														<Application>Requested</Application>
+													</FareBasisCode>
+												</FareBasis>
+											</FareComponent>
+
+											<TourCode>749</TourCode>
+										</FareDetail>
+									</DetailedFlightItem>
+								</OfferItemType>
+								<TimeLimits>
+									<TimeLimit>
+										<TicketByTimeLimit>
+											<TicketBy>2017-11-01T12:52:21</TicketBy>
+										</TicketByTimeLimit>
+									</TimeLimit>
+								</TimeLimits>
+							</OfferItem>
+
+						</OrderItems>
+						<DataLists>
+							<OriginDestinationList>
+								<OriginDestination OriginDestinationKey="OD1">
+									<DepartureCode>TRV</DepartureCode>
+									<ArrivalCode>DXB</ArrivalCode>
+									<FlightReferences>AMADEUS11OD1FL1</FlightReferences>
+								</OriginDestination>
+
+							</OriginDestinationList>
+							<FlightList>
+								<Flight FlightKey="AMADEUS11OD1FL1">
+									<SegmentReferences>SEG1</SegmentReferences>
+								</Flight>
+							</FlightList>
+						</DataLists>
+					</Query>
+					<TotalPrice>
+						<Currency>USD</Currency>
+						<BaseCost Amount="243.54" Currency="USD" />
+						<BasePrice Amount="243.54" Currency="USD" />
+						<Discount Amount="0.0" Currency="USD" />
+						<GrossPrice Amount="243.54" Currency="USD" />
+						<NetPrice Amount="243.54" Currency="USD" />
+						<AgencyCommission Amount="0.0" Currency="USD" />
+						<VendorCommission Amount="0.0" Currency="USD" />
+						<MarkUp Amount="0.0" Currency="USD" />
+						<GrossProfit Amount="0.0" Currency="USD" />
+						<NetProfit Amount="0.0" Currency="USD" />
+						<GrossProfitMargin Amount="0.0" Currency="USD" />
+						<NetProfitMargin Amount="0.0" Currency="USD" />
+					</TotalPrice>
+				</Air>
+			</Product>
+		</ProductRequest>
+	</ProductRequests>
+</ModifyBookingRequest>

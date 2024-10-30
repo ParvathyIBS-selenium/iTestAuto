@@ -1,0 +1,1900 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project activeEnvironment="Default" name="Send Schedule Message" resourceRoot="" soapui-version="5.2.0" abortOnError="false" runType="SEQUENTIAL" defaultScriptLanguage="Groovy" id="09b50c93-adc6-40ca-b1b6-5048f09feaba" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ProjectSettings@hermesConfig">D:\soap projects</con:setting></con:settings><con:testSuite name="Send SSM" id="f2fc784d-1a13-4359-ad31-93e8b531723c"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="false" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Send" searchProperties="true" id="e28d81d1-bb5f-43fd-8ea6-4066ee0c1c73" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword=""><con:settings/><con:testStep type="properties" name="Properties" id="2f8d5020-ba36-4bb5-af23-367ef70208ef"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" discardValuesOnSave="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SSM Type</con:name><con:value>NEW</con:value></con:property><con:property><con:name>Flight ID</con:name><con:value>LH5777R</con:value></con:property><con:property><con:name>Day of Flight</con:name><con:value>04</con:value></con:property><con:property><con:name>Month of Flight</con:name><con:value>JUN</con:value></con:property><con:property><con:name>Service Type</con:name><con:value>F</con:value></con:property><con:property><con:name>Aircraft Type</con:name><con:value>M1F</con:value></con:property><con:property><con:name>Capacity Config</con:name><con:value>YYM1FPP26</con:value></con:property><con:property><con:name>Origin ETD (UTC)</con:name><con:value>1200</con:value></con:property><con:property><con:name>Transit ETA (UTC)</con:name><con:value>1330</con:value></con:property><con:property><con:name>Transit ETD (UTC)</con:name><con:value>1200+1</con:value></con:property><con:property><con:name>Destination ETA (UTC)</con:name><con:value>1330+1</con:value></con:property><con:property><con:name>Origin</con:name><con:value>FMO</con:value></con:property><con:property><con:name>Transit</con:name><con:value>FRA</con:value></con:property><con:property><con:name>Destination</con:name><con:value>MUC</con:value></con:property><con:property><con:name>Origin ETD (LT)</con:name><con:value>1400</con:value></con:property><con:property><con:name>Transit ETA (LT)</con:name><con:value>1530</con:value></con:property><con:property><con:name>Transit ETD (LT)</con:name><con:value>1400+1</con:value></con:property><con:property><con:name>Destination ETA (LT)</con:name><con:value>1530+1</con:value></con:property><con:property><con:name>Sent Telex</con:name><con:value>QN QLHC1LH
+.QLHRMLH 251155 MESX
+SSM
+NEW
+LH5777R 3/YY
+04JUN 04JUN 1234567
+F M1F .PP26
+FMO1200 FRA1330
+FRA1200/1 MUC1330/1
+=</con:value></con:property><con:property><con:name>Test case Name</con:name><con:value>SendMVTTElex</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="TC Name" id="dbb885e1-3ed4-4c90-bf16-d930ca628cde"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.util.Iterator;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def props=testRunner.testCase.getTestStepByName("Properties") 
+FileInputStream file = new FileInputStream(new File(projectDir,"\\excels\\Datasheet.xlsx"));
+XSSFWorkbook workbook1 = new XSSFWorkbook(file)
+
+XSSFSheet sheet1 = workbook1.getSheet("TCName")
+
+
+   Row row = sheet1.getRow(1);
+           
+     Cell cell = row.getCell(0);
+
+     log.info cell
+
+  props.setPropertyValue("Test case Name", cell.toString());
+     </script></con:config></con:testStep><con:testStep type="groovy" name="Excel Read" id="6416854d-1662-4108-b2c9-8bb952e60e50"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.util.Iterator;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFRow;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+def props=testRunner.testCase.getTestStepByName("Properties")
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+String flightNumber=null;
+String dayOfOps=null;
+String envToUse=null;
+String MonthOfOps=null;
+String testcase=p["Test case Name"].getValue();
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+
+FileInputStream file = new FileInputStream(new File(projectDir,"\\excels\\Datasheet.xlsx"));
+XSSFWorkbook workbook1 = new XSSFWorkbook(file)
+XSSFSheet sheet1 = workbook1.getSheet(testcase)
+
+  Iterator rowIterator = sheet1.rowIterator();
+  rowIterator.next()
+        Row row;                      
+        def rowsData = []
+         while(rowIterator.hasNext()) {
+
+         	 row = rowIterator.next()
+             def rowIndex = row.getRowNum()
+             def colIndex;
+             def rowData = []
+             
+            for (Cell cell : row) {
+
+           colIndex = cell.getColumnIndex()
+        rowData[colIndex] = cell.getRichStringCellValue().getString();
+      
+
+        if(rowData[colIndex]==testcase)
+        {
+        	//Getting the flight Number
+        	cell = row.getCell(6);
+
+        	 flightNumber=cell.getRichStringCellValue().getString();
+
+        	 //Getting the day of operation
+        	 cell = row.getCell(8);
+
+        	 dayOfOps=cell.getRichStringCellValue().getString();
+
+        	 //Env to Use
+        	  cell = row.getCell(1);
+        	envToUse=cell.getRichStringCellValue().getString();
+
+        	//Getting the month of ops
+        	   cell = row.getCell(10);
+        	  MonthOfOps=cell.getRichStringCellValue().getString();  
+        	
+        }
+
+    
+    
+
+             }
+             }
+
+
+ //Setting the values in the property file
+      props.setPropertyValue("Flight ID", flightNumber);
+      props.setPropertyValue("Day of Flight", dayOfOps);
+      props.setPropertyValue("Month of Flight", MonthOfOps.toUpperCase());
+       
+      
+       //Setting the value in the test case
+      testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",envToUse )
+          </script></con:config></con:testStep><con:testStep type="groovy" name="Build Telex" id="b59b5f16-f3ad-44bb-9f9e-b8c04ea8dffd"><con:settings/><con:config><script>/* Version History 
+ * ?			?		created							
+ * 2014-08-05	Knut		fix: at end of 2.line of telex must be "MESX" to simulate that it comes from SITA=>MesX=>test environment
+ */
+
+import de.imbus.sit.SITDate;
+import de.imbus.sit.SITUtils;
+
+def alert = com.eviware.soapui.support.UISupport;
+
+// Match "xxxx" or "xxxx+x" where x can be any number. E.g. "1200" or "1200+1"
+String timeMatch = "^\\d{4}(\\+\\d)?";
+// Match "xxxx+Y" where Y can be any number. E.g. "1200+1"
+String plusMatch = "^\\d{4}?(\\+\\d)";
+// Match 2 three numbers (NOT chars). E.g. "22"
+String twoNumbers = "^\\d{2}";
+// Match 3 three upper case chars (NOT numbers). E.g. "FMO"
+String stationMatch = "^[A-Z]{3}";
+// Match 3 three upper case chars (NOT numbers). E.g. "F"
+String oneCharMatch = "^[A-Z]{1}";
+// Match 3 three chars inkluding numbers. E.g. "FMO", "F3K"
+String threeChar = "^\\w{3}";
+// Match 9 three chars inkluding numbers. E.g. "YYM1FPP26"
+String nineChar = "^\\w{9}";
+// Match a flight number with allowed suffixes. E.g. "LH9022C"
+//String flightMatch = "^[A-Z]{2}\\d{4}[MXOKBYAHCUPZWS]?";
+//String flightMatch = "^[A-Z]{2}[0-9]{3}\\w?";
+String flightMatch = "^[A-Z]{2}\\d{3}(\\d[MXOKBYAHCUPZWS]?)?";
+
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+def orgETD 		= SITUtils.checkInput( p["Origin ETD (UTC)"].getValue(), timeMatch ).substring(0,4);
+def orgETDPlus 	= "";
+def transETA		= SITUtils.checkInput( p["Transit ETA (UTC)"].getValue(), timeMatch ).substring(0,4);
+def transETAPlus 	= "";
+def transETD		= SITUtils.checkInput( p["Transit ETD (UTC)"].getValue(), timeMatch ).substring(0,4);
+def transETDPlus	= "";
+def destETA		= SITUtils.checkInput( p["Destination ETA (UTC)"].getValue(), timeMatch ).substring(0,4);
+def destETAPlus	= "";
+String origin 			= SITUtils.checkInput( p["Origin"].getValue(), stationMatch );
+String transit 		= SITUtils.checkInput( p["Transit"].getValue(), stationMatch );
+String destination		= SITUtils.checkInput( p["Destination"].getValue(), stationMatch );
+//String flightID 		= SITUtils.checkInput( p["Flight ID"].getValue(), flightMatch );
+String dayOfFlight		= SITUtils.checkInput( p["Day of Flight"].getValue(), twoNumbers );
+String monthOfFlight	= SITUtils.checkInput( p["Month of Flight"].getValue(), stationMatch );
+String serviceType		= SITUtils.checkInput( p["Service Type"].getValue(), oneCharMatch );
+String aircraftType		= SITUtils.checkInput( p["Aircraft Type"].getValue(), threeChar );
+String capConf			= SITUtils.checkInput( p["Capacity Config"].getValue(), nineChar );
+String flightID 		= p["Flight ID"].getValue();
+
+try {
+	orgETDPlus = p["Origin ETD (UTC)"].getValue().substring(5);
+	orgETDPlus = "/" + orgETDPlus;
+} catch ( Exception e ) {
+	orgETDPlus = "";
+}
+
+try {
+	transETAPlus = p["Transit ETA (UTC)"].getValue().substring(5);
+	transETAPlus = "/" + transETAPlus;
+} catch ( Exception e ) {
+	transETAPlus = "";
+}
+
+try {
+	transETDPlus = p["Transit ETD (UTC)"].getValue().substring(5);
+	transETDPlus = "/" + transETDPlus;
+} catch ( Exception e ) {
+	transETDPlus = "";
+}
+
+try {
+	destETAPlus = p["Destination ETA (UTC)"].getValue().substring(5);
+	destETAPlus = "/" + destETAPlus;
+} catch ( Exception e ) {
+	destETAPlus = "";
+}
+
+String sent_date = SITDate.getDateTime( "", "ddkkmm" );
+
+String org_ETD_LT 	= SITDate.getOwnTime( "Europe/Berlin", "kkmm", orgETD  );
+String trans_ETA_LT = SITDate.getOwnTime( "Europe/Berlin", "kkmm", transETA  );
+String trans_ETD_LT = SITDate.getOwnTime( "Europe/Berlin", "kkmm", transETD  );
+String dest_ETA_LT 	= SITDate.getOwnTime( "Europe/Berlin", "kkmm", destETA  );
+
+/*build SSM message*/
+
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + sent_date + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			p["SSM Type"].getValue() + NEWLINE +
+			flightID + " 3/" + capConf.substring(0,2) + NEWLINE + 
+			dayOfFlight + monthOfFlight + " " +  dayOfFlight + 
+			monthOfFlight + " 1234567"  + NEWLINE + 
+			serviceType + " " + aircraftType + " ." + capConf.substring(5,9) + NEWLINE +
+			origin + orgETD + orgETDPlus + " " + transit +  transETA + transETAPlus + NEWLINE +  
+			transit + transETD + transETDPlus + " " + destination +  
+			destETA + destETAPlus + NEWLINE +  
+			"=";
+
+/*Add created telex to the properties*/
+
+s.setPropertyValue( "Origin ETD (LT)",org_ETD_LT + orgETDPlus.replace("/", "+") );
+s.setPropertyValue( "Transit ETA (LT)", trans_ETA_LT + transETAPlus.replace("/", "+") );
+s.setPropertyValue( "Transit ETD (LT)", trans_ETD_LT + transETDPlus.replace("/", "+") );
+s.setPropertyValue( "Destination ETA (LT)", dest_ETA_LT + destETAPlus.replace("/", "+") );
+s.setPropertyValue( "Sent Telex", telex);</script></con:config></con:testStep><con:testStep type="groovy" name="enqueue in SSM-to-SUT--Queue" id="cc8b7e07-93f8-4804-9e50-531d64d552ef"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#Project#use--HermesProfile}' )
+String queue = context.expand( '${#Project#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	//jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,null ,null);
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("Sent Telex"));
+	log.info(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("Sent Telex"))
+
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:setupScript>log.info("########################################################")
+log.info("")
+log.info('Project: "'+testRunner.testCase.testSuite.project.name+'"' )
+log.info('TestSuite: "'+testRunner.testCase.testSuite.name+'"' )
+log.info('TestCase: "'+testRunner.testCase.name+'"' )
+
+log.info("selected Environment: "+context.expand( '"${#TestCase#selected-Env-Prefix}"' ))
+log.info("used HermesProfile: "+context.expand( '"${#TestCase#use--HermesProfile}"' ))
+log.info("use__Queue--SSM-to-SUT: "+context.expand( '"${#TestCase#use__Queue--SSM-to-SUT}"' ))
+log.info("use__Queue--SITA-to-SUT: "+context.expand( '"${#TestCase#use__Queue--SITA-to-SUT}"' ))
+log.info("use__Queue--SUT-to-SITA: "+context.expand( '"${#TestCase#use__Queue--SUT-to-SITA}"' ))
+</con:setupScript><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Send without transition" searchProperties="true" id="a163bdf8-cbf6-4e56-b263-afcd9c2b9c47"><con:settings/><con:testStep type="properties" name="Properties" id="42b67594-f1b6-4aa0-81bd-610cad172dcb"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" discardValuesOnSave="false" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>SSM Type</con:name><con:value>NEW</con:value></con:property><con:property><con:name>Flight ID</con:name><con:value/></con:property><con:property><con:name>Day of Flight</con:name><con:value/></con:property><con:property><con:name>Month of Flight</con:name><con:value/></con:property><con:property><con:name>Service Type</con:name><con:value/></con:property><con:property><con:name>Aircraft Type</con:name><con:value/></con:property><con:property><con:name>Capacity Config</con:name><con:value/></con:property><con:property><con:name>Origin ETD (UTC)</con:name><con:value>1200</con:value></con:property><con:property><con:name>Destination ETA (UTC)</con:name><con:value>1330+1</con:value></con:property><con:property><con:name>Origin</con:name><con:value>FMO</con:value></con:property><con:property><con:name>Destination</con:name><con:value/></con:property><con:property><con:name>Origin ETD (LT)</con:name><con:value/></con:property><con:property><con:name>Destination ETA (LT)</con:name><con:value/></con:property><con:property><con:name>Sent Telex</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Build Telex" id="e2915842-af03-4d7a-b45b-0567d99a3d8e"><con:settings/><con:config><script>/* Version History 
+ * ?			?		created							
+ * 2014-08-05	Knut		fix: at end of 2.line of telex must be "MESX" to simulate that it comes from SITA=>MesX=>test environment
+ */
+
+import de.imbus.sit.SITDate;
+import de.imbus.sit.SITUtils;
+
+def alert = com.eviware.soapui.support.UISupport;
+
+// Match "xxxx" or "xxxx+x" where x can be any number. E.g. "1200" or "1200+1"
+String timeMatch = "^\\d{4}(\\+\\d)?";
+// Match "xxxx+Y" where Y can be any number. E.g. "1200+1"
+String plusMatch = "^\\d{4}?(\\+\\d)";
+// Match 2 three numbers (NOT chars). E.g. "22"
+String twoNumbers = "^\\d{2}";
+// Match 3 three upper case chars (NOT numbers). E.g. "FMO"
+String stationMatch = "^[A-Z]{3}";
+// Match 3 three upper case chars (NOT numbers). E.g. "F"
+String oneCharMatch = "^[A-Z]{1}";
+// Match 3 three chars inkluding numbers. E.g. "FMO", "F3K"
+String threeChar = "^\\w{3}";
+// Match 9 three chars inkluding numbers. E.g. "YYM1FPP26"
+String nineChar = "^\\w{9}";
+// Match a flight number with allowed suffixes. E.g. "LH9022C"
+//String flightMatch = "^[A-Z]{2}\\d{4}[MXOKBYAHCUPZWS]?";
+//String flightMatch = "^[A-Z]{2}[0-9]{3}\\w?";
+String flightMatch = "^[A-Z]{2}\\d{3}(\\d[MXOKBYAHCUPZWS]?)?";
+
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+def orgETD 		= SITUtils.checkInput( p["Origin ETD (UTC)"].getValue(), timeMatch ).substring(0,4);
+def orgETDPlus 	= "";
+def destETA		= SITUtils.checkInput( p["Destination ETA (UTC)"].getValue(), timeMatch ).substring(0,4);
+def destETAPlus	= "";
+String origin 			= SITUtils.checkInput( p["Origin"].getValue(), stationMatch );
+String destination		= SITUtils.checkInput( p["Destination"].getValue(), stationMatch );
+String flightID 		= SITUtils.checkInput( p["Flight ID"].getValue(), flightMatch );
+String dayOfFlight		= SITUtils.checkInput( p["Day of Flight"].getValue(), twoNumbers );
+String monthOfFlight	= SITUtils.checkInput( p["Month of Flight"].getValue(), stationMatch );
+String serviceType		= SITUtils.checkInput( p["Service Type"].getValue(), oneCharMatch );
+String aircraftType		= SITUtils.checkInput( p["Aircraft Type"].getValue(), threeChar );
+String capConf			= SITUtils.checkInput( p["Capacity Config"].getValue(), nineChar );
+
+
+try {
+	orgETDPlus = p["Origin ETD (UTC)"].getValue().substring(5);
+	orgETDPlus = "/" + orgETDPlus;
+} catch ( Exception e ) {
+	orgETDPlus = "";
+}
+
+
+try {
+	destETAPlus = p["Destination ETA (UTC)"].getValue().substring(5);
+	destETAPlus = "/" + destETAPlus;
+} catch ( Exception e ) {
+	destETAPlus = "";
+}
+
+String sent_date = SITDate.getDateTime( "", "ddkkmm" );
+
+String org_ETD_LT 	= SITDate.getOwnTime( SITDate.getTimeZoneForStation( origin ), "kkmm", orgETD  );
+String dest_ETA_LT 	= SITDate.getOwnTime( SITDate.getTimeZoneForStation( destination ), "kkmm", destETA  );
+
+/*build SSM message*/
+
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + sent_date + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			p["SSM Type"].getValue() + NEWLINE +
+			flightID + " 3/" + capConf.substring(0,2) + NEWLINE + 
+			dayOfFlight + monthOfFlight + " " +  dayOfFlight + 
+			monthOfFlight + " 1234567"  + NEWLINE + 
+			serviceType + " " + aircraftType + " ." + capConf.substring(5,9) + NEWLINE +
+			origin + orgETD + orgETDPlus + " " + destination + destETA + destETAPlus + NEWLINE +  
+			"=";
+
+/*Add created telex to the properties*/
+
+s.setPropertyValue( "Origin ETD (LT)",org_ETD_LT + orgETDPlus.replace("/", "+") );
+s.setPropertyValue( "Destination ETA (LT)", dest_ETA_LT + destETAPlus.replace("/", "+") );
+s.setPropertyValue( "Sent Telex", telex);</script></con:config></con:testStep><con:testStep type="groovy" name="Send Telex" disabled="true" id="fc699799-3071-46e8-ac9c-1b3a760e9aab"><con:settings/><con:config><script>/*
+ * this test step is deactivated because it is replaced by the following step
+ * It may be removed if the new version has proved failsafe
+ */
+
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT.SSM::-");
+def hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+
+def jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+Session queueSession = jmsConnectionHolder.getSession();
+Queue queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+
+MessageProducer messageProducer =queueSession.createProducer( queueSend );
+TextMessage textMessageSend = queueSession.createTextMessage();
+
+textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("Sent Telex"));
+messageProducer.send( textMessageSend);
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="enqueue in SSM-to-SUT--Queue" id="ed107c81-c0c0-448e-b280-f7666dd555c0"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#TestCase#use--HermesProfile}' )
+String queue = context.expand( '${#TestCase#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("Sent Telex"));
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:setupScript>log.info("########################################################")
+log.info("")
+log.info('Project: "'+testRunner.testCase.testSuite.project.name+'"' )
+log.info('TestSuite: "'+testRunner.testCase.testSuite.name+'"' )
+log.info('TestCase: "'+testRunner.testCase.name+'"' )
+
+log.info("selected Environment: "+context.expand( '"${#TestCase#selected-Env-Prefix}"' ))
+log.info("used HermesProfile: "+context.expand( '"${#TestCase#use--HermesProfile}"' ))
+log.info("use__Queue--SSM-to-SUT: "+context.expand( '"${#TestCase#use__Queue--SSM-to-SUT}"' ))
+log.info("use__Queue--SITA-to-SUT: "+context.expand( '"${#TestCase#use__Queue--SITA-to-SUT}"' ))
+log.info("use__Queue--SUT-to-SITA: "+context.expand( '"${#TestCase#use__Queue--SUT-to-SITA}"' ))
+</con:setupScript><con:properties/></con:testCase><con:testCase id="1393460e-5edd-4d5f-a548-b22c36bd7076" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Single Leg" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="fab53146-44d1-4861-aabe-d8989b6766da"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>StartDate</con:name><con:value>04AUG18</con:value></con:property><con:property><con:name>EndDate</con:name><con:value>09AUG18</con:value></con:property><con:property><con:name>Origin</con:name><con:value>FRA</con:value></con:property><con:property><con:name>Destination</con:name><con:value>HNL</con:value></con:property><con:property><con:name>SSM Message</con:name><con:value>QN QLHC1LH
+.QLHRMLH 050438 MESX
+SSM
+NEW
+LH1329B 3/YY
+04AUG18 09AUG18 1234567
+F M1F .PP26
+FRA1200 HNL1330
+=</con:value></con:property><con:property><con:name>Module Name</con:name><con:value>eFreight</con:value></con:property><con:property><con:name>Test case Name</con:name><con:value>E9771</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Values From Prop" id="fca301cd-561e-43c6-a07c-df0dafd16621" disabled="true"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+/*****Taking values from property file****/
+Properties props = new Properties()
+File propsFile = new File(projectDir,'/src/resources/GlobalVariable.properties')
+props.load(propsFile.newDataInputStream())
+
+
+/**** Getting values from propertyFile***/
+String startDate=props.getProperty('startDate')
+String endDate=props.getProperty('endDate')
+String flightNumber=props.getProperty('flightNumber')
+String origin=props.getProperty('origin')
+String destination=props.getProperty('destination')
+String testEnv=props.getProperty('testEnv')
+
+/****ADDING the values to SOAP props****/
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+s.setPropertyValue( "FlightNumber", flightNumber);
+s.setPropertyValue( "StartDate", startDate.toUpperCase());
+s.setPropertyValue( "EndDate", endDate.toUpperCase());
+s.setPropertyValue( "Origin", origin);
+s.setPropertyValue( "Destination", destination);
+
+/***** Setting the test environment in project****/
+ testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",testEnv )</script></con:config></con:testStep><con:testStep type="groovy" name="Define Preconditions" id="4f888884-5679-4881-a3dd-9dff5ba87529"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+
+
+//AWB Range creation and storing to selenium property file
+
+String moduleName=prop.getProperty("module");
+//String testcaseName=prop.getProperty("testcase");
+def testcaseName=context.expand ('${#Project#TCName}');
+String testEnv=prop.getProperty('testEnv')
+
+s.setPropertyValue( "Module Name", moduleName);
+s.setPropertyValue( "Test case Name", testcaseName);
+
+/***** Setting the test environment in project****/
+ if(testEnv.equals('ICAPSIT'))
+{
+ param="2";
+}
+else if(testEnv.equals('LCAGSIT'))
+{
+ param="1";
+}
+else if(testEnv.equals('ICAPPIT'))
+{
+ param="4";
+}
+testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",param)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Import Parameters" id="23a820be-760c-40fe-8212-1a445251f119"><con:settings/><con:config><script>import java.util.Date;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+//Generate flight number
+
+Random r = new Random();
+String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Character base = alphabet.charAt(r.nextInt(alphabet.length()));
+
+String flightNumber=testRunner.testCase.testSuite.getPropertyValue("CarrierCode")+
+                    testRunner.testCase.testSuite.getPropertyValue("FlightRange")+base.toString();
+
+                    log.info(flightNumber)
+
+String flightNo=flightNumber-testRunner.testCase.testSuite.getPropertyValue("CarrierCode")
+
+//Storing to property file
+
+testRunner.testCase.testSuite.setPropertyValue("FlightNumber",flightNumber)
+testRunner.testCase.testSuite.setPropertyValue("FlightNo",flightNo)
+
+//Storing the next flight range to property file
+String fltRange=testRunner.testCase.testSuite.getPropertyValue("FlightRange")
+int flightRange=Integer.parseInt(fltRange)+1;
+testRunner.testCase.testSuite.setPropertyValue("FlightRange",flightRange.toString())
+
+//Create start date
+Date date = new Date();
+
+Calendar c = Calendar.getInstance(); 
+c.setTime(date); 
+c.add(Calendar.DATE, 1);
+
+date = c.getTime();
+
+DateFormat fmt = new SimpleDateFormat('ddMMMyy');
+String fromattedDate = fmt.format(date);
+s.setPropertyValue( "StartDate", fromattedDate.toUpperCase());
+
+//Create end date
+
+
+
+c.add(Calendar.DATE, 5);
+
+date = c.getTime();
+
+ fmt = new SimpleDateFormat('ddMMMyy');
+ fromattedDate = fmt.format(date);
+s.setPropertyValue( "EndDate", fromattedDate.toUpperCase());
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Values From Excel" id="6a79620b-ae2d-4ab8-9fb9-df208fb1b04d"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+//Directory
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//Values from SOAP property file
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+String sheetName=p["Module Name"].getValue();
+//String testcaseName=p["Test case Name"].getValue();
+def testcaseName=context.expand ('${#Project#TCName}');
+
+
+String [] flightParams=["Origin","Destination"];
+
+
+FileInputStream file = new FileInputStream(new File(projectDir,"\\src\\resources\\TestData.xls"));
+Workbook workBook = new HSSFWorkbook(file);
+
+Sheet sheet = workBook.getSheet(sheetName);
+Iterator&lt;Row> rows = sheet.rowIterator();
+		 
+		 int rowIndex = -1;
+		 while (rows.hasNext()) {
+			 Row row = rows.next();
+			 row.getRowNum();
+
+			 /**** Finding the row Index****/
+			 for (Cell cell : row) {
+
+				 if (cell.toString().equals(testcaseName)) {
+
+		
+					 rowIndex = row.getRowNum();
+					
+
+					
+
+					 break;
+				 }
+
+				 break;
+			 }
+		 }
+		 
+
+
+		 //Getting the column numbers
+		     def rowHeader = sheet.getRow(0); 
+		     columnCount=rowHeader.getLastCellNum(); 
+
+		  for(int k=0;k&lt;flightParams.length;k++)
+		  { 
+			  
+
+		 rows = sheet.rowIterator();
+            while (rows.hasNext()) {
+                Row row = rows.next();
+                  for (Cell cell : row) {
+
+                  	 if(cell.toString().equals(flightParams[k]))
+				  {
+				  	 columnIndex = cell.getColumnIndex();
+
+				  	  Row row2 = sheet.getRow(rowIndex);
+           
+                          Cell cell2 = row2.getCell(columnIndex, Row.CREATE_NULL_AS_BLANK);
+                          
+                           s.setPropertyValue( flightParams[k], cell2.toString());
+				  }
+                  	
+                  }
+            	
+            }
+			  
+		  }
+		         
+
+		</script></con:config></con:testStep><con:testStep type="groovy" name="Build SSM" id="77ea2e29-b603-47b8-80ea-132c21f5a861"><con:settings/><con:config><script>def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+String flightNum 		= testRunner.testCase.testSuite.getPropertyValue("FlightNumber");
+String startDate 		= p["StartDate"].getValue();
+String endDate 		= p["EndDate"].getValue();
+String origin 		     = p["Origin"].getValue();
+String destination 		= p["Destination"].getValue();
+
+log.info('FlightNumber'+flightNum)
+log.info('StartDate'+startDate)
+log.info('endDate'+endDate)
+log.info('origin'+origin)
+log.info('destination'+destination)
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + "050438" + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			"NEW" + NEWLINE +
+			flightNum + " 3/" + "YY" + NEWLINE + 
+			startDate +" " +  endDate + 
+			" 1234567"  + NEWLINE + 
+			"F M1F .PP26"+NEWLINE+
+			origin+"1200 "+destination+"1330"+NEWLINE+ 
+			"=";
+s.setPropertyValue( "SSM Message", telex);
+ 
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Send SSM" id="4abb5024-a32d-4afb-bcc7-95d807a87501"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#Project#use--HermesProfile}' )
+String queue = context.expand( '${#Project#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	//jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,null ,null);
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"));
+	log.info(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"))
+
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Values To Prop" id="5c889d9d-3bd9-4230-9665-5b34b1ffdcde"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+output = new FileOutputStream(path);
+
+//Flight creation and storing to selenium property file
+
+String flightNumber=testRunner.testCase.testSuite.getPropertyValue("FlightNumber")
+String flightNo=testRunner.testCase.testSuite.getPropertyValue("FlightNo")
+String startDate 		= p["StartDate"].getValue();
+String endDate 		= p["EndDate"].getValue();
+
+prop.setProperty("flightNumber", flightNumber);
+prop.setProperty("flightNo", flightNo);
+prop.setProperty("StartDate", startDate);
+prop.setProperty("EndDate", endDate);
+
+String status="Yes";
+prop.setProperty("SoapTaskStatus", status);
+log.info "updated status"
+prop.store(output, null);
+
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="156d0e0f-370e-488a-9741-23aa1a20ee7a" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Multi Leg" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="3f3da81b-7a3f-4b61-8acd-d75db23a7568"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>StartDate</con:name><con:value>04AUG18</con:value></con:property><con:property><con:name>EndDate</con:name><con:value>10AUG18</con:value></con:property><con:property><con:name>Origin</con:name><con:value>FRA</con:value></con:property><con:property><con:name>Destination</con:name><con:value>HNL</con:value></con:property><con:property><con:name>SSM Message</con:name><con:value>QN QLHC1LH
+.QLHRMLH 050438 MESX
+SSM
+NEW
+LH1325M 3/YY
+05AUG18 10AUG18 1234567
+F M1F .PP26
+MUC1500 HNL2030
+=</con:value></con:property><con:property><con:name>Module Name</con:name><con:value>eFreight</con:value></con:property><con:property><con:name>Test case Name</con:name><con:value>E9804</con:value></con:property><con:property><con:name>FlightDate1</con:name><con:value>05AUG18</con:value></con:property><con:property><con:name>Transit</con:name><con:value>MUC</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Values From Prop" id="3cbbcf0c-96f8-4d8f-808d-206d73916771" disabled="true"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+/*****Taking values from property file****/
+Properties props = new Properties()
+File propsFile = new File(projectDir,'/src/resources/GlobalVariable.properties')
+props.load(propsFile.newDataInputStream())
+
+
+/**** Getting values from propertyFile***/
+String startDate=props.getProperty('startDate')
+String endDate=props.getProperty('endDate')
+String flightNumber=props.getProperty('flightNumber')
+String origin=props.getProperty('origin')
+String destination=props.getProperty('destination')
+String testEnv=props.getProperty('testEnv')
+
+/****ADDING the values to SOAP props****/
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+s.setPropertyValue( "FlightNumber", flightNumber);
+s.setPropertyValue( "StartDate", startDate.toUpperCase());
+s.setPropertyValue( "EndDate", endDate.toUpperCase());
+s.setPropertyValue( "Origin", origin);
+s.setPropertyValue( "Destination", destination);
+
+/***** Setting the test environment in project****/
+ testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",testEnv )</script></con:config></con:testStep><con:testStep type="groovy" name="Define Preconditions" id="45e6a120-f2bd-4a33-96ae-69629df1d500"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+
+
+//AWB Range creation and storing to selenium property file
+
+String moduleName=prop.getProperty("module");
+//String testcaseName=prop.getProperty("testcase");
+def testcaseName=context.expand ('${#Project#TCName}');
+String testEnv=prop.getProperty('testEnv')
+
+s.setPropertyValue( "Module Name", moduleName);
+s.setPropertyValue( "Test case Name", testcaseName);
+
+/***** Setting the test environment in project****/
+ if(testEnv.equals('ICAPSIT'))
+{
+ param="2";
+}
+else if(testEnv.equals('LCAGSIT'))
+{
+ param="1";
+}
+else if(testEnv.equals('ICAPPIT'))
+{
+ param="4";
+}
+testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",param)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Import Parameters_Firstleg" id="478d2787-8ffe-42c6-ad74-2bf82a06627e"><con:settings/><con:config><script>import java.util.Date;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+//Generate flight number
+
+Random r = new Random();
+String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Character base = alphabet.charAt(r.nextInt(alphabet.length()));
+
+String flightNumber=testRunner.testCase.testSuite.getPropertyValue("CarrierCode")+
+                    testRunner.testCase.testSuite.getPropertyValue("FlightRange")+base.toString();
+
+                    log.info(flightNumber)
+
+String flightNo=flightNumber-testRunner.testCase.testSuite.getPropertyValue("CarrierCode")
+
+//Storing to property file
+
+testRunner.testCase.testSuite.setPropertyValue("FlightNumber",flightNumber)
+testRunner.testCase.testSuite.setPropertyValue("FlightNo",flightNo)
+
+//Storing the next flight range to property file
+String fltRange=testRunner.testCase.testSuite.getPropertyValue("FlightRange")
+int flightRange=Integer.parseInt(fltRange)+1;
+testRunner.testCase.testSuite.setPropertyValue("FlightRange",flightRange.toString())
+
+//Create start date
+Date date = new Date();
+
+Calendar c = Calendar.getInstance(); 
+c.setTime(date); 
+c.add(Calendar.DATE, 1);
+
+date = c.getTime();
+
+DateFormat fmt = new SimpleDateFormat('ddMMMyy');
+String fromattedDate = fmt.format(date);
+s.setPropertyValue( "StartDate", fromattedDate.toUpperCase());
+
+//Create end date
+
+
+
+c.add(Calendar.DATE, 5);
+
+date = c.getTime();
+
+ fmt = new SimpleDateFormat('ddMMMyy');
+ fromattedDate = fmt.format(date);
+s.setPropertyValue( "EndDate", fromattedDate.toUpperCase());
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Import Parameters_SecondLeg" id="e02dd3a3-0785-4357-95d6-54f93d941342"><con:settings/><con:config><script>import java.util.Date;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+//Generate flight number
+
+Random r = new Random();
+String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Character base = alphabet.charAt(r.nextInt(alphabet.length()));
+
+String flightNumber2=testRunner.testCase.testSuite.getPropertyValue("CarrierCode")+
+                    testRunner.testCase.testSuite.getPropertyValue("FlightRange")+base.toString();
+
+                    log.info(flightNumber2)
+String flightNo2=flightNumber2-testRunner.testCase.testSuite.getPropertyValue("CarrierCode")
+
+//Storing to property file
+
+testRunner.testCase.testSuite.setPropertyValue("FlightNumber2",flightNumber2)
+testRunner.testCase.testSuite.setPropertyValue("FlightNo2",flightNo2)
+
+//Storing the next flight range to property file
+String fltRange=testRunner.testCase.testSuite.getPropertyValue("FlightRange")
+int flightRange=Integer.parseInt(fltRange)+1;
+testRunner.testCase.testSuite.setPropertyValue("FlightRange",flightRange.toString())
+
+//Create start date
+Date date = new Date();
+
+Calendar c = Calendar.getInstance(); 
+c.setTime(date); 
+c.add(Calendar.DATE, 2);
+
+date = c.getTime();
+
+DateFormat fmt = new SimpleDateFormat('ddMMMyy');
+String fromattedDate = fmt.format(date);
+s.setPropertyValue( "FlightDate1", fromattedDate.toUpperCase());
+
+//Create end date
+c.add(Calendar.DATE, 5);
+
+date = c.getTime();
+
+ fmt = new SimpleDateFormat('ddMMMyy');
+ fromattedDate = fmt.format(date);
+s.setPropertyValue( "EndDate", fromattedDate.toUpperCase());
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Values From Excel" id="b109e384-4269-47cb-8897-9f643c51319d"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+//Directory
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//Values from SOAP property file
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+String sheetName=p["Module Name"].getValue();
+def testcaseName=context.expand ('${#Project#TCName}');
+
+
+String [] flightParams=["Origin","Transit","Destination"];
+
+
+FileInputStream file = new FileInputStream(new File(projectDir,"\\src\\resources\\TestData.xls"));
+Workbook workBook = new HSSFWorkbook(file);
+
+Sheet sheet = workBook.getSheet(sheetName);
+Iterator&lt;Row> rows = sheet.rowIterator();
+		 
+		 int rowIndex = -1;
+		 while (rows.hasNext()) {
+			 Row row = rows.next();
+			 row.getRowNum();
+
+			 /**** Finding the row Index****/
+			 for (Cell cell : row) {
+
+				 if (cell.toString().equals(testcaseName)) {
+
+		
+					 rowIndex = row.getRowNum();
+					
+
+					
+
+					 break;
+				 }
+
+				 break;
+			 }
+		 }
+		 
+
+
+		 //Getting the column numbers
+		     def rowHeader = sheet.getRow(0); 
+		     columnCount=rowHeader.getLastCellNum(); 
+
+		  for(int k=0;k&lt;flightParams.length;k++)
+		  { 
+			  
+
+		 rows = sheet.rowIterator();
+            while (rows.hasNext()) {
+                Row row = rows.next();
+                  for (Cell cell : row) {
+
+                  	 if(cell.toString().equals(flightParams[k]))
+				  {
+				  	 columnIndex = cell.getColumnIndex();
+
+				  	  Row row2 = sheet.getRow(rowIndex);
+           
+                          Cell cell2 = row2.getCell(columnIndex, Row.CREATE_NULL_AS_BLANK);
+                          
+                           s.setPropertyValue( flightParams[k], cell2.toString());
+				  }
+                  	
+                  }
+            	
+            }
+			  
+		  }
+		         
+
+		</script></con:config></con:testStep><con:testStep type="groovy" name="Build SSM" id="5f5328d3-27b4-4f20-b887-f228b23fc7b0"><con:settings/><con:config><script>def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+String flightNum 		= testRunner.testCase.testSuite.getPropertyValue("FlightNumber");
+String startDate 		= p["StartDate"].getValue();
+String endDate 		= p["EndDate"].getValue();
+String origin 		     = p["Origin"].getValue();
+String transit 		= p["Transit"].getValue();
+String destination 		= p["Destination"].getValue();
+
+log.info('FlightNumber'+flightNum)
+log.info('StartDate'+startDate)
+log.info('endDate'+endDate)
+log.info('origin'+origin)
+log.info('transit'+transit);
+log.info('destination'+destination)
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + "050438" + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			"NEW" + NEWLINE +
+			flightNum + " 3/" + "YY" + NEWLINE + 
+			startDate +" " +  endDate + 
+			" 1234567"  + NEWLINE + 
+			"F M1F .PP26"+NEWLINE+
+			origin+"1200 "+transit+"1330"+NEWLINE+ 
+			"=";
+s.setPropertyValue( "SSM Message", telex);
+ 
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Send SSM" id="c12fcd98-882e-43a9-b97a-2f95baeedd3b"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#Project#use--HermesProfile}' )
+String queue = context.expand( '${#Project#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	//jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,null ,null);
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"));
+	log.info(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"))
+
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Build SSM2" id="b5d13642-e190-49dd-828d-09852c5bb952"><con:settings/><con:config><script>def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+String flightNum 		= testRunner.testCase.testSuite.getPropertyValue("FlightNumber2");
+String startDate 		= p["FlightDate1"].getValue();
+String endDate 		= p["EndDate"].getValue();
+String origin 		     = p["Origin"].getValue();
+String transit 		= p["Transit"].getValue();
+String destination 		= p["Destination"].getValue();
+
+log.info('FlightNumber'+flightNum)
+log.info('StartDate'+startDate)
+log.info('endDate'+endDate)
+log.info('origin'+origin)
+log.info('transit'+transit);
+log.info('destination'+destination)
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + "050438" + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			"NEW" + NEWLINE +
+			flightNum + " 3/" + "YY" + NEWLINE + 
+			startDate +" " +  endDate + 
+			" 1234567"  + NEWLINE + 
+			"F M1F .PP26"+NEWLINE+
+			transit+"1500 "+destination+"2030"+NEWLINE+ 
+			"=";
+s.setPropertyValue( "SSM Message", telex);
+ 
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Send SSM2" id="37d68230-dcfd-4929-893a-da72d819de80"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#Project#use--HermesProfile}' )
+String queue = context.expand( '${#Project#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	//jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,null ,null);
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"));
+	log.info(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"))
+
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Values To Prop" id="a51c207a-b2b6-4aea-99a6-5e0ed29b0983"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+output = new FileOutputStream(path);
+
+//Flight creation and storing to selenium property file
+
+String flightNumber=testRunner.testCase.testSuite.getPropertyValue("FlightNumber")
+String flightNumber2=testRunner.testCase.testSuite.getPropertyValue("FlightNumber2")
+String flightNo=testRunner.testCase.testSuite.getPropertyValue("FlightNo")
+String flightNo2=testRunner.testCase.testSuite.getPropertyValue("FlightNo2")
+String startDate 		= p["StartDate"].getValue();
+String flightdate1 		= p["FlightDate1"].getValue();
+String endDate 		= p["EndDate"].getValue();
+
+prop.setProperty("flightNumber", flightNumber);
+prop.setProperty("flightNumber2", flightNumber2);
+prop.setProperty("flightNo", flightNo);
+prop.setProperty("flightNo2", flightNo2);
+prop.setProperty("StartDate", startDate);
+prop.setProperty("FlightDate1", flightdate1);
+prop.setProperty("EndDate", endDate);
+
+
+
+String status="Yes";
+prop.setProperty("SoapTaskStatus", status);
+log.info "updated status"
+prop.store(output, null);
+
+
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="1ade4bd5-a311-42de-b08f-4535a46a6c24" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="Send_SSM" searchProperties="true"><con:settings/><con:testStep type="properties" name="Properties" id="f8dbb947-34cf-4e10-9256-48716920dae7"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>StartDate</con:name><con:value>31JUL18</con:value></con:property><con:property><con:name>EndDate</con:name><con:value>05AUG18</con:value></con:property><con:property><con:name>Origin</con:name><con:value>DUS</con:value></con:property><con:property><con:name>Destination</con:name><con:value>FRA</con:value></con:property><con:property><con:name>SSM Message</con:name><con:value>QN QLHC1LH
+.QLHRMLH 050438 MESX
+SSM
+NEW
+NH1364Z 3/YY
+31JUL18 05AUG18 1234567
+F M1F .PP26
+DUS0800 FRA1330
+=</con:value></con:property><con:property><con:name>Module Name</con:name><con:value>rampHandling_DAS</con:value></con:property><con:property><con:name>Test case Name</con:name><con:value>TC_559</con:value></con:property><con:property><con:name>Transit</con:name><con:value>FRA</con:value></con:property><con:property><con:name>CarrierCode</con:name><con:value>NH</con:value></con:property></con:properties></con:config></con:testStep><con:testStep type="groovy" name="Values From Prop" id="ef2919e5-bce0-49f5-acb6-727cf4617e74" disabled="true"><con:settings/><con:config><script>def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+/*****Taking values from property file****/
+Properties props = new Properties()
+File propsFile = new File(projectDir,'/src/resources/GlobalVariable.properties')
+props.load(propsFile.newDataInputStream())
+
+
+/**** Getting values from propertyFile***/
+String startDate=props.getProperty('startDate')
+String endDate=props.getProperty('endDate')
+String flightNumber=props.getProperty('flightNumber')
+String origin=props.getProperty('origin')
+String destination=props.getProperty('destination')
+String testEnv=props.getProperty('testEnv')
+
+/****ADDING the values to SOAP props****/
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+s.setPropertyValue( "FlightNumber", flightNumber);
+s.setPropertyValue( "StartDate", startDate.toUpperCase());
+s.setPropertyValue( "EndDate", endDate.toUpperCase());
+s.setPropertyValue( "Origin", origin);
+s.setPropertyValue( "Destination", destination);
+
+/***** Setting the test environment in project****/
+ testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",testEnv )</script></con:config></con:testStep><con:testStep type="groovy" name="Values From Excel" id="0852b8c0-fd6c-43c1-91e4-46a2f1114c07"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
+import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+
+//Directory
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+//Values from SOAP property file
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+String sheetName=p["Module Name"].getValue();
+//String testcaseName=p["Test case Name"].getValue();
+def testcaseName=context.expand ('${#Project#TCName}');
+
+
+String [] flightParams=["Origin","Transit","Destination","CarrierCode"];
+
+
+FileInputStream file = new FileInputStream(new File(projectDir,"\\src\\resources\\TestData.xls"));
+Workbook workBook = new HSSFWorkbook(file);
+
+Sheet sheet = workBook.getSheet(sheetName);
+Iterator&lt;Row> rows = sheet.rowIterator();
+		 
+		 int rowIndex = -1;
+		 while (rows.hasNext()) {
+			 Row row = rows.next();
+			 row.getRowNum();
+
+			 /**** Finding the row Index****/
+			 for (Cell cell : row) {
+
+				 if (cell.toString().equals(testcaseName)) {
+
+		
+					 rowIndex = row.getRowNum();
+					
+
+					
+
+					 break;
+				 }
+
+				 break;
+			 }
+		 }
+		 
+
+
+		 //Getting the column numbers
+		     def rowHeader = sheet.getRow(0); 
+		     columnCount=rowHeader.getLastCellNum(); 
+
+		  for(int k=0;k&lt;flightParams.length;k++)
+		  { 
+			  
+
+		 rows = sheet.rowIterator();
+            while (rows.hasNext()) {
+                Row row = rows.next();
+                  for (Cell cell : row) {
+
+                  	 if(cell.toString().equals(flightParams[k]))
+				  {
+				  	 columnIndex = cell.getColumnIndex();
+
+				  	  Row row2 = sheet.getRow(rowIndex);
+           
+                          Cell cell2 = row2.getCell(columnIndex, Row.CREATE_NULL_AS_BLANK);
+                          
+                           s.setPropertyValue( flightParams[k], cell2.toString());
+				  }
+                  	
+                  }
+            	
+            }
+			  
+		  }
+		         
+
+		</script></con:config></con:testStep><con:testStep type="groovy" name="Define Preconditions" id="ce1ab12d-26ae-4853-9ff8-c294f435c9d2"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+
+
+//AWB Range creation and storing to selenium property file
+
+String moduleName=prop.getProperty("module");
+//String testcaseName=prop.getProperty("testcase");
+def testcaseName=context.expand ('${#Project#TCName}');
+String testEnv=prop.getProperty('testEnv')
+
+s.setPropertyValue( "Module Name", moduleName);
+s.setPropertyValue( "Test case Name", testcaseName);
+
+/***** Setting the test environment in project****/
+ if(testEnv.equals('ICAPSIT'))
+{
+ param="2";
+}
+else if(testEnv.equals('LCAGSIT'))
+{
+ param="1";
+}
+else if(testEnv.equals('ICAPPIT'))
+{
+ param="4";
+}
+testRunner.testCase.testSuite.project.setPropertyValue("Environment-to-use",param)
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Import Parameters" id="7308a09a-1f16-423b-a188-39c83016ddb7"><con:settings/><con:config><script>import java.util.Date;
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+
+//Generate flight number
+
+Random r = new Random();
+String alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+Character base = alphabet.charAt(r.nextInt(alphabet.length()));
+
+String flightNumber=p["CarrierCode"].getValue()+
+                    testRunner.testCase.testSuite.getPropertyValue("FlightRange")+base.toString();
+
+                    log.info(flightNumber)
+
+String flightNo=flightNumber-p["CarrierCode"].getValue();
+
+//Storing to property file
+
+testRunner.testCase.testSuite.setPropertyValue("FlightNumber",flightNumber)
+testRunner.testCase.testSuite.setPropertyValue("FlightNo",flightNo)
+
+//Storing the next flight range to property file
+String fltRange=testRunner.testCase.testSuite.getPropertyValue("FlightRange")
+int flightRange=Integer.parseInt(fltRange)+1;
+testRunner.testCase.testSuite.setPropertyValue("FlightRange",flightRange.toString())
+
+//Create start date
+Date date = new Date();
+
+Calendar c = Calendar.getInstance(); 
+c.setTime(date); 
+c.add(Calendar.DATE, 1);
+
+date = c.getTime();
+
+DateFormat fmt = new SimpleDateFormat('ddMMMyy');
+String fromattedDate = fmt.format(date);
+s.setPropertyValue( "StartDate", fromattedDate.toUpperCase());
+
+//Create end date
+
+
+
+c.add(Calendar.DATE, 5);
+
+date = c.getTime();
+
+ fmt = new SimpleDateFormat('ddMMMyy');
+ fromattedDate = fmt.format(date);
+s.setPropertyValue( "EndDate", fromattedDate.toUpperCase());
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Build SSM" id="5d86c1e0-4df6-43cf-a10b-cee183566178"><con:settings/><con:config><script>def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+def s = testRunner.testCase.getTestStepByName( "Properties" );
+String flightNum 		= testRunner.testCase.testSuite.getPropertyValue("FlightNumber");
+String startDate 		= p["StartDate"].getValue();
+String endDate 		= p["EndDate"].getValue();
+String origin 		     = p["Origin"].getValue();
+String transit 		= p["Transit"].getValue();
+String destination 		= p["Destination"].getValue();
+
+log.info('FlightNumber'+flightNum)
+log.info('StartDate'+startDate)
+log.info('endDate'+endDate)
+log.info('origin'+origin)
+log.info('transit'+transit)
+log.info('destination'+destination)
+NEWLINE = "\r";
+String telex = "QN QLHC1LH" + NEWLINE + 
+			".QLHRMLH " + "050438" + " MESX" + NEWLINE +   // every Telex comming via MesX has "MESX" at end of 2.line (info from Simon Erassmy) (used by e.g. Mosaik for some decisions)
+			"SSM"+ NEWLINE +
+			"NEW" + NEWLINE +
+			flightNum + " 3/" + "YY" + NEWLINE + 
+			startDate +" " +  endDate + 
+			" 1234567"  + NEWLINE + 
+			"F M1F .PP26"+NEWLINE+
+			origin+"0800 "+transit+"1330"+NEWLINE+ 
+			"=";
+s.setPropertyValue( "SSM Message", telex);
+
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Send SSM" id="b4c66964-bc95-45ca-87a4-357d14640b1e"><con:settings/><con:config><script>import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSConnectionHolder
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.util.HermesUtils
+import com.eviware.soapui.impl.wsdl.submit.transports.jms.JMSEndpoint
+import hermes.Hermes
+import javax.jms.*
+
+
+/*Send message via MesX*/
+String hermesProfile = context.expand( '${#Project#use--HermesProfile}' )
+String queue = context.expand( '${#Project#use__Queue--SSM-to-SUT}' )
+String urlEndpoint = "jms://"+ hermesProfile +"::queue_"+ queue +"::-"
+log.info('target url: "'+ urlEndpoint +'"')
+try{
+def jmsEndpoint 
+try {
+	jmsEndpoint = new  JMSEndpoint( urlEndpoint ); // LCAG-SIT
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @LCAG-SIT::queue_LCAG.TO.SIT::-"); // LCAG-SIT
+//def jmsEndpoint = new  JMSEndpoint("jms://MesX @iCap-SIT::queue_MESX.TO.QLHCW::-"); // iCap-SIT
+def hermes 
+try {
+	hermes = HermesUtils.getHermes( context.testCase.testSuite.project, jmsEndpoint.sessionName)
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+def jmsConnectionHolder 
+try {
+	//jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,null ,null);
+	jmsConnectionHolder = new JMSConnectionHolder( jmsEndpoint, hermes, false, null ,"mqm" ,null);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Session queueSession 
+try {
+	queueSession = jmsConnectionHolder.getSession();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+Queue queueSend 
+try {
+	queueSend = jmsConnectionHolder.getQueue( jmsConnectionHolder.getJmsEndpoint().getSend() );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+MessageProducer messageProducer 
+try {
+	messageProducer =queueSession.createProducer( queueSend );
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+TextMessage textMessageSend 
+try {
+	textMessageSend = queueSession.createTextMessage();
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+try {
+	textMessageSend.setText(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"));
+	log.info(testRunner.testCase.getTestStepByName( "Properties" ).getPropertyValue("SSM Message"))
+
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+try {
+	messageProducer.send( textMessageSend);
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+} catch ( Exception e ) {
+	log_exception( e, "")
+	throw e
+}
+
+
+def log_exception( Exception e, String msg) {
+	log.error( e.toString() )
+}
+</script></con:config></con:testStep><con:testStep type="groovy" name="Values To Prop" id="72cc7706-4f52-46fa-a3cf-d88d60d40e31"><con:settings/><con:config><script>import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+
+def groovyUtils = new com.eviware.soapui.support.GroovyUtils(context)
+def projectDir = groovyUtils.projectPath
+
+def p = testRunner.testCase.getTestStepByName( "Properties" ).getProperties();
+
+/*****Taking values from property file****/
+
+Properties prop = new Properties();
+FileOutputStream output;
+FileInputStream fileIn;
+
+String path=projectDir+'/src/resources/GlobalVariable.properties';
+fileIn = new FileInputStream(path);
+
+prop.load(fileIn);
+output = new FileOutputStream(path);
+
+//Flight creation and storing to selenium property file
+
+String flightNumber=testRunner.testCase.testSuite.getPropertyValue("FlightNumber")
+String flightNo=testRunner.testCase.testSuite.getPropertyValue("FlightNo")
+String startDate 		= p["StartDate"].getValue();
+String endDate 		= p["EndDate"].getValue();
+
+prop.setProperty("flightNumber", flightNumber);
+prop.setProperty("flightNo", flightNo);
+prop.setProperty("StartDate", startDate);
+prop.setProperty("EndDate", endDate);
+
+prop.store(output, null);
+
+
+
+
+
+</script></con:config></con:testStep><con:properties/></con:testCase><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 5" searchProperties="true" id="1eef95ab-93fb-46a0-841e-dd5b2e03cdc1"><con:settings/><con:properties/></con:testCase><con:properties><con:property><con:name>FlightRange</con:name><con:value>1330</con:value></con:property><con:property><con:name>FlightNumber</con:name><con:value>LH1329B</con:value></con:property><con:property><con:name>CarrierCode</con:name><con:value>LH</con:value></con:property><con:property><con:name>FlightNumber2</con:name><con:value>LH1325M</con:value></con:property><con:property><con:name>FlightNo</con:name><con:value>1329B</con:value></con:property><con:property><con:name>FlightN02</con:name><con:value>1272L</con:value></con:property><con:property><con:name>FlightNo2</con:name><con:value>1325M</con:value></con:property></con:properties></con:testSuite><con:testSuite name="TestSuite 2" id="a3180c6c-7062-4eab-921c-b4e1959f969b"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true" id="2f5c3c81-a0de-47f3-9802-65e2b0258a81"><con:settings/><con:testStep type="groovy" name="Groovy Script1" id="887ba8df-baf4-4bd3-acb5-2a69bc123ebd"><con:settings/><con:config><script/></con:config></con:testStep><con:testStep type="properties" name="Properties" id="55256fd1-6365-4c63-92c5-a2cbfb393ceb"><con:settings/><con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:properties><con:property><con:name>AWB</con:name><con:value/></con:property></con:properties></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties><con:property><con:name>*** with the following Parameter the Tester may select the Test-Environment ***</con:name><con:value>.</con:value></con:property><con:property><con:name>*** Environment mapping</con:name><con:value>*** 1=>"LCAG-SIT", 2=>"iCap-SIT",3=>"ICAP-TEST",4=>ICAP_PIT ***</con:value></con:property><con:property><con:name>Environment-to-use</con:name><con:value>2</con:value></con:property><con:property><con:name>*** the following Properties define the available Environments ***</con:name><con:value>.</con:value></con:property><con:property><con:name>LCAG-SIT--HermesProfile</con:name><con:value>MesX @LCAG-SIT</con:value></con:property><con:property><con:name>LCAG-SIT__Queue--SITA-to-SUT</con:name><con:value>LCAG.TO.SIT</con:value></con:property><con:property><con:name>LCAG-SIT__Queue--SSM-to-SUT</con:name><con:value>LCAG.TO.SIT.SSM</con:value></con:property><con:property><con:name>LCAG-SIT__Queue--SUT-to-SITA</con:name><con:value>1</con:value></con:property><con:property><con:name>iCap-SIT--HermesProfile</con:name><con:value>MesX @iCap-SIT</con:value></con:property><con:property><con:name>iCap-SIT__Queue--SITA-to-SUT</con:name><con:value>MESX.TO.QLHCW</con:value></con:property><con:property><con:name>iCap-SIT__Queue--SSM-to-SUT</con:name><con:value>MESX.TO.QLHC1</con:value></con:property><con:property><con:name>iCap-SIT__Queue--SUT-to-SITA</con:name><con:value>MESX.FROM.QLHCW</con:value></con:property><con:property><con:name>ICAP-TEST--HermesProfile</con:name><con:value>MesX @iCap-SIT</con:value></con:property><con:property><con:name>ICAP-TEST__Queue--SITA-to-SUT</con:name><con:value>MESX.TO.QLHC6</con:value></con:property><con:property><con:name>ICAP-TEST__Queue--SSM-to-SUT</con:name><con:value>MESX.TO.QLHC5</con:value></con:property><con:property><con:name>ICAP-TEST__Queue--SUT-to-SITA</con:name><con:value>MESX.FROM.QLHC6</con:value></con:property><con:property><con:name>ICAP-PIT--HermesProfile</con:name><con:value>MesX @ICAP-PIT</con:value></con:property><con:property><con:name>ICAP-PIT__Queue--SITA-to-SUT</con:name><con:value>MESX.TO.LCPIT</con:value></con:property><con:property><con:name>ICAP-PIT__Queue--SSM-to-SUT</con:name><con:value>MESX.TO.LCPSM</con:value></con:property><con:property><con:name>ICAP-PIT__Queue--SUT-to-SITA</con:name><con:value>LCAG.FROM.TST</con:value></con:property><con:property><con:name>*** the following Properties are helpers ***</con:name><con:value>.</con:value></con:property><con:property><con:name>selected-Env-Prefix</con:name><con:value>${#Project#Env-Name-${#Project#Environment-to-use}}</con:value></con:property><con:property><con:name>Env-Name-1</con:name><con:value>LCAG-SIT</con:value></con:property><con:property><con:name>Env-Name-2</con:name><con:value>iCap-SIT</con:value></con:property><con:property><con:name>Env-Name-3</con:name><con:value>ICAP-TEST</con:value></con:property><con:property><con:name>Env-Name-4</con:name><con:value>ICAP-PIT</con:value></con:property><con:property><con:name>*** the following Properties are calculated helpers for the scripts ***</con:name><con:value>.</con:value></con:property><con:property><con:name>use--HermesProfile</con:name><con:value>${#Project#${#Project#selected-Env-Prefix}--HermesProfile}</con:value></con:property><con:property><con:name>use__Queue--SSM-to-SUT</con:name><con:value>${#Project#${#Project#selected-Env-Prefix}__Queue--SSM-to-SUT}</con:value></con:property><con:property><con:name>use__Queue--SITA-to-SUT</con:name><con:value>${#Project#${#Project#selected-Env-Prefix}__Queue--SITA-to-SUT}</con:value></con:property><con:property><con:name>use__Queue--SUT-to-SITA</con:name><con:value>${#Project#${#Project#selected-Env-Prefix}__Queue--SUT-to-SITA}</con:value></con:property><con:property><con:name>TCName</con:name><con:value>E9771</con:value></con:property></con:properties><con:wssContainer/><con:oAuth2ProfileContainer/><con:sensitiveInformation/></con:soapui-project>

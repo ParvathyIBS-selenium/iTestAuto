@@ -1,0 +1,5 @@
+TC015- Release allotment defect is there.Once fixed last step to be rechecked. (IIP-23 )
+TC027-Booking reassign defect exists . Once fixed irregularity step to be added in reassign step  (defect : IIP-5)
+
+Global customer allotment - check in CMT008 screen , if the global customer check box is checked. If not global customer 
+allotment cant be created with the agent.

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<rsm:FreightBookedList xmlns:ram="iata:datamodel:3" xmlns:rsm="iata:freightbookedlist:1">
+    <rsm:MessageHeaderDocument>
+        <ram:ID>AF05520210519CDG_b11ffa44-927a-4d8c-a073-cac0f39ea28b</ram:ID>
+        <ram:Name>Transport Loading Instructions</ram:Name>
+        <ram:TypeCode>121</ram:TypeCode>
+        <ram:IssueDateTime>2021-05-11T10:42:00Z</ram:IssueDateTime>
+        <ram:PurposeCode>Creation</ram:PurposeCode>
+        <ram:VersionID>2.00</ram:VersionID>
+      <SenderParty>
+         <PrimaryID schemeID="C">SPLJXKL</PrimaryID>
+      </SenderParty>
+      <SenderParty>
+         <PrimaryID schemeID="P">SPLJXKL</PrimaryID>
+      </SenderParty>
+      <RecipientParty>
+         <PrimaryID schemeID="P">QVIUSAF</PrimaryID>
+      </RecipientParty>
+      <RecipientParty>
+         <PrimaryID schemeID="C">QVIUSAF</PrimaryID>
+      </RecipientParty>
+    </rsm:MessageHeaderDocument>
+    <rsm:BusinessHeaderDocument>
+        <ram:ID>AF005520210519CDG</ram:ID>
+    </rsm:BusinessHeaderDocument>
+    <rsm:LogisticsTransportMovement>
+        <ram:StageCode>Main-Carriage</ram:StageCode>
+        <ram:ModeCode>0</ram:ModeCode>
+        <ram:Mode></ram:Mode>
+        <ram:ID>AF0055</ram:ID>
+        <ram:SequenceNumeric>1</ram:SequenceNumeric>
+        <ram:DepartureEvent>
+            <ram:DepartureOccurrenceDateTime>2021-05-19T18:25:00</ram:DepartureOccurrenceDateTime>
+            <ram:DepartureDateTimeTypeCode>S</ram:DepartureDateTimeTypeCode>
+            <ram:OccurrenceDepartureLocation>
+                <ram:ID>IAD</ram:ID>
+                <ram:TypeCode>Airport</ram:TypeCode>
+            </ram:OccurrenceDepartureLocation>
+        </ram:DepartureEvent>
+    </rsm:LogisticsTransportMovement>
+    <rsm:ArrivalEvent>
+        <ram:OccurrenceArrivalLocation>
+            <ram:ID>CDG</ram:ID>
+            <ram:TypeCode>Airport</ram:TypeCode>
+        </ram:OccurrenceArrivalLocation>
+        <ram:AssociatedTransportCargo>
+            <ram:IncludedMasterConsignment>
+                <ram:GrossWeightMeasure unitCode="KGM">200</ram:GrossWeightMeasure>
+                <ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+                <ram:TotalPieceQuantity>4</ram:TotalPieceQuantity>
+                <ram:SummaryDescription>BUILDING MATERI</ram:SummaryDescription>
+                <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+                <ram:TransportContractDocument>
+                    <ram:ID>057-31331344</ram:ID>
+                </ram:TransportContractDocument>
+                <ram:OriginLocation>
+                    <ram:ID>IAD</ram:ID>
+                </ram:OriginLocation>
+                <ram:FinalDestinationLocation>
+                    <ram:ID>CDG</ram:ID>
+                </ram:FinalDestinationLocation>
+                <ram:HandlingInstructions>
+                    <ram:Description>GEN</ram:Description>
+                    <ram:DescriptionCode>GEN</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+                <ram:HandlingInstructions>
+                    <ram:Description>BAG</ram:Description>
+                    <ram:DescriptionCode>BAG</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+                <ram:HandlingInstructions>
+                    <ram:Description>PER</ram:Description>
+                    <ram:DescriptionCode>PER</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+            </ram:IncludedMasterConsignment>
+            <ram:IncludedMasterConsignment>
+                <ram:GrossWeightMeasure unitCode="KGM">150</ram:GrossWeightMeasure>
+                <ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+                <ram:TotalPieceQuantity>3</ram:TotalPieceQuantity>
+                <ram:SummaryDescription>BUILDING MATERI</ram:SummaryDescription>
+                <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+                <ram:TransportContractDocument>
+                    <ram:ID>057-31331355</ram:ID>
+                </ram:TransportContractDocument>
+                <ram:OriginLocation>
+                    <ram:ID>IAD</ram:ID>
+                </ram:OriginLocation>
+                <ram:FinalDestinationLocation>
+                    <ram:ID>CDG</ram:ID>
+                </ram:FinalDestinationLocation>
+                <ram:HandlingInstructions>
+                    <ram:Description>RCX</ram:Description>
+                    <ram:DescriptionCode>RCX</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+                <ram:HandlingInstructions>
+                    <ram:Description>RFL</ram:Description>
+                    <ram:DescriptionCode>RFL</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+            </ram:IncludedMasterConsignment>  
+            <ram:IncludedMasterConsignment>
+                <ram:GrossWeightMeasure unitCode="KGM">250</ram:GrossWeightMeasure>
+                <ram:GrossVolumeMeasure unitCode="MTQ">1</ram:GrossVolumeMeasure>
+                <ram:TotalPieceQuantity>5</ram:TotalPieceQuantity>
+                <ram:SummaryDescription>BUILDING MATERI</ram:SummaryDescription>
+                <ram:TransportSplitDescription>T</ram:TransportSplitDescription>
+                <ram:TransportContractDocument>
+                    <ram:ID>057-31331366</ram:ID>
+                </ram:TransportContractDocument>
+                <ram:OriginLocation>
+                    <ram:ID>IAD</ram:ID>
+                </ram:OriginLocation>
+                <ram:FinalDestinationLocation>
+                    <ram:ID>CDG</ram:ID>
+                </ram:FinalDestinationLocation>
+                <ram:HandlingInstructions>
+                    <ram:Description>GEN</ram:Description>
+                    <ram:DescriptionCode>GEN</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+                <ram:HandlingInstructions>
+                    <ram:Description>BAG</ram:Description>
+                    <ram:DescriptionCode>BAG</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+                <ram:HandlingInstructions>
+                    <ram:Description>PER</ram:Description>
+                    <ram:DescriptionCode>PER</ram:DescriptionCode>
+                </ram:HandlingInstructions>
+            </ram:IncludedMasterConsignment>  			
+        </ram:AssociatedTransportCargo>
+    </rsm:ArrivalEvent>
+</rsm:FreightBookedList>

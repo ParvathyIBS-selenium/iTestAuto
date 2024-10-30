@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BLSearchRQ>
+	<ProviderCode>1A</ProviderCode>
+	<Data>
+		<AirShoppingRQ>
+			<!-- <Parameters> <Pricing> <OverrideCurrency>JPY</OverrideCurrency> </Pricing> 
+				</Parameters> -->
+
+			<Party>
+				<Sender>
+					<AggregatorSender>
+						<Name>Worldspan</Name>
+						<Category>
+							<Code>M</Code>
+							<Definition>NDC aggregator</Definition>
+						</Category>
+						<AggregatorID>1P</AggregatorID>
+					</AggregatorSender>
+				</Sender>
+				<Participants>
+					<Participant>
+						<TravelAgencyParticipant SequenceNumber="1">
+							<Name>USD Travel</Name>
+							<Type>TravelAgency</Type>
+							<Contacts>
+								<Contact>
+									<EmailContact>
+										<Address>ndc@usdtravel.com</Address>
+									</EmailContact>
+								</Contact>
+							</Contacts>
+							<PseudoCity>1F8</PseudoCity>
+							<IATA_Number>2212345</IATA_Number>
+							<AgencyID Owner="LH">1001</AgencyID>
+							<AgentUser>
+								<Name>John Smith</Name>
+								<AgentUserID>1980</AgentUserID>
+								<UserRole>Admin</UserRole>
+							</AgentUser>
+						</TravelAgencyParticipant>
+					</Participant>
+				</Participants>
+			</Party>
+			<Document>
+				<Name>LH NDC GATEWAY</Name>
+				<ReferenceVersion>1.0</ReferenceVersion>
+			</Document>
+			<Travellers>
+				<Traveller>
+					<AnonymousTraveller>
+						<PTC Quantity="2">ADT</PTC>
+					</AnonymousTraveller>
+				</Traveller>
+				<Traveller>
+					<AnonymousTraveller>
+						<PTC Quantity="1">CHD</PTC>
+					</AnonymousTraveller>
+				</Traveller>
+			</Travellers>
+			<CoreQuery>
+
+				<Attribute>
+					<OriginDestination OriginDestinationKey="OD1">
+						<Departure>
+							<AirportCode>TRV</AirportCode>
+							<Date>2017-08-13</Date>
+						</Departure>
+						<Arrival>
+							<AirportCode>DXB</AirportCode>
+						</Arrival>
+					</OriginDestination>
+				</Attribute>
+			</CoreQuery>
+			<Preferences>
+				<Preference>
+					<AlliancePreferences>
+						<Alliance PreferencesLevel="Required">
+							<Code>*A</Code>
+						</Alliance>
+					</AlliancePreferences>
+				</Preference>
+			</Preferences>
+		</AirShoppingRQ>
+	</Data>
+</BLSearchRQ>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?><ns2:FlightManifest xmlns="iata:datamodel:3" xmlns:ns2="iata:flightmanifest:1">
+<ns2:MessageHeaderDocument>
+<ID>AF5067-10JUN2021_100621173004581</ID>
+<Name>Transport Loading Report</Name>
+<TypeCode>122</TypeCode>
+<IssueDateTime>2021-06-10T10:11:43</IssueDateTime>
+<PurposeCode>Creation</PurposeCode>
+<VersionID>2.00</VersionID>
+<SenderParty>
+<PrimaryID schemeID="C">SPLJXKL</PrimaryID>
+</SenderParty>
+<SenderParty>
+<PrimaryID schemeID="P">SPLJXKL</PrimaryID>
+</SenderParty>
+<RecipientParty>
+<PrimaryID schemeID="P">QVIUSAF</PrimaryID>
+</RecipientParty>
+<RecipientParty>
+<PrimaryID schemeID="C">QVIUSAF</PrimaryID>
+</RecipientParty>
+</ns2:MessageHeaderDocument>
+<ns2:BusinessHeaderDocument>
+<ID>AF5067100621173004CDG</ID>
+<IncludedHeaderNote>
+<Content>FlightManifest</Content>
+</IncludedHeaderNote>
+</ns2:BusinessHeaderDocument>
+<ns2:LogisticsTransportMovement>
+<StageCode>Main-Carriage</StageCode>
+<ModeCode>4</ModeCode>
+<Mode>AIR TRANSPORT</Mode>
+<ID>AF5067</ID>
+<SequenceNumeric>1</SequenceNumeric>
+<TotalGrossWeightMeasure unitCode="KGM">100</TotalGrossWeightMeasure>
+<TotalGrossVolumeMeasure unitCode="MTQ">1</TotalGrossVolumeMeasure>
+<TotalPackageQuantity>10</TotalPackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<DepartureEvent>
+<DepartureOccurrenceDateTime>2021-06-10T02:00:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceDepartureLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+<TypeCode>Airport</TypeCode>
+</OccurrenceDepartureLocation>
+</DepartureEvent>
+</ns2:LogisticsTransportMovement>
+<ns2:ArrivalEvent>
+<ArrivalOccurrenceDateTime>2021-06-10T05:00:00</ArrivalOccurrenceDateTime>
+<ArrivalDateTimeTypeCode>S</ArrivalDateTimeTypeCode>
+<DepartureOccurrenceDateTime>2021-06-10T02:00:00</DepartureOccurrenceDateTime>
+<DepartureDateTimeTypeCode>S</DepartureDateTimeTypeCode>
+<OccurrenceArrivalLocation>
+<ID>IAD</ID>
+<Name>STAT</Name>
+<TypeCode>Airport</TypeCode>
+<FirstArrivalCountryID>null</FirstArrivalCountryID>
+</OccurrenceArrivalLocation>
+<AssociatedTransportCargo>
+<TypeCode>ULD</TypeCode>
+<UtilizedUnitLoadTransportEquipment>
+<ID>62168</ID>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1</GrossVolumeMeasure>
+<PieceQuantity>10</PieceQuantity>
+<CharacteristicCode>AKE</CharacteristicCode>
+<LoadingRemark>C-L7 </LoadingRemark>
+<OperatingParty>
+<PrimaryID schemeAgencyID="3">AF</PrimaryID></OperatingParty>
+</UtilizedUnitLoadTransportEquipment>
+<IncludedMasterConsignment>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1</GrossVolumeMeasure>
+<PackageQuantity>10</PackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<SummaryDescription>GENERAL COMMODI</SummaryDescription>
+<TransportSplitDescription>S</TransportSplitDescription>
+<TransportContractDocument>
+<ID>057-43955752</ID>
+</TransportContractDocument>
+<OriginLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>IAD</ID>
+<Name>STAT</Name>
+</FinalDestinationLocation>
+<HandlingSPHInstructions>
+<DescriptionCode>GEN</DescriptionCode>
+</HandlingSPHInstructions>
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+</IncludedMasterConsignment>
+</AssociatedTransportCargo>
+<AssociatedTransportCargo>
+<TypeCode>ULD</TypeCode>
+<UtilizedUnitLoadTransportEquipment>
+<ID>62168</ID>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1</GrossVolumeMeasure>
+<PieceQuantity>10</PieceQuantity>
+<CharacteristicCode>AKE</CharacteristicCode>
+<LoadingRemark>C-L7 </LoadingRemark>
+<OperatingParty>
+<PrimaryID schemeAgencyID="3">AF</PrimaryID></OperatingParty>
+</UtilizedUnitLoadTransportEquipment>
+<IncludedMasterConsignment>
+<GrossWeightMeasure unitCode="KGM">100</GrossWeightMeasure>
+<GrossVolumeMeasure unitCode="MTQ">1</GrossVolumeMeasure>
+<PackageQuantity>10</PackageQuantity>
+<TotalPieceQuantity>10</TotalPieceQuantity>
+<SummaryDescription>GENERAL COMMODI</SummaryDescription>
+<TransportSplitDescription>S</TransportSplitDescription>
+<TransportContractDocument>
+<ID>057-43955763</ID>
+</TransportContractDocument>
+<OriginLocation>
+<ID>CDG</ID>
+<Name>CHARLES DE GAULLE AIRPORT</Name>
+</OriginLocation>
+<FinalDestinationLocation>
+<ID>AMS</ID>
+<Name>SCHIPHOL AIRPORT</Name>
+</FinalDestinationLocation>
+<HandlingSPHInstructions>
+<DescriptionCode>GEN</DescriptionCode>
+</HandlingSPHInstructions>
+<AssociatedConsignmentCustomsProcedure>
+<GoodsStatusCode>X</GoodsStatusCode>
+</AssociatedConsignmentCustomsProcedure>
+</IncludedMasterConsignment>
+</AssociatedTransportCargo>
+<AssociatedTransportCargo>
+<TypeCode>NIL</TypeCode>
+</AssociatedTransportCargo>
+</ns2:ArrivalEvent>
+</ns2:FlightManifest>

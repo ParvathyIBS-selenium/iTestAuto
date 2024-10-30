@@ -1,0 +1,83 @@
+package common;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.util.Iterator;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelRead {
+	
+	
+	
+	
+	public static void main (String []args)
+	{
+		try  
+		{  
+		File file = new File("D:\\SEL_WS_SVN\\workspace\\iTestFinal_4.10\\src\\resources\\TestData\\DataLoad\\TestData.xlsx");   //creating a new file instance  
+		FileInputStream fis = new FileInputStream(file);   //obtaining bytes from the file  
+		//creating Workbook instance that refers to .xlsx file  
+		XSSFWorkbook wb = new XSSFWorkbook(fis);   
+		XSSFSheet sheet = wb.getSheetAt(0);     //creating a Sheet object to retrieve object  
+		int physicalRows = sheet. getPhysicalNumberOfRows();
+		
+		System.out.println(physicalRows);
+		
+		for(int i=1;i<physicalRows;i++)
+		{
+			   Row row = sheet.getRow(i);
+	           Cell cell = row.getCell(3);
+	           
+	           switch (cell.getCellType())               
+	   		{  
+	   		case Cell.CELL_TYPE_STRING:    //field that represents string cell type  
+	   		System.out.print(cell.getStringCellValue() + "\t\t\t"); 
+	   		
+	   		if(cell.getStringCellValue().equals(""))
+	   		{
+	   			System.out.println("loose");
+	   		}
+	   		break;  
+	   		case Cell.CELL_TYPE_NUMERIC:    //field that represents number cell type  
+	   		System.out.print(cell.getNumericCellValue() + "\t\t\t");  
+	   		break;  
+	   		default:  
+	   		}  
+		}
+		
+		
+//		Iterator<Row> itr = sheet.iterator();    //iterating over excel file  
+//		while (itr.hasNext())                 
+//		{  
+//		Row row = itr.next();  
+//		Iterator<Cell> cellIterator = row.cellIterator();   //iterating over each column  
+//		while (cellIterator.hasNext())   
+//		{  
+//		Cell cell = cellIterator.next();  
+//		switch (cell.getCellType())               
+//		{  
+//		case Cell.CELL_TYPE_STRING:    //field that represents string cell type  
+//		System.out.print(cell.getStringCellValue() + "\t\t\t");  
+//		break;  
+//		case Cell.CELL_TYPE_NUMERIC:    //field that represents number cell type  
+//		System.out.print(cell.getNumericCellValue() + "\t\t\t");  
+//		break;  
+//		default:  
+//		}  
+//		}  
+//		System.out.println("");  
+//		}  
+		}  
+		catch(Exception e)  
+		{  
+		e.printStackTrace();  
+		}  
+		}  
+		
+	}
+
+
